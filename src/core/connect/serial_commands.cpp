@@ -80,8 +80,9 @@ void EspSerialCmd::receiveCommands() {
             displayRecvError();
             recvStatus = WAITING;
         }
+
         if (recvStatus == SUCCESS) {
-            displayRecvCommand(serialCli.parse(recvCommand));
+            displayRecvCommand(recvStatus == SUCCESS);
             recvStatus = WAITING;
         }
 

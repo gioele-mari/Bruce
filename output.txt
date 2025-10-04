@@ -1,0 +1,4665 @@
+.
+├── 2.0_road_path.md
+├── boards
+│   ├── _boards_json
+│   │   ├── CYD-2432S028.json
+│   │   ├── esp32dev.json
+│   │   ├── ESP-General.json
+│   │   ├── lilygo-t-deck.json
+│   │   ├── lilygo-t-display-s3.json
+│   │   ├── lilygo-t-display-s3-pro.json
+│   │   ├── lilygo-t-display-ttgo.json
+│   │   ├── lilygo-t-embed-cc1101.json
+│   │   ├── lilygo-t-embed.json
+│   │   ├── lilygo-t-hmi.json
+│   │   ├── lilygo-t-lora-pager.json
+│   │   ├── lilygo-t-watch-s3.json
+│   │   ├── m5stack-cardputer-adv.json
+│   │   ├── m5stack-cardputer.json
+│   │   ├── m5stack-core2.json
+│   │   ├── m5stack-core.json
+│   │   ├── m5stack-cores3.json
+│   │   ├── m5stack-cplus1_1.json
+│   │   ├── m5stack-cplus2.json
+│   │   ├── _New-Device-Model.json
+│   │   ├── smoochiee-board.json
+│   │   └── xk404.json
+│   ├── CYD-2432S028
+│   │   ├── CYD-2432S028.ini
+│   │   ├── interface.cpp
+│   │   └── pins_arduino.h
+│   ├── ESP-General
+│   │   ├── ESP-General.ini
+│   │   ├── interface.cpp
+│   │   └── pins_arduino.h
+│   ├── lilygo-t-deck
+│   │   ├── interface.cpp
+│   │   ├── lilygo-t-deck.ini
+│   │   └── pins_arduino.h
+│   ├── lilygo-t-display-s3
+│   │   ├── connections.md
+│   │   ├── interface.cpp
+│   │   ├── lilygo-t-display-s3.ini
+│   │   └── pins_arduino.h
+│   ├── lilygo-t-display-s3-pro
+│   │   ├── interface.cpp
+│   │   ├── pins_arduino.h
+│   │   └── platformio.ini
+│   ├── lilygo-t-display-ttgo
+│   │   ├── connections.md
+│   │   ├── interface.cpp
+│   │   ├── lilygo-t-display-s3.ini
+│   │   └── pins_arduino.h
+│   ├── lilygo-t-hmi
+│   │   ├── connections.md
+│   │   ├── interface.cpp
+│   │   ├── lilygo-t-hmi.ini
+│   │   └── pins_arduino.h
+│   ├── lilygo-t-watch-s3
+│   │   ├── interface.cpp
+│   │   ├── lilygo-t-watch-s3.ini
+│   │   └── pins_arduino.h
+│   ├── m5stack-cardputer
+│   │   ├── interface.cpp
+│   │   ├── m5stack-cardputer.ini
+│   │   └── pins_arduino.h
+│   ├── m5stack-core
+│   │   ├── interface.cpp
+│   │   ├── m5stack-core.ini
+│   │   └── pins_arduino.h
+│   ├── m5stack-core2
+│   │   ├── interface.cpp
+│   │   ├── m5stack-core2.ini
+│   │   └── pins_arduino.h
+│   ├── m5stack-cores3
+│   │   ├── interface.cpp
+│   │   ├── m5stack-cores3.ini
+│   │   └── pins_arduino.h
+│   ├── m5stack-cplus1_1
+│   │   ├── interface.cpp
+│   │   ├── m5stack-cplus1_1.ini
+│   │   └── pins_arduino.h
+│   ├── m5stack-cplus2
+│   │   ├── interface.cpp
+│   │   ├── m5stack-cplus2.ini
+│   │   └── pins_arduino.h
+│   ├── marauder-mini
+│   │   ├── interface.cpp
+│   │   ├── marauder-mini.ini
+│   │   └── pins_arduino.h
+│   ├── marauder-touch
+│   │   ├── interface.cpp
+│   │   ├── marauder-touch.ini
+│   │   └── pins_arduino.h
+│   ├── _New-Device-Model
+│   │   ├── interface.cpp
+│   │   ├── _New-Device-Model.ini
+│   │   └── pins_arduino.h
+│   ├── phantom
+│   │   ├── interface.cpp
+│   │   ├── phantom.ini
+│   │   └── pins_arduino.h
+│   ├── pinouts
+│   │   ├── pins_arduino.h
+│   │   └── variant.cpp
+│   ├── README.md
+│   ├── smoochiee-board
+│   │   ├── interface.cpp
+│   │   ├── pins_arduino.h
+│   │   └── smoochiee-board.ini
+│   └── xk404
+│       ├── interface.cpp
+│       ├── pins_arduino.h
+│       └── xk404.ini
+├── build.py
+├── .clang-format
+├── custom_16Mb.csv
+├── custom_4Mb.csv
+├── custom_4Mb_full.csv
+├── custom_8Mb.csv
+├── embedded_resources
+│   └── web_interface
+│       ├── checksum.sha256
+│       ├── index.css
+│       ├── index.html
+│       ├── index.js
+│       ├── logout.html
+│       └── not_found.html
+├── .git
+│   ├── branches
+│   ├── COMMIT_EDITMSG
+│   ├── config
+│   ├── description
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── sendemail-validate.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   └── exclude
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   ├── main
+│   │       │   └── menu_personalizzato
+│   │       └── remotes
+│   │           └── origin
+│   │               ├── HEAD
+│   │               ├── main
+│   │               └── menu_personalizzato
+│   ├── objects
+│   │   ├── 2f
+│   │   │   └── f3571c1eba41710026c411ce1a8216ea6b624f
+│   │   ├── 7f
+│   │   │   └── 552b7b7c522a5a0d2f67fb71465ad6816fe4af
+│   │   ├── 80
+│   │   │   └── c857398b845f1c59f63d676043d83f8d469f00
+│   │   ├── a6
+│   │   │   └── 4a83c41256398a5f4c8cbb5fe625228b38e34d
+│   │   ├── b8
+│   │   │   └── 80d7fa62ec42e04dd335f1b646ec6cef115891
+│   │   ├── cf
+│   │   │   └── 04b2d0783c749747a6bbf88214700b4b57684d
+│   │   ├── info
+│   │   └── pack
+│   │       ├── pack-d30d81bf3cfe39e32efe9ac8247bcc58ee3e0b27.idx
+│   │       ├── pack-d30d81bf3cfe39e32efe9ac8247bcc58ee3e0b27.pack
+│   │       └── pack-d30d81bf3cfe39e32efe9ac8247bcc58ee3e0b27.rev
+│   ├── ORIG_HEAD
+│   ├── packed-refs
+│   └── refs
+│       ├── heads
+│       │   ├── main
+│       │   └── menu_personalizzato
+│       ├── remotes
+│       │   └── origin
+│       │       ├── HEAD
+│       │       ├── main
+│       │       └── menu_personalizzato
+│       └── tags
+├── .github
+│   ├── FUNDING.yml
+│   ├── ISSUE_TEMPLATE
+│   │   ├── bug_report.md
+│   │   └── feature_request.md
+│   ├── pull_request_template.md
+│   └── workflows
+│       ├── buil_parallel.yml
+│       ├── PR_All_envs.yml
+│       └── PR_check.yml
+├── .gitignore
+├── include
+│   ├── current_year.h
+│   ├── globals.h
+│   ├── interface.h
+│   ├── MenuItemInterface.h
+│   ├── precompiler_flags.h
+│   ├── README
+│   ├── tftLogger.h
+│   ├── VectorDisplay.h
+│   └── webFiles.h
+├── LAYOUT.md
+├── lib
+│   ├── CYD-touch
+│   │   ├── CYD28_TouchscreenC.cpp
+│   │   ├── CYD28_TouchscreenC.h
+│   │   ├── CYD28_TouchscreenR.cpp
+│   │   └── CYD28_TouchscreenR.h
+│   ├── HAL
+│   │   ├── io_expander
+│   │   │   ├── Adafruit_AW9523.cpp
+│   │   │   ├── Adafruit_AW9523.h
+│   │   │   ├── io_expander.h
+│   │   │   ├── PCA9555.cpp
+│   │   │   └── PCA9555.h
+│   │   ├── library.json
+│   │   ├── sd_card
+│   │   │   ├── SD.cpp
+│   │   │   └── SD_MMC.cpp
+│   │   ├── sd_defines.h
+│   │   └── SD.h
+│   ├── README
+│   ├── RTC
+│   │   ├── cplus_RTC.cpp
+│   │   └── cplus_RTC.h
+│   ├── TFT_eSPI
+│   │   ├── CMakeLists.txt
+│   │   ├── Extensions
+│   │   │   ├── Button.cpp
+│   │   │   ├── Button.h
+│   │   │   ├── Smooth_font.cpp
+│   │   │   ├── Smooth_font.h
+│   │   │   ├── Sprite.cpp
+│   │   │   ├── Sprite.h
+│   │   │   ├── Touch.cpp
+│   │   │   └── Touch.h
+│   │   ├── Fonts
+│   │   │   ├── Custom
+│   │   │   │   ├── Orbitron_Light_24.h
+│   │   │   │   ├── Orbitron_Light_32.h
+│   │   │   │   ├── Roboto_Thin_24.h
+│   │   │   │   ├── Satisfy_24.h
+│   │   │   │   └── Yellowtail_32.h
+│   │   │   ├── Font16.c
+│   │   │   ├── Font16.h
+│   │   │   ├── Font32rle.c
+│   │   │   ├── Font32rle.h
+│   │   │   ├── Font64rle.c
+│   │   │   ├── Font64rle.h
+│   │   │   ├── Font72rle.c
+│   │   │   ├── Font72rle.h
+│   │   │   ├── Font72x53rle.c
+│   │   │   ├── Font72x53rle.h
+│   │   │   ├── Font7srle.c
+│   │   │   ├── Font7srle.h
+│   │   │   ├── GFXFF
+│   │   │   │   ├── FreeMono12pt7b.h
+│   │   │   │   ├── FreeMono18pt7b.h
+│   │   │   │   ├── FreeMono24pt7b.h
+│   │   │   │   ├── FreeMono9pt7b.h
+│   │   │   │   ├── FreeMonoBold12pt7b.h
+│   │   │   │   ├── FreeMonoBold18pt7b.h
+│   │   │   │   ├── FreeMonoBold24pt7b.h
+│   │   │   │   ├── FreeMonoBold9pt7b.h
+│   │   │   │   ├── FreeMonoBoldOblique12pt7b.h
+│   │   │   │   ├── FreeMonoBoldOblique18pt7b.h
+│   │   │   │   ├── FreeMonoBoldOblique24pt7b.h
+│   │   │   │   ├── FreeMonoBoldOblique9pt7b.h
+│   │   │   │   ├── FreeMonoOblique12pt7b.h
+│   │   │   │   ├── FreeMonoOblique18pt7b.h
+│   │   │   │   ├── FreeMonoOblique24pt7b.h
+│   │   │   │   ├── FreeMonoOblique9pt7b.h
+│   │   │   │   ├── FreeSans12pt7b.h
+│   │   │   │   ├── FreeSans18pt7b.h
+│   │   │   │   ├── FreeSans24pt7b.h
+│   │   │   │   ├── FreeSans9pt7b.h
+│   │   │   │   ├── FreeSansBold12pt7b.h
+│   │   │   │   ├── FreeSansBold18pt7b.h
+│   │   │   │   ├── FreeSansBold24pt7b.h
+│   │   │   │   ├── FreeSansBold9pt7b.h
+│   │   │   │   ├── FreeSansBoldOblique12pt7b.h
+│   │   │   │   ├── FreeSansBoldOblique18pt7b.h
+│   │   │   │   ├── FreeSansBoldOblique24pt7b.h
+│   │   │   │   ├── FreeSansBoldOblique9pt7b.h
+│   │   │   │   ├── FreeSansOblique12pt7b.h
+│   │   │   │   ├── FreeSansOblique18pt7b.h
+│   │   │   │   ├── FreeSansOblique24pt7b.h
+│   │   │   │   ├── FreeSansOblique9pt7b.h
+│   │   │   │   ├── FreeSerif12pt7b.h
+│   │   │   │   ├── FreeSerif18pt7b.h
+│   │   │   │   ├── FreeSerif24pt7b.h
+│   │   │   │   ├── FreeSerif9pt7b.h
+│   │   │   │   ├── FreeSerifBold12pt7b.h
+│   │   │   │   ├── FreeSerifBold18pt7b.h
+│   │   │   │   ├── FreeSerifBold24pt7b.h
+│   │   │   │   ├── FreeSerifBold9pt7b.h
+│   │   │   │   ├── FreeSerifBoldItalic12pt7b.h
+│   │   │   │   ├── FreeSerifBoldItalic18pt7b.h
+│   │   │   │   ├── FreeSerifBoldItalic24pt7b.h
+│   │   │   │   ├── FreeSerifBoldItalic9pt7b.h
+│   │   │   │   ├── FreeSerifItalic12pt7b.h
+│   │   │   │   ├── FreeSerifItalic18pt7b.h
+│   │   │   │   ├── FreeSerifItalic24pt7b.h
+│   │   │   │   ├── FreeSerifItalic9pt7b.h
+│   │   │   │   ├── gfxfont.h
+│   │   │   │   ├── license.txt
+│   │   │   │   ├── print.txt
+│   │   │   │   └── TomThumb.h
+│   │   │   └── glcdfont.c
+│   │   ├── Kconfig
+│   │   ├── keywords.txt
+│   │   ├── library.json
+│   │   ├── library.properties
+│   │   ├── license.txt
+│   │   ├── Processors
+│   │   │   ├── pio_16bit_parallel.pio.h
+│   │   │   ├── pio_8bit_parallel_18bpp.pio.h
+│   │   │   ├── pio_8bit_parallel.pio.h
+│   │   │   ├── pio_SPI_18bit.pio.h
+│   │   │   ├── pio_SPI.pio.h
+│   │   │   ├── TFT_eSPI_ESP32.c
+│   │   │   ├── TFT_eSPI_ESP32_C3.c
+│   │   │   ├── TFT_eSPI_ESP32_C3.h
+│   │   │   ├── TFT_eSPI_ESP32.h
+│   │   │   ├── TFT_eSPI_ESP32_S3.c
+│   │   │   ├── TFT_eSPI_ESP32_S3.h
+│   │   │   ├── TFT_eSPI_ESP8266.c
+│   │   │   ├── TFT_eSPI_ESP8266.h
+│   │   │   ├── TFT_eSPI_Generic.c
+│   │   │   ├── TFT_eSPI_Generic.h
+│   │   │   ├── TFT_eSPI_RP2040.c
+│   │   │   ├── TFT_eSPI_RP2040.h
+│   │   │   ├── TFT_eSPI_STM32.c
+│   │   │   └── TFT_eSPI_STM32.h
+│   │   ├── README.md
+│   │   ├── README.txt
+│   │   ├── TFT_config.h
+│   │   ├── TFT_Drivers
+│   │   │   ├── EPD_Defines.h
+│   │   │   ├── GC9A01_Defines.h
+│   │   │   ├── GC9A01_Init.h
+│   │   │   ├── GC9A01_Rotation.h
+│   │   │   ├── HX8357B_Defines.h
+│   │   │   ├── HX8357B_Init.h
+│   │   │   ├── HX8357B_Rotation.h
+│   │   │   ├── HX8357C_Defines.h
+│   │   │   ├── HX8357C_Init.h
+│   │   │   ├── HX8357C_Rotation.h
+│   │   │   ├── HX8357D_Defines.h
+│   │   │   ├── HX8357D_Init.h
+│   │   │   ├── HX8357D_Rotation.h
+│   │   │   ├── ILI9163_Defines.h
+│   │   │   ├── ILI9163_Init.h
+│   │   │   ├── ILI9163_Rotation.h
+│   │   │   ├── ILI9225_Defines.h
+│   │   │   ├── ILI9225_Init.h
+│   │   │   ├── ILI9225_Rotation.h
+│   │   │   ├── ILI9341_Defines.h
+│   │   │   ├── ILI9341_Init.h
+│   │   │   ├── ILI9341_Rotation.h
+│   │   │   ├── ILI9481_Defines.h
+│   │   │   ├── ILI9481_Init.h
+│   │   │   ├── ILI9481_Rotation.h
+│   │   │   ├── ILI9486_Defines.h
+│   │   │   ├── ILI9486_Init.h
+│   │   │   ├── ILI9486_Rotation.h
+│   │   │   ├── ILI9488_Defines.h
+│   │   │   ├── ILI9488_Init.h
+│   │   │   ├── ILI9488_Rotation.h
+│   │   │   ├── R61581_Defines.h
+│   │   │   ├── R61581_Init.h
+│   │   │   ├── R61581_Rotation.h
+│   │   │   ├── RM68120_Defines.h
+│   │   │   ├── RM68120_Init.h
+│   │   │   ├── RM68120_Rotation.h
+│   │   │   ├── RM68140_Defines.h
+│   │   │   ├── RM68140_Init.h
+│   │   │   ├── RM68140_Rotation.h
+│   │   │   ├── S6D02A1_Defines.h
+│   │   │   ├── S6D02A1_Init.h
+│   │   │   ├── S6D02A1_Rotation.h
+│   │   │   ├── SSD1351_Defines.h
+│   │   │   ├── SSD1351_Init.h
+│   │   │   ├── SSD1351_Rotation.h
+│   │   │   ├── SSD1963_Defines.h
+│   │   │   ├── SSD1963_Init.h
+│   │   │   ├── SSD1963_Rotation.h
+│   │   │   ├── ST7735_Defines.h
+│   │   │   ├── ST7735_Init.h
+│   │   │   ├── ST7735_Rotation.h
+│   │   │   ├── ST7789_2_Defines.h
+│   │   │   ├── ST7789_2_Init.h
+│   │   │   ├── ST7789_2_Rotation.h
+│   │   │   ├── ST7789_Defines.h
+│   │   │   ├── ST7789_Init.h
+│   │   │   ├── ST7789_Rotation.h
+│   │   │   ├── ST7796_Defines.h
+│   │   │   ├── ST7796_Init.h
+│   │   │   └── ST7796_Rotation.h
+│   │   ├── TFT_eSPI.cpp
+│   │   ├── TFT_eSPI.h
+│   │   ├── Tools
+│   │   │   ├── bmp2array4bit
+│   │   │   │   ├── bmp2array4bit.py
+│   │   │   │   ├── README.md
+│   │   │   │   └── star.bmp
+│   │   │   ├── Create_Smooth_Font
+│   │   │   │   └── Create_font
+│   │   │   │       ├── Create_font.pde
+│   │   │   │       ├── data
+│   │   │   │       │   └── Final-Frontier.ttf
+│   │   │   │       └── FontFiles
+│   │   │   │           └── Final-Frontier28.h
+│   │   │   └── Screenshot_client
+│   │   │       └── Screenshot_client.pde
+│   │   ├── User_Setup.h
+│   │   ├── User_Setups
+│   │   │   ├── Setup0_Sprite.h
+│   │   │   ├── Setup100_RP2040_ILI9488_parallel.h
+│   │   │   ├── Setup101_RP2040_ILI9481_parallel.h
+│   │   │   ├── Setup102_RP2040_ILI9341_parallel.h
+│   │   │   ├── Setup103_RP2040_ILI9486_parallel.h
+│   │   │   ├── Setup104_RP2040_ST7796_parallel.h
+│   │   │   ├── Setup105_RP2040_ST7796_16bit_parallel.h
+│   │   │   ├── Setup106_RP2040_ILI9481_16bit_parallel.h
+│   │   │   ├── Setup107_RP2040_ILI9341_16bit_parallel.h
+│   │   │   ├── Setup108_RP2040_ST7735.h
+│   │   │   ├── Setup10_RPi_touch_ILI9486.h
+│   │   │   ├── Setup11_RPi_touch_ILI9486.h
+│   │   │   ├── Setup12_M5Stack_Basic_Core.h
+│   │   │   ├── Setup135_ST7789.h
+│   │   │   ├── Setup136_LilyGo_TTV.h
+│   │   │   ├── Setup137_LilyGo_TDisplay_RP2040.h
+│   │   │   ├── Setup138_Pico_Explorer_Base_RP2040_ST7789.h
+│   │   │   ├── Setup13_ILI9481_Parallel.h
+│   │   │   ├── Setup14_ILI9341_Parallel.h
+│   │   │   ├── Setup15_HX8357D.h
+│   │   │   ├── Setup16_ILI9488_Parallel.h
+│   │   │   ├── Setup17_ePaper.h
+│   │   │   ├── Setup18_ST7789.h
+│   │   │   ├── Setup19_RM68140_Parallel.h
+│   │   │   ├── Setup1_ILI9341.h
+│   │   │   ├── Setup200_GC9A01.h
+│   │   │   ├── Setup201_WT32_SC01.h
+│   │   │   ├── Setup202_SSD1351_128.h
+│   │   │   ├── Setup203_ST7789.h
+│   │   │   ├── Setup204_ESP32_TouchDown.h
+│   │   │   ├── Setup205_ESP32_TouchDown_S3.h
+│   │   │   ├── Setup206_LilyGo_T_Display_S3.h
+│   │   │   ├── Setup207_LilyGo_T_HMI.h
+│   │   │   ├── Setup209_LilyGo_T_Dongle_S3.h
+│   │   │   ├── Setup20_ILI9488.h
+│   │   │   ├── Setup210_LilyGo_T_Embed_S3.h
+│   │   │   ├── Setup211_LilyGo_T_QT_Pro_S3.h
+│   │   │   ├── Setup212_LilyGo_T_PicoPro.h
+│   │   │   ├── Setup213_LilyGo_T_Beam_Shield.h
+│   │   │   ├── Setup21_ILI9488.h
+│   │   │   ├── Setup22_TTGO_T4.h
+│   │   │   ├── Setup22_TTGO_T4_v1.3.h
+│   │   │   ├── Setup23_TTGO_TM.h
+│   │   │   ├── Setup24_ST7789.h
+│   │   │   ├── Setup250_ESP32_S3_Box_Lite.h
+│   │   │   ├── Setup251_ESP32_S3_Box.h
+│   │   │   ├── Setup25_TTGO_T_Display.h
+│   │   │   ├── Setup26_TTGO_T_Wristband.h
+│   │   │   ├── Setup27_RPi_ST7796_ESP32.h
+│   │   │   ├── Setup28_RPi_ST7796_ESP8266.h
+│   │   │   ├── Setup29b_ILI9341_STM32.h
+│   │   │   ├── Setup29_ILI9341_STM32.h
+│   │   │   ├── Setup2_ST7735.h
+│   │   │   ├── Setup301_BW16_ST7735.h
+│   │   │   ├── Setup302_Waveshare_ESP32S3_GC9A01.h
+│   │   │   ├── Setup30_ILI9341_Parallel_STM32.h
+│   │   │   ├── Setup31_ST7796_Parallel_STM32.h
+│   │   │   ├── Setup32_ILI9341_STM32F103.h
+│   │   │   ├── Setup33_RPi_ILI9486_STM32.h
+│   │   │   ├── Setup34_ILI9481_Parallel_STM32.h
+│   │   │   ├── Setup35_ILI9341_STM32_Port_Bus.h
+│   │   │   ├── Setup36_RPi_touch_ST7796.h
+│   │   │   ├── Setup3_ILI9163.h
+│   │   │   ├── Setup42_ILI9341_ESP32.h
+│   │   │   ├── Setup43_ST7735.h
+│   │   │   ├── Setup44_TTGO_CameraPlus.h
+│   │   │   ├── Setup45_TTGO_T_Watch.h
+│   │   │   ├── Setup46_GC9A01_ESP32.h
+│   │   │   ├── Setup47_ST7735.h
+│   │   │   ├── Setup4_S6D02A1.h
+│   │   │   ├── Setup50_SSD1963_Parallel.h
+│   │   │   ├── Setup51_LilyPi_ILI9481.h
+│   │   │   ├── Setup52_LilyPi_ST7796.h
+│   │   │   ├── Setup5_RPi_ILI9486.h
+│   │   │   ├── Setup60_RP2040_ILI9341.h
+│   │   │   ├── Setup60_RP2040_RPI_MHS.h
+│   │   │   ├── Setup61_RP2040_ILI9341_PIO_SPI.h
+│   │   │   ├── Setup62_RP2040_Nano_Connect_ILI9341.h
+│   │   │   ├── Setup66_Seeed_XIAO_Round.h
+│   │   │   ├── Setup6_RPi_Wr_ILI9486.h
+│   │   │   ├── Setup70b_ESP32_S3_ILI9341.h
+│   │   │   ├── Setup70c_ESP32_C3_ILI9341.h
+│   │   │   ├── Setup70d_ILI9488_S3_Parallel.h
+│   │   │   ├── Setup70_ESP32_S2_ILI9341.h
+│   │   │   ├── Setup70f_ESP32_S2_ST7735.h
+│   │   │   ├── Setup70h_ESP32_S3_GC9A01.h
+│   │   │   ├── Setup71_ESP32_S2_ST7789.h
+│   │   │   ├── Setup72_ESP32_ST7789_172x320.h
+│   │   │   ├── Setup7_ST7735_128x128.h
+│   │   │   ├── Setup8_ILI9163_128x128.h
+│   │   │   ├── Setup9_ST7735_Overlap.h
+│   │   │   ├── SetupX_Template.h
+│   │   │   └── User_Custom_Fonts.h
+│   │   └── User_Setup_Select.h
+│   ├── TFT_eSPI_QRcode
+│   │   ├── examples
+│   │   │   ├── basic
+│   │   │   │   └── basic.ino
+│   │   │   └── wifi
+│   │   │       └── wifi.ino
+│   │   ├── .gitignore
+│   │   ├── keywords.txt
+│   │   ├── library.json
+│   │   ├── library.properties
+│   │   ├── README.md
+│   │   └── src
+│   │       ├── frame.c
+│   │       ├── qrbits.h
+│   │       ├── qrcode.cpp
+│   │       ├── qrcode.h
+│   │       ├── qrencode.c
+│   │       └── qrencode.h
+│   └── utility
+│       ├── AXP192.cpp
+│       ├── AXP192.h
+│       ├── bq27220.cpp
+│       ├── bq27220.h
+│       ├── Keyboard.cpp
+│       ├── Keyboard_def.h
+│       └── Keyboard.h
+├── LICENSE
+├── media
+│   ├── artworks
+│   │   ├── bruce-aquarium.png
+│   │   ├── bruce-lab.jpg
+│   │   ├── bruce-meds.png
+│   │   ├── bruce-sat-1.png
+│   │   ├── bruce-sat-2.png
+│   │   └── bruce-working.jpg
+│   ├── connections
+│   │   ├── ibutton_sticks.jpg
+│   │   ├── README.md
+│   │   └── spi_pins.excalidraw.png
+│   ├── pcbs
+│   │   ├── Pirata
+│   │   │   ├── back.png
+│   │   │   └── front.png
+│   │   ├── smoochie
+│   │   │   ├── back.png
+│   │   │   ├── Bruce_PCB_full.png
+│   │   │   └── front.png
+│   │   ├── TH3_KR4K3N
+│   │   │   └── pcb_back.jpg
+│   │   └── ultramarines
+│   │       ├── ultramarines_full_side.jpg
+│   │       ├── ultramarines_pcb_back.jpg
+│   │       └── ultramarines_pcb_front.png
+│   └── pictures
+│       ├── 3d_case_parts.png
+│       ├── bruce_banner.jpg
+│       ├── bruce_hd.png
+│       ├── core.png
+│       ├── cyd.png
+│       ├── lilygo-t-display-s3.jpg
+│       ├── pic1.png
+│       ├── pic2.png
+│       ├── pic3.png
+│       ├── pic4.png
+│       ├── pic5.png
+│       └── stick.png
+├── output.txt
+├── patch.py
+├── pcbs
+│   ├── Bruce_PCB_smoochie
+│   │   ├── 3d
+│   │   │   ├── Bruce_PCB_V2_3dCase.zip
+│   │   │   └── README.md
+│   │   ├── BOM_Bruce_PCB_v2_Smoochiee.xlsx
+│   │   ├── Bruce_PCB_Smoochiee_Pick_and_Plack.xlsx
+│   │   ├── Bruce_PCB_v2_Schematic.pdf
+│   │   ├── gerber
+│   │   │   ├── BRUCE_MANUAL_BUILD.zip
+│   │   │   └── Bruce_PCB_v2_Smoochiee.zip
+│   │   └── README.md
+│   ├── M5Stick_Intermidiate_ultramarines
+│   │   ├── Gerber_m5module_PCB_m5module_2024-11-18.zip
+│   │   └── README.md
+│   ├── README.md
+│   └── StickCPlus_PCB_Pirata
+│       ├── BOM of Pirata Board.xlsx
+│       ├── Pirata Board Schematics.pdf
+│       ├── Pirata_StickC_Board.zip
+│       └── Readme.md
+├── .pio
+│   ├── build
+│   │   ├── m5stack-cplus2
+│   │   │   └── idedata.json
+│   │   └── project.checksum
+│   └── libdeps
+│       └── m5stack-cplus2
+│           ├── Adafruit BusIO
+│           │   ├── Adafruit_BusIO_Register.cpp
+│           │   ├── Adafruit_BusIO_Register.h
+│           │   ├── Adafruit_GenericDevice.cpp
+│           │   ├── Adafruit_GenericDevice.h
+│           │   ├── Adafruit_I2CDevice.cpp
+│           │   ├── Adafruit_I2CDevice.h
+│           │   ├── Adafruit_I2CRegister.h
+│           │   ├── Adafruit_SPIDevice.cpp
+│           │   ├── Adafruit_SPIDevice.h
+│           │   ├── CMakeLists.txt
+│           │   ├── component.mk
+│           │   ├── examples
+│           │   │   ├── genericdevice_uartregtest
+│           │   │   │   ├── genericdevice_uartregtest.ino
+│           │   │   │   └── .uno.test.skip
+│           │   │   ├── genericdevice_uarttest
+│           │   │   │   ├── genericdevice_uarttest.ino
+│           │   │   │   └── .uno.test.skip
+│           │   │   ├── i2c_address_detect
+│           │   │   │   └── i2c_address_detect.ino
+│           │   │   ├── i2corspi_register
+│           │   │   │   └── i2corspi_register.ino
+│           │   │   ├── i2c_readwrite
+│           │   │   │   └── i2c_readwrite.ino
+│           │   │   ├── i2c_registers
+│           │   │   │   └── i2c_registers.ino
+│           │   │   ├── spi_modetest
+│           │   │   │   └── spi_modetest.ino
+│           │   │   ├── spi_readwrite
+│           │   │   │   └── spi_readwrite.ino
+│           │   │   ├── spi_register_bits
+│           │   │   │   └── spi_register_bits.ino
+│           │   │   └── spi_registers
+│           │   │       └── spi_registers.ino
+│           │   ├── .git
+│           │   │   ├── branches
+│           │   │   ├── config
+│           │   │   ├── description
+│           │   │   ├── HEAD
+│           │   │   ├── hooks
+│           │   │   │   ├── applypatch-msg.sample
+│           │   │   │   ├── commit-msg.sample
+│           │   │   │   ├── fsmonitor-watchman.sample
+│           │   │   │   ├── post-update.sample
+│           │   │   │   ├── pre-applypatch.sample
+│           │   │   │   ├── pre-commit.sample
+│           │   │   │   ├── pre-merge-commit.sample
+│           │   │   │   ├── prepare-commit-msg.sample
+│           │   │   │   ├── pre-push.sample
+│           │   │   │   ├── pre-rebase.sample
+│           │   │   │   ├── pre-receive.sample
+│           │   │   │   ├── push-to-checkout.sample
+│           │   │   │   ├── sendemail-validate.sample
+│           │   │   │   └── update.sample
+│           │   │   ├── index
+│           │   │   ├── info
+│           │   │   │   └── exclude
+│           │   │   ├── logs
+│           │   │   │   ├── HEAD
+│           │   │   │   └── refs
+│           │   │   │       ├── heads
+│           │   │   │       │   └── master
+│           │   │   │       └── remotes
+│           │   │   │           └── origin
+│           │   │   │               └── HEAD
+│           │   │   ├── objects
+│           │   │   │   ├── info
+│           │   │   │   └── pack
+│           │   │   │       ├── pack-2a7ca9bee5ae81f4f440fdbaf2661beed23b205d.idx
+│           │   │   │       ├── pack-2a7ca9bee5ae81f4f440fdbaf2661beed23b205d.pack
+│           │   │   │       └── pack-2a7ca9bee5ae81f4f440fdbaf2661beed23b205d.rev
+│           │   │   ├── packed-refs
+│           │   │   ├── .piopm
+│           │   │   ├── refs
+│           │   │   │   ├── heads
+│           │   │   │   │   └── master
+│           │   │   │   ├── remotes
+│           │   │   │   │   └── origin
+│           │   │   │   │       └── HEAD
+│           │   │   │   └── tags
+│           │   │   └── shallow
+│           │   ├── .github
+│           │   │   ├── ISSUE_TEMPLATE.md
+│           │   │   ├── PULL_REQUEST_TEMPLATE.md
+│           │   │   └── workflows
+│           │   │       └── githubci.yml
+│           │   ├── library.properties
+│           │   ├── LICENSE
+│           │   └── README.md
+│           ├── AnimatedGIF
+│           │   ├── examples
+│           │   │   ├── adafruit_gfx_memory
+│           │   │   │   └── adafruit_gfx_memory.ino
+│           │   │   ├── adafruit_gfx_sdcard
+│           │   │   │   └── adafruit_gfx_sdcard.ino
+│           │   │   ├── best_practices_example
+│           │   │   │   └── best_practices_example.ino
+│           │   │   ├── big_mem_demo
+│           │   │   │   └── big_mem_demo.ino
+│           │   │   ├── bitbank_lcd_library
+│           │   │   │   └── bitbank_lcd_library.ino
+│           │   │   ├── cyd_cooked_demo
+│           │   │   │   └── cyd_cooked_demo.ino
+│           │   │   ├── ESP32_LEDMatrix_I2S
+│           │   │   │   └── ESP32_LEDMatrix_I2S.ino
+│           │   │   ├── ESP32-LGFX-SDCard-GifPlayer
+│           │   │   │   ├── ESP32-LGFX-SDCard-GifPlayer.ino
+│           │   │   │   ├── ReadMe.txt
+│           │   │   │   └── SD_Content
+│           │   │   │       ├── LICENSE.txt
+│           │   │   │       └── ReadMe.txt
+│           │   │   ├── function_test
+│           │   │   │   └── function_test.ino
+│           │   │   ├── gif_animated_digits
+│           │   │   │   ├── digit_0.h
+│           │   │   │   ├── digit_1.h
+│           │   │   │   ├── digit_2.h
+│           │   │   │   ├── digit_3.h
+│           │   │   │   ├── digit_4.h
+│           │   │   │   ├── digit_5.h
+│           │   │   │   ├── digit_6.h
+│           │   │   │   ├── digit_7.h
+│           │   │   │   ├── digit_8.h
+│           │   │   │   ├── digit_9.h
+│           │   │   │   └── gif_animated_digits.ino
+│           │   │   ├── gif_benchmark
+│           │   │   │   └── gif_benchmark.ino
+│           │   │   ├── gif_from_spi_flash
+│           │   │   │   ├── diskio.h
+│           │   │   │   ├── ff.c
+│           │   │   │   ├── ffconf.h
+│           │   │   │   ├── ff.h
+│           │   │   │   └── gif_from_spi_flash.ino
+│           │   │   ├── gif_transparency_demo
+│           │   │   │   ├── gif_transparency_demo.ino
+│           │   │   │   └── octocat_4bpp.h
+│           │   │   ├── NeoPixel_Player
+│           │   │   │   ├── NeoPixelPlayer.ino
+│           │   │   │   └── rainbow_5x14.h
+│           │   │   ├── oled_gif_demo
+│           │   │   │   └── oled_gif_demo.ino
+│           │   │   ├── perf_explained
+│           │   │   │   ├── matrix_small.h
+│           │   │   │   └── perf_explained.ino
+│           │   │   ├── play_all_sd_files
+│           │   │   │   └── play_all_sd_files.ino
+│           │   │   ├── TFT_eSPI_memory
+│           │   │   │   ├── GIFDraw.ino
+│           │   │   │   └── TFT_eSPI_memory.ino
+│           │   │   ├── TinyPico_Display_GIF
+│           │   │   │   ├── homer_small_car.h
+│           │   │   │   └── TinyPico_Display_GIF.ino
+│           │   │   ├── turbo_t_qt_example
+│           │   │   │   └── turbo_t_qt_example.ino
+│           │   │   └── two_instances
+│           │   │       └── two_instances.ino
+│           │   ├── .github
+│           │   │   └── ISSUE_TEMPLATE
+│           │   │       └── bug_report.md
+│           │   ├── library.properties
+│           │   ├── LICENSE
+│           │   ├── linux
+│           │   │   ├── fb_demo.c
+│           │   │   ├── gif_lcd.c
+│           │   │   ├── main.c
+│           │   │   ├── make_fb
+│           │   │   ├── Makefile
+│           │   │   └── make_lcd
+│           │   ├── MacOS
+│           │   │   └── GIF_Test
+│           │   │       ├── GIF_Test
+│           │   │       │   ├── main.cpp
+│           │   │       │   └── Makefile
+│           │   │       └── GIF_Test.xcodeproj
+│           │   │           ├── project.pbxproj
+│           │   │           ├── project.xcworkspace
+│           │   │           │   ├── contents.xcworkspacedata
+│           │   │           │   └── xcuserdata
+│           │   │           │       └── laurencebank.xcuserdatad
+│           │   │           │           └── UserInterfaceState.xcuserstate
+│           │   │           └── xcuserdata
+│           │   │               └── laurencebank.xcuserdatad
+│           │   │                   └── xcschemes
+│           │   │                       └── xcschememanagement.plist
+│           │   ├── .piopm
+│           │   ├── README.md
+│           │   ├── src
+│           │   │   ├── AnimatedGIF.cpp
+│           │   │   ├── AnimatedGIF.h
+│           │   │   └── gif.inl
+│           │   └── test_images
+│           │       ├── badgers.h
+│           │       ├── bw_wiggler_128x64.h
+│           │       ├── earth_128x128.h
+│           │       ├── green.h
+│           │       ├── homer.h
+│           │       ├── homer_tiny.h
+│           │       ├── nostromo.h
+│           │       ├── pattern.h
+│           │       ├── thisisfine_240x179.h
+│           │       └── x_wing.h
+│           ├── ArduinoJson
+│           │   ├── ArduinoJson.h
+│           │   ├── examples
+│           │   │   ├── JsonConfigFile
+│           │   │   │   └── JsonConfigFile.ino
+│           │   │   ├── JsonFilterExample
+│           │   │   │   └── JsonFilterExample.ino
+│           │   │   ├── JsonGeneratorExample
+│           │   │   │   └── JsonGeneratorExample.ino
+│           │   │   ├── JsonHttpClient
+│           │   │   │   └── JsonHttpClient.ino
+│           │   │   ├── JsonParserExample
+│           │   │   │   └── JsonParserExample.ino
+│           │   │   ├── JsonServer
+│           │   │   │   └── JsonServer.ino
+│           │   │   ├── JsonUdpBeacon
+│           │   │   │   └── JsonUdpBeacon.ino
+│           │   │   ├── MsgPackParser
+│           │   │   │   └── MsgPackParser.ino
+│           │   │   ├── ProgmemExample
+│           │   │   │   └── ProgmemExample.ino
+│           │   │   └── StringExample
+│           │   │       └── StringExample.ino
+│           │   ├── library.json
+│           │   ├── library.properties
+│           │   ├── LICENSE.txt
+│           │   ├── .piopm
+│           │   ├── README.md
+│           │   └── src
+│           │       ├── ArduinoJson
+│           │       │   ├── Array
+│           │       │   │   ├── ArrayData.hpp
+│           │       │   │   ├── ArrayImpl.hpp
+│           │       │   │   ├── ElementProxy.hpp
+│           │       │   │   ├── JsonArrayConst.hpp
+│           │       │   │   ├── JsonArray.hpp
+│           │       │   │   ├── JsonArrayIterator.hpp
+│           │       │   │   └── Utilities.hpp
+│           │       │   ├── Collection
+│           │       │   │   ├── CollectionData.hpp
+│           │       │   │   └── CollectionImpl.hpp
+│           │       │   ├── compatibility.hpp
+│           │       │   ├── Configuration.hpp
+│           │       │   ├── Deserialization
+│           │       │   │   ├── DeserializationError.hpp
+│           │       │   │   ├── DeserializationOptions.hpp
+│           │       │   │   ├── deserialize.hpp
+│           │       │   │   ├── Filter.hpp
+│           │       │   │   ├── NestingLimit.hpp
+│           │       │   │   ├── Reader.hpp
+│           │       │   │   └── Readers
+│           │       │   │       ├── ArduinoStreamReader.hpp
+│           │       │   │       ├── ArduinoStringReader.hpp
+│           │       │   │       ├── FlashReader.hpp
+│           │       │   │       ├── IteratorReader.hpp
+│           │       │   │       ├── RamReader.hpp
+│           │       │   │       ├── StdStreamReader.hpp
+│           │       │   │       └── VariantReader.hpp
+│           │       │   ├── Document
+│           │       │   │   └── JsonDocument.hpp
+│           │       │   ├── Json
+│           │       │   │   ├── EscapeSequence.hpp
+│           │       │   │   ├── JsonDeserializer.hpp
+│           │       │   │   ├── JsonSerializer.hpp
+│           │       │   │   ├── Latch.hpp
+│           │       │   │   ├── PrettyJsonSerializer.hpp
+│           │       │   │   ├── TextFormatter.hpp
+│           │       │   │   ├── Utf16.hpp
+│           │       │   │   └── Utf8.hpp
+│           │       │   ├── Memory
+│           │       │   │   ├── Alignment.hpp
+│           │       │   │   ├── Allocator.hpp
+│           │       │   │   ├── MemoryPool.hpp
+│           │       │   │   ├── MemoryPoolList.hpp
+│           │       │   │   ├── ResourceManager.hpp
+│           │       │   │   ├── ResourceManagerImpl.hpp
+│           │       │   │   ├── StringBuffer.hpp
+│           │       │   │   ├── StringBuilder.hpp
+│           │       │   │   ├── StringNode.hpp
+│           │       │   │   └── StringPool.hpp
+│           │       │   ├── Misc
+│           │       │   │   └── SerializedValue.hpp
+│           │       │   ├── MsgPack
+│           │       │   │   ├── endianness.hpp
+│           │       │   │   ├── ieee754.hpp
+│           │       │   │   ├── MsgPackBinary.hpp
+│           │       │   │   ├── MsgPackDeserializer.hpp
+│           │       │   │   ├── MsgPackExtension.hpp
+│           │       │   │   └── MsgPackSerializer.hpp
+│           │       │   ├── Namespace.hpp
+│           │       │   ├── Numbers
+│           │       │   │   ├── arithmeticCompare.hpp
+│           │       │   │   ├── convertNumber.hpp
+│           │       │   │   ├── FloatParts.hpp
+│           │       │   │   ├── FloatTraits.hpp
+│           │       │   │   ├── JsonFloat.hpp
+│           │       │   │   ├── JsonInteger.hpp
+│           │       │   │   └── parseNumber.hpp
+│           │       │   ├── Object
+│           │       │   │   ├── JsonObjectConst.hpp
+│           │       │   │   ├── JsonObject.hpp
+│           │       │   │   ├── JsonObjectIterator.hpp
+│           │       │   │   ├── JsonPair.hpp
+│           │       │   │   ├── MemberProxy.hpp
+│           │       │   │   ├── ObjectData.hpp
+│           │       │   │   └── ObjectImpl.hpp
+│           │       │   ├── Polyfills
+│           │       │   │   ├── alias_cast.hpp
+│           │       │   │   ├── assert.hpp
+│           │       │   │   ├── attributes.hpp
+│           │       │   │   ├── ctype.hpp
+│           │       │   │   ├── integer.hpp
+│           │       │   │   ├── limits.hpp
+│           │       │   │   ├── math.hpp
+│           │       │   │   ├── mpl
+│           │       │   │   │   └── max.hpp
+│           │       │   │   ├── pgmspace_generic.hpp
+│           │       │   │   ├── pgmspace.hpp
+│           │       │   │   ├── preprocessor.hpp
+│           │       │   │   ├── type_traits
+│           │       │   │   │   ├── conditional.hpp
+│           │       │   │   │   ├── decay.hpp
+│           │       │   │   │   ├── declval.hpp
+│           │       │   │   │   ├── enable_if.hpp
+│           │       │   │   │   ├── function_traits.hpp
+│           │       │   │   │   ├── integral_constant.hpp
+│           │       │   │   │   ├── is_array.hpp
+│           │       │   │   │   ├── is_base_of.hpp
+│           │       │   │   │   ├── is_class.hpp
+│           │       │   │   │   ├── is_const.hpp
+│           │       │   │   │   ├── is_convertible.hpp
+│           │       │   │   │   ├── is_enum.hpp
+│           │       │   │   │   ├── is_floating_point.hpp
+│           │       │   │   │   ├── is_integral.hpp
+│           │       │   │   │   ├── is_pointer.hpp
+│           │       │   │   │   ├── is_same.hpp
+│           │       │   │   │   ├── is_signed.hpp
+│           │       │   │   │   ├── is_unsigned.hpp
+│           │       │   │   │   ├── make_unsigned.hpp
+│           │       │   │   │   ├── remove_const.hpp
+│           │       │   │   │   ├── remove_cv.hpp
+│           │       │   │   │   ├── remove_reference.hpp
+│           │       │   │   │   ├── type_identity.hpp
+│           │       │   │   │   └── void_t.hpp
+│           │       │   │   ├── type_traits.hpp
+│           │       │   │   └── utility.hpp
+│           │       │   ├── Serialization
+│           │       │   │   ├── CountingDecorator.hpp
+│           │       │   │   ├── measure.hpp
+│           │       │   │   ├── serialize.hpp
+│           │       │   │   ├── Writer.hpp
+│           │       │   │   └── Writers
+│           │       │   │       ├── ArduinoStringWriter.hpp
+│           │       │   │       ├── DummyWriter.hpp
+│           │       │   │       ├── PrintWriter.hpp
+│           │       │   │       ├── StaticStringWriter.hpp
+│           │       │   │       ├── StdStreamWriter.hpp
+│           │       │   │       └── StdStringWriter.hpp
+│           │       │   ├── Strings
+│           │       │   │   ├── Adapters
+│           │       │   │   │   ├── FlashString.hpp
+│           │       │   │   │   ├── RamString.hpp
+│           │       │   │   │   └── StringObject.hpp
+│           │       │   │   ├── IsString.hpp
+│           │       │   │   ├── JsonString.hpp
+│           │       │   │   ├── StringAdapter.hpp
+│           │       │   │   ├── StringAdapters.hpp
+│           │       │   │   └── StringTraits.hpp
+│           │       │   ├── Variant
+│           │       │   │   ├── Converter.hpp
+│           │       │   │   ├── ConverterImpl.hpp
+│           │       │   │   ├── JsonVariantConst.hpp
+│           │       │   │   ├── JsonVariantCopier.hpp
+│           │       │   │   ├── JsonVariant.hpp
+│           │       │   │   ├── JsonVariantVisitor.hpp
+│           │       │   │   ├── VariantAttorney.hpp
+│           │       │   │   ├── VariantCompare.hpp
+│           │       │   │   ├── VariantContent.hpp
+│           │       │   │   ├── VariantData.hpp
+│           │       │   │   ├── VariantDataVisitor.hpp
+│           │       │   │   ├── VariantImpl.hpp
+│           │       │   │   ├── VariantOperators.hpp
+│           │       │   │   ├── VariantRefBase.hpp
+│           │       │   │   ├── VariantRefBaseImpl.hpp
+│           │       │   │   ├── VariantTag.hpp
+│           │       │   │   └── VariantTo.hpp
+│           │       │   └── version.hpp
+│           │       ├── ArduinoJson.h
+│           │       ├── ArduinoJson.hpp
+│           │       └── CMakeLists.txt
+│           ├── AsyncTCP
+│           │   ├── examples
+│           │   │   ├── AsyncSend
+│           │   │   │   └── AsyncSend.ino
+│           │   │   ├── Client
+│           │   │   │   └── Client.ino
+│           │   │   └── FetchWebsite
+│           │   │       └── FetchWebsite.ino
+│           │   ├── library.json
+│           │   ├── library.properties
+│           │   ├── LICENSE
+│           │   ├── .piopm
+│           │   ├── README.md
+│           │   └── src
+│           │       ├── AsyncTCP.cpp
+│           │       ├── AsyncTCP.h
+│           │       ├── AsyncTCPLogging.h
+│           │       ├── AsyncTCPSimpleIntrusiveList.h
+│           │       └── AsyncTCPVersion.h
+│           ├── audio-driver
+│           │   ├── CMakeLists.txt
+│           │   ├── docs
+│           │   │   └── html
+│           │   │       ├── ac101_8h_source.html
+│           │   │       ├── annotated.html
+│           │   │       ├── _a_p_i___i2_c_8h.html
+│           │   │       ├── _a_p_i___i2_c_8h_source.html
+│           │   │       ├── _a_p_i___i2_c___arduino_8cpp.html
+│           │   │       ├── _a_p_i___i2_c___espressif_i_d_f_8cpp.html
+│           │   │       ├── _a_p_i___s_p_i_8h.html
+│           │   │       ├── _a_p_i___s_p_i_8h_source.html
+│           │   │       ├── _a_p_i___s_p_i___arduino_8cpp.html
+│           │   │       ├── _a_p_i___s_p_i___others_8cpp.html
+│           │   │       ├── _audio_board_8h.html
+│           │   │       ├── _audio_board_8h_source.html
+│           │   │       ├── _audio_driver_config_8h.html
+│           │   │       ├── _audio_driver_config_8h_source.html
+│           │   │       ├── _audio_driver_logger_8h.html
+│           │   │       ├── _audio_driver_logger_8h_source.html
+│           │   │       ├── bc_s.png
+│           │   │       ├── bdwn.png
+│           │   │       ├── class_audio_board.html
+│           │   │       ├── class_audio_board-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_board.html
+│           │   │       ├── classaudio__driver_1_1_audio_board-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_a_c101_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_a_c101_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_a_c101_class.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver_a_d1938_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_a_d1938_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_a_d1938_class.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver_c_s42448_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_c_s42448_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_c_s42448_class.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver_c_s43l22_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_c_s43l22_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_c_s43l22_class.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s7210_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s7210_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s7210_class.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s7243_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s7243_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s7243_class.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s7243e_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s7243e_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s7243e_class.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s8156_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s8156_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s8156_class.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s8311_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s8311_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s8311_class.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s8374_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s8374_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s8374_class.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s8388_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s8388_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_e_s8388_class.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_lyrat_mini_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_lyrat_mini_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_lyrat_mini_class.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_p_c_m3168_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_p_c_m3168_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_p_c_m3168_class.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver_t_a_s5805_m_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_t_a_s5805_m_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_t_a_s5805_m_class.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver_w_m8960_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_w_m8960_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_w_m8960_class.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver_w_m8978_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_w_m8978_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_w_m8978_class.png
+│           │   │       ├── classaudio__driver_1_1_audio_driver_w_m8994_class.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_w_m8994_class-members.html
+│           │   │       ├── classaudio__driver_1_1_audio_driver_w_m8994_class.png
+│           │   │       ├── classaudio__driver_1_1_codec_config.html
+│           │   │       ├── classaudio__driver_1_1_codec_config-members.html
+│           │   │       ├── classaudio__driver_1_1_codec_config.png
+│           │   │       ├── classaudio__driver_1_1_driver_pins.html
+│           │   │       ├── classaudio__driver_1_1_driver_pins-members.html
+│           │   │       ├── classaudio__driver_1_1_driver_pins.png
+│           │   │       ├── classaudio__driver_1_1_driver_touch_class.html
+│           │   │       ├── classaudio__driver_1_1_driver_touch_class-members.html
+│           │   │       ├── classaudio__driver_1_1_driver_touch_class.png
+│           │   │       ├── classaudio__driver_1_1_no_driver_class.html
+│           │   │       ├── classaudio__driver_1_1_no_driver_class-members.html
+│           │   │       ├── classaudio__driver_1_1_no_driver_class.png
+│           │   │       ├── classaudio__driver_1_1_optional.html
+│           │   │       ├── classaudio__driver_1_1_optional-members.html
+│           │   │       ├── classaudio__driver_1_1_pins_audio_kit_a_c101_class.html
+│           │   │       ├── classaudio__driver_1_1_pins_audio_kit_a_c101_class-members.html
+│           │   │       ├── classaudio__driver_1_1_pins_audio_kit_a_c101_class.png
+│           │   │       ├── classaudio__driver_1_1_pins_audio_kit_es8388v1_class.html
+│           │   │       ├── classaudio__driver_1_1_pins_audio_kit_es8388v1_class-members.html
+│           │   │       ├── classaudio__driver_1_1_pins_audio_kit_es8388v1_class.png
+│           │   │       ├── classaudio__driver_1_1_pins_audio_kit_es8388v2_class.html
+│           │   │       ├── classaudio__driver_1_1_pins_audio_kit_es8388v2_class-members.html
+│           │   │       ├── classaudio__driver_1_1_pins_audio_kit_es8388v2_class.png
+│           │   │       ├── classaudio__driver_1_1_pins.html
+│           │   │       ├── classaudio__driver_1_1_pins_lyrat42_class.html
+│           │   │       ├── classaudio__driver_1_1_pins_lyrat42_class-members.html
+│           │   │       ├── classaudio__driver_1_1_pins_lyrat42_class.png
+│           │   │       ├── classaudio__driver_1_1_pins_lyrat43_class.html
+│           │   │       ├── classaudio__driver_1_1_pins_lyrat43_class-members.html
+│           │   │       ├── classaudio__driver_1_1_pins_lyrat43_class.png
+│           │   │       ├── classaudio__driver_1_1_pins_lyrat_mini_class.html
+│           │   │       ├── classaudio__driver_1_1_pins_lyrat_mini_class-members.html
+│           │   │       ├── classaudio__driver_1_1_pins_lyrat_mini_class.png
+│           │   │       ├── classaudio__driver_1_1_pins-members.html
+│           │   │       ├── classaudio__driver_1_1_pins.png
+│           │   │       ├── classaudio__driver_1_1_vector_1_1iterator.html
+│           │   │       ├── classaudio__driver_1_1_vector_1_1iterator-members.html
+│           │   │       ├── classaudio__driver_1_1_vector.html
+│           │   │       ├── classaudio__driver_1_1_vector-members.html
+│           │   │       ├── class_audio_driver_a_c101_class.html
+│           │   │       ├── class_audio_driver_a_c101_class-members.html
+│           │   │       ├── class_audio_driver_a_c101_class.png
+│           │   │       ├── class_audio_driver_e_s8388_class.html
+│           │   │       ├── class_audio_driver_e_s8388_class-members.html
+│           │   │       ├── class_audio_driver_e_s8388_class.png
+│           │   │       ├── class_audio_driver.html
+│           │   │       ├── classaudio__driver__local_1_1_optional.html
+│           │   │       ├── classaudio__driver__local_1_1_optional-members.html
+│           │   │       ├── classaudio__driver__local_1_1_vector_1_1iterator.html
+│           │   │       ├── classaudio__driver__local_1_1_vector_1_1iterator-members.html
+│           │   │       ├── classaudio__driver__local_1_1_vector.html
+│           │   │       ├── classaudio__driver__local_1_1_vector-members.html
+│           │   │       ├── class_audio_driver_logger_class.html
+│           │   │       ├── class_audio_driver_logger_class-members.html
+│           │   │       ├── class_audio_driver-members.html
+│           │   │       ├── class_audio_driver.png
+│           │   │       ├── class_codec_config.html
+│           │   │       ├── class_codec_config-members.html
+│           │   │       ├── class_codec_config.png
+│           │   │       ├── class_driver_pins.html
+│           │   │       ├── class_driver_pins-members.html
+│           │   │       ├── class_driver_pins.png
+│           │   │       ├── classes.html
+│           │   │       ├── class_pins_audio_kit_a_c101_class.html
+│           │   │       ├── class_pins_audio_kit_a_c101_class-members.html
+│           │   │       ├── class_pins_audio_kit_a_c101_class.png
+│           │   │       ├── class_pins_audio_kit_es8388v1_class.html
+│           │   │       ├── class_pins_audio_kit_es8388v1_class-members.html
+│           │   │       ├── class_pins_audio_kit_es8388v1_class.png
+│           │   │       ├── class_pins_audio_kit_es8388v2_class.html
+│           │   │       ├── class_pins_audio_kit_es8388v2_class-members.html
+│           │   │       ├── class_pins_audio_kit_es8388v2_class.png
+│           │   │       ├── class_pins.html
+│           │   │       ├── class_pins_lyrat42_class.html
+│           │   │       ├── class_pins_lyrat42_class-members.html
+│           │   │       ├── class_pins_lyrat42_class.png
+│           │   │       ├── class_pins_lyrat43_class.html
+│           │   │       ├── class_pins_lyrat43_class-members.html
+│           │   │       ├── class_pins_lyrat43_class.png
+│           │   │       ├── class_pins_lyrat_mini_class.html
+│           │   │       ├── class_pins_lyrat_mini_class-members.html
+│           │   │       ├── class_pins_lyrat_mini_class.png
+│           │   │       ├── class_pins-members.html
+│           │   │       ├── class_pins.png
+│           │   │       ├── closed.png
+│           │   │       ├── _common_8h.html
+│           │   │       ├── _common_8h_source.html
+│           │   │       ├── _config_audio_driver_8h.html
+│           │   │       ├── _config_audio_driver_8h_source.html
+│           │   │       ├── dir_03d7d17aa0ae13f975c2241883b8df3e.html
+│           │   │       ├── dir_3332572731ff3fd80c1365914592ab28.html
+│           │   │       ├── dir_511e250381cf65549d6c590ad76a70fd.html
+│           │   │       ├── dir_68267d1309a1af8e8297ef4c3efbcdba.html
+│           │   │       ├── dir_a7363e98f9e0bdd87618633653859815.html
+│           │   │       ├── dir_ad1443ad78850774d960093f43f14de0.html
+│           │   │       ├── dir_e4835fadc71b9b2f9d6adbf1a4723c42.html
+│           │   │       ├── doc.png
+│           │   │       ├── doxygen.css
+│           │   │       ├── doxygen.svg
+│           │   │       ├── _driver_8h.html
+│           │   │       ├── _driver_8h_source.html
+│           │   │       ├── _driver_common_8h.html
+│           │   │       ├── _driver_common_8h_source.html
+│           │   │       ├── _driver_constants_8h_source.html
+│           │   │       ├── _driver_pins_8h.html
+│           │   │       ├── _driver_pins_8h_source.html
+│           │   │       ├── dynsections.js
+│           │   │       ├── es8311_8h_source.html
+│           │   │       ├── es8388_8h_source.html
+│           │   │       ├── etc_8cpp.html
+│           │   │       ├── etc_8h.html
+│           │   │       ├── etc_8h_source.html
+│           │   │       ├── files.html
+│           │   │       ├── folderclosed.png
+│           │   │       ├── folderopen.png
+│           │   │       ├── functions_b.html
+│           │   │       ├── functions_c.html
+│           │   │       ├── functions_d.html
+│           │   │       ├── functions_e.html
+│           │   │       ├── functions_f.html
+│           │   │       ├── functions_func_b.html
+│           │   │       ├── functions_func_c.html
+│           │   │       ├── functions_func_d.html
+│           │   │       ├── functions_func_e.html
+│           │   │       ├── functions_func_g.html
+│           │   │       ├── functions_func_h.html
+│           │   │       ├── functions_func.html
+│           │   │       ├── functions_func_~.html
+│           │   │       ├── functions_func_i.html
+│           │   │       ├── functions_func_l.html
+│           │   │       ├── functions_func_m.html
+│           │   │       ├── functions_func_o.html
+│           │   │       ├── functions_func_p.html
+│           │   │       ├── functions_func_r.html
+│           │   │       ├── functions_func_s.html
+│           │   │       ├── functions_func_t.html
+│           │   │       ├── functions_func_v.html
+│           │   │       ├── functions_func_w.html
+│           │   │       ├── functions_g.html
+│           │   │       ├── functions_h.html
+│           │   │       ├── functions.html
+│           │   │       ├── functions_~.html
+│           │   │       ├── functions_i.html
+│           │   │       ├── functions_l.html
+│           │   │       ├── functions_m.html
+│           │   │       ├── functions_o.html
+│           │   │       ├── functions_p.html
+│           │   │       ├── functions_r.html
+│           │   │       ├── functions_s.html
+│           │   │       ├── functions_t.html
+│           │   │       ├── functions_vars.html
+│           │   │       ├── functions_v.html
+│           │   │       ├── functions_w.html
+│           │   │       ├── globals_defs.html
+│           │   │       ├── globals_enum.html
+│           │   │       ├── globals_eval.html
+│           │   │       ├── globals_func.html
+│           │   │       ├── globals.html
+│           │   │       ├── globals_type.html
+│           │   │       ├── globals_vars.html
+│           │   │       ├── group__audio__driver.html
+│           │   │       ├── group__buffers.html
+│           │   │       ├── group__driver.html
+│           │   │       ├── group___enumerations.html
+│           │   │       ├── group__enumerations.html
+│           │   │       ├── hierarchy.html
+│           │   │       ├── _i2_c_8cpp.html
+│           │   │       ├── _i2_c_8h.html
+│           │   │       ├── _i2_c_8h_source.html
+│           │   │       ├── index.html
+│           │   │       ├── jquery.js
+│           │   │       ├── _logger_8c.html
+│           │   │       ├── _logger_8h.html
+│           │   │       ├── _logger_8h_source.html
+│           │   │       ├── _logger_i_d_f_8h.html
+│           │   │       ├── _logger_i_d_f_8h_source.html
+│           │   │       ├── _logger_s_t_d_8cpp.html
+│           │   │       ├── _logger_s_t_d_8h.html
+│           │   │       ├── _logger_s_t_d_8h_source.html
+│           │   │       ├── menudata.js
+│           │   │       ├── menu.js
+│           │   │       ├── modules.html
+│           │   │       ├── namespaceaudio__driver.html
+│           │   │       ├── namespaceaudio__driver__local.html
+│           │   │       ├── namespacemembers_enum.html
+│           │   │       ├── namespacemembers_eval.html
+│           │   │       ├── namespacemembers_func.html
+│           │   │       ├── namespacemembers.html
+│           │   │       ├── namespacemembers_type.html
+│           │   │       ├── namespacemembers_vars.html
+│           │   │       ├── namespaces.html
+│           │   │       ├── nav_f.png
+│           │   │       ├── nav_g.png
+│           │   │       ├── nav_h.png
+│           │   │       ├── open.png
+│           │   │       ├── _optional_8h.html
+│           │   │       ├── _optional_8h_source.html
+│           │   │       ├── _pins_8h.html
+│           │   │       ├── _pins_8h_source.html
+│           │   │       ├── _r_e_a_d_m_e_8md.html
+│           │   │       ├── search
+│           │   │       │   ├── all_0.html
+│           │   │       │   ├── all_0.js
+│           │   │       │   ├── all_10.html
+│           │   │       │   ├── all_10.js
+│           │   │       │   ├── all_11.html
+│           │   │       │   ├── all_11.js
+│           │   │       │   ├── all_12.html
+│           │   │       │   ├── all_12.js
+│           │   │       │   ├── all_13.html
+│           │   │       │   ├── all_13.js
+│           │   │       │   ├── all_14.html
+│           │   │       │   ├── all_14.js
+│           │   │       │   ├── all_15.html
+│           │   │       │   ├── all_15.js
+│           │   │       │   ├── all_1.html
+│           │   │       │   ├── all_1.js
+│           │   │       │   ├── all_2.html
+│           │   │       │   ├── all_2.js
+│           │   │       │   ├── all_3.html
+│           │   │       │   ├── all_3.js
+│           │   │       │   ├── all_4.html
+│           │   │       │   ├── all_4.js
+│           │   │       │   ├── all_5.html
+│           │   │       │   ├── all_5.js
+│           │   │       │   ├── all_6.html
+│           │   │       │   ├── all_6.js
+│           │   │       │   ├── all_7.html
+│           │   │       │   ├── all_7.js
+│           │   │       │   ├── all_8.html
+│           │   │       │   ├── all_8.js
+│           │   │       │   ├── all_9.html
+│           │   │       │   ├── all_9.js
+│           │   │       │   ├── all_a.html
+│           │   │       │   ├── all_a.js
+│           │   │       │   ├── all_b.html
+│           │   │       │   ├── all_b.js
+│           │   │       │   ├── all_c.html
+│           │   │       │   ├── all_c.js
+│           │   │       │   ├── all_d.html
+│           │   │       │   ├── all_d.js
+│           │   │       │   ├── all_e.html
+│           │   │       │   ├── all_e.js
+│           │   │       │   ├── all_f.html
+│           │   │       │   ├── all_f.js
+│           │   │       │   ├── classes_0.html
+│           │   │       │   ├── classes_0.js
+│           │   │       │   ├── classes_1.html
+│           │   │       │   ├── classes_1.js
+│           │   │       │   ├── classes_2.html
+│           │   │       │   ├── classes_2.js
+│           │   │       │   ├── classes_3.html
+│           │   │       │   ├── classes_3.js
+│           │   │       │   ├── classes_4.html
+│           │   │       │   ├── classes_4.js
+│           │   │       │   ├── classes_5.html
+│           │   │       │   ├── classes_5.js
+│           │   │       │   ├── classes_6.html
+│           │   │       │   ├── classes_6.js
+│           │   │       │   ├── classes_7.html
+│           │   │       │   ├── classes_7.js
+│           │   │       │   ├── classes_8.html
+│           │   │       │   ├── classes_8.js
+│           │   │       │   ├── classes_9.html
+│           │   │       │   ├── classes_9.js
+│           │   │       │   ├── close.svg
+│           │   │       │   ├── defines_0.html
+│           │   │       │   ├── defines_0.js
+│           │   │       │   ├── defines_1.html
+│           │   │       │   ├── defines_1.js
+│           │   │       │   ├── defines_2.html
+│           │   │       │   ├── defines_2.js
+│           │   │       │   ├── defines_3.html
+│           │   │       │   ├── defines_3.js
+│           │   │       │   ├── defines_4.html
+│           │   │       │   ├── defines_4.js
+│           │   │       │   ├── defines_5.html
+│           │   │       │   ├── defines_5.js
+│           │   │       │   ├── defines_6.html
+│           │   │       │   ├── defines_6.js
+│           │   │       │   ├── defines_7.html
+│           │   │       │   ├── defines_7.js
+│           │   │       │   ├── defines_8.html
+│           │   │       │   ├── defines_8.js
+│           │   │       │   ├── defines_9.html
+│           │   │       │   ├── defines_9.js
+│           │   │       │   ├── enums_0.html
+│           │   │       │   ├── enums_0.js
+│           │   │       │   ├── enums_1.html
+│           │   │       │   ├── enums_1.js
+│           │   │       │   ├── enums_2.html
+│           │   │       │   ├── enums_2.js
+│           │   │       │   ├── enums_3.html
+│           │   │       │   ├── enums_3.js
+│           │   │       │   ├── enums_4.html
+│           │   │       │   ├── enums_4.js
+│           │   │       │   ├── enums_5.html
+│           │   │       │   ├── enums_5.js
+│           │   │       │   ├── enums_6.html
+│           │   │       │   ├── enums_6.js
+│           │   │       │   ├── enumvalues_0.html
+│           │   │       │   ├── enumvalues_0.js
+│           │   │       │   ├── enumvalues_1.html
+│           │   │       │   ├── enumvalues_1.js
+│           │   │       │   ├── enumvalues_2.html
+│           │   │       │   ├── enumvalues_2.js
+│           │   │       │   ├── enumvalues_3.html
+│           │   │       │   ├── enumvalues_3.js
+│           │   │       │   ├── enumvalues_4.html
+│           │   │       │   ├── enumvalues_4.js
+│           │   │       │   ├── enumvalues_5.html
+│           │   │       │   ├── enumvalues_5.js
+│           │   │       │   ├── enumvalues_6.html
+│           │   │       │   ├── enumvalues_6.js
+│           │   │       │   ├── enumvalues_7.html
+│           │   │       │   ├── enumvalues_7.js
+│           │   │       │   ├── enumvalues_8.html
+│           │   │       │   ├── enumvalues_8.js
+│           │   │       │   ├── enumvalues_9.html
+│           │   │       │   ├── enumvalues_9.js
+│           │   │       │   ├── enumvalues_a.html
+│           │   │       │   ├── enumvalues_a.js
+│           │   │       │   ├── enumvalues_b.html
+│           │   │       │   ├── enumvalues_b.js
+│           │   │       │   ├── enumvalues_c.html
+│           │   │       │   ├── enumvalues_c.js
+│           │   │       │   ├── enumvalues_d.html
+│           │   │       │   ├── enumvalues_d.js
+│           │   │       │   ├── enumvalues_e.html
+│           │   │       │   ├── enumvalues_e.js
+│           │   │       │   ├── enumvalues_f.html
+│           │   │       │   ├── enumvalues_f.js
+│           │   │       │   ├── files_0.html
+│           │   │       │   ├── files_0.js
+│           │   │       │   ├── files_1.html
+│           │   │       │   ├── files_1.js
+│           │   │       │   ├── files_2.html
+│           │   │       │   ├── files_2.js
+│           │   │       │   ├── files_3.html
+│           │   │       │   ├── files_3.js
+│           │   │       │   ├── files_4.html
+│           │   │       │   ├── files_4.js
+│           │   │       │   ├── files_5.html
+│           │   │       │   ├── files_5.js
+│           │   │       │   ├── files_6.html
+│           │   │       │   ├── files_6.js
+│           │   │       │   ├── files_7.html
+│           │   │       │   ├── files_7.js
+│           │   │       │   ├── files_8.html
+│           │   │       │   ├── files_8.js
+│           │   │       │   ├── functions_0.html
+│           │   │       │   ├── functions_0.js
+│           │   │       │   ├── functions_10.html
+│           │   │       │   ├── functions_10.js
+│           │   │       │   ├── functions_11.html
+│           │   │       │   ├── functions_11.js
+│           │   │       │   ├── functions_1.html
+│           │   │       │   ├── functions_1.js
+│           │   │       │   ├── functions_2.html
+│           │   │       │   ├── functions_2.js
+│           │   │       │   ├── functions_3.html
+│           │   │       │   ├── functions_3.js
+│           │   │       │   ├── functions_4.html
+│           │   │       │   ├── functions_4.js
+│           │   │       │   ├── functions_5.html
+│           │   │       │   ├── functions_5.js
+│           │   │       │   ├── functions_6.html
+│           │   │       │   ├── functions_6.js
+│           │   │       │   ├── functions_7.html
+│           │   │       │   ├── functions_7.js
+│           │   │       │   ├── functions_8.html
+│           │   │       │   ├── functions_8.js
+│           │   │       │   ├── functions_9.html
+│           │   │       │   ├── functions_9.js
+│           │   │       │   ├── functions_a.html
+│           │   │       │   ├── functions_a.js
+│           │   │       │   ├── functions_b.html
+│           │   │       │   ├── functions_b.js
+│           │   │       │   ├── functions_c.html
+│           │   │       │   ├── functions_c.js
+│           │   │       │   ├── functions_d.html
+│           │   │       │   ├── functions_d.js
+│           │   │       │   ├── functions_e.html
+│           │   │       │   ├── functions_e.js
+│           │   │       │   ├── functions_f.html
+│           │   │       │   ├── functions_f.js
+│           │   │       │   ├── groups_0.html
+│           │   │       │   ├── groups_0.js
+│           │   │       │   ├── groups_1.html
+│           │   │       │   ├── groups_1.js
+│           │   │       │   ├── groups_2.html
+│           │   │       │   ├── groups_2.js
+│           │   │       │   ├── mag_sel.svg
+│           │   │       │   ├── namespaces_0.html
+│           │   │       │   ├── namespaces_0.js
+│           │   │       │   ├── nomatches.html
+│           │   │       │   ├── pages_0.html
+│           │   │       │   ├── pages_0.js
+│           │   │       │   ├── search.css
+│           │   │       │   ├── searchdata.js
+│           │   │       │   ├── search.js
+│           │   │       │   ├── search_l.png
+│           │   │       │   ├── search_m.png
+│           │   │       │   ├── search_r.png
+│           │   │       │   ├── typedefs_0.html
+│           │   │       │   ├── typedefs_0.js
+│           │   │       │   ├── typedefs_1.html
+│           │   │       │   ├── typedefs_1.js
+│           │   │       │   ├── typedefs_2.html
+│           │   │       │   ├── typedefs_2.js
+│           │   │       │   ├── typedefs_3.html
+│           │   │       │   ├── typedefs_3.js
+│           │   │       │   ├── variables_0.html
+│           │   │       │   ├── variables_0.js
+│           │   │       │   ├── variables_10.html
+│           │   │       │   ├── variables_10.js
+│           │   │       │   ├── variables_11.html
+│           │   │       │   ├── variables_11.js
+│           │   │       │   ├── variables_1.html
+│           │   │       │   ├── variables_1.js
+│           │   │       │   ├── variables_2.html
+│           │   │       │   ├── variables_2.js
+│           │   │       │   ├── variables_3.html
+│           │   │       │   ├── variables_3.js
+│           │   │       │   ├── variables_4.html
+│           │   │       │   ├── variables_4.js
+│           │   │       │   ├── variables_5.html
+│           │   │       │   ├── variables_5.js
+│           │   │       │   ├── variables_6.html
+│           │   │       │   ├── variables_6.js
+│           │   │       │   ├── variables_7.html
+│           │   │       │   ├── variables_7.js
+│           │   │       │   ├── variables_8.html
+│           │   │       │   ├── variables_8.js
+│           │   │       │   ├── variables_9.html
+│           │   │       │   ├── variables_9.js
+│           │   │       │   ├── variables_a.html
+│           │   │       │   ├── variables_a.js
+│           │   │       │   ├── variables_b.html
+│           │   │       │   ├── variables_b.js
+│           │   │       │   ├── variables_c.html
+│           │   │       │   ├── variables_c.js
+│           │   │       │   ├── variables_d.html
+│           │   │       │   ├── variables_d.js
+│           │   │       │   ├── variables_e.html
+│           │   │       │   ├── variables_e.js
+│           │   │       │   ├── variables_f.html
+│           │   │       │   └── variables_f.js
+│           │   │       ├── splitbar.png
+│           │   │       ├── structac__i2s__clock__t.html
+│           │   │       ├── structac__i2s__clock__t-members.html
+│           │   │       ├── structaudio__driver_1_1_pins_function.html
+│           │   │       ├── structaudio__driver_1_1_pins_function-members.html
+│           │   │       ├── structaudio__driver_1_1_pins_i2_c.html
+│           │   │       ├── structaudio__driver_1_1_pins_i2_c-members.html
+│           │   │       ├── structaudio__driver_1_1_pins_i2_c.png
+│           │   │       ├── structaudio__driver_1_1_pins_i2_s.html
+│           │   │       ├── structaudio__driver_1_1_pins_i2_s-members.html
+│           │   │       ├── structaudio__driver_1_1_pins_s_p_i.html
+│           │   │       ├── structaudio__driver_1_1_pins_s_p_i-members.html
+│           │   │       ├── structaudio__driver_1_1_pins_s_p_i.png
+│           │   │       ├── structcodec__config__t.html
+│           │   │       ├── structcodec__config__t-members.html
+│           │   │       ├── structcodec__config__t.png
+│           │   │       ├── struct__coeff__div.html
+│           │   │       ├── structcoeff__div.html
+│           │   │       ├── struct__coeff__div-members.html
+│           │   │       ├── structcoeff__div-members.html
+│           │   │       ├── structes__i2s__clock__t.html
+│           │   │       ├── structes__i2s__clock__t-members.html
+│           │   │       ├── struct_i2_c_config.html
+│           │   │       ├── struct_i2_c_config-members.html
+│           │   │       ├── struct_i2_c_config.png
+│           │   │       ├── struct_i2_s_definition.html
+│           │   │       ├── struct_i2_s_definition-members.html
+│           │   │       ├── structi2s__definition__t.html
+│           │   │       ├── structi2s__definition__t-members.html
+│           │   │       ├── structi2s__iface__t.html
+│           │   │       ├── structi2s__iface__t-members.html
+│           │   │       ├── structi2s__samplerate__t.html
+│           │   │       ├── structi2s__samplerate__t-members.html
+│           │   │       ├── struct_pins_function.html
+│           │   │       ├── struct_pins_function-members.html
+│           │   │       ├── struct_pins_i2_c.html
+│           │   │       ├── struct_pins_i2_c-members.html
+│           │   │       ├── struct_pins_i2_s.html
+│           │   │       ├── struct_pins_i2_s-members.html
+│           │   │       ├── struct_pins_s_p_i.html
+│           │   │       ├── struct_pins_s_p_i-members.html
+│           │   │       ├── struct_s_p_i_class.html
+│           │   │       ├── struct_s_p_i_class-members.html
+│           │   │       ├── struct_s_p_i_config.html
+│           │   │       ├── struct_s_p_i_config-members.html
+│           │   │       ├── struct_s_p_i_config.png
+│           │   │       ├── struct_two_wire.html
+│           │   │       ├── sync_off.png
+│           │   │       ├── sync_on.png
+│           │   │       ├── tab_a.png
+│           │   │       ├── tab_b.png
+│           │   │       ├── tab_h.png
+│           │   │       ├── tabs.css
+│           │   │       ├── tab_s.png
+│           │   │       ├── _vector_8h.html
+│           │   │       └── _vector_8h_source.html
+│           │   ├── Doxyfile
+│           │   ├── examples
+│           │   │   ├── audiotools
+│           │   │   │   ├── audiotools-custom-max
+│           │   │   │   │   └── audiotools-custom-max.ino
+│           │   │   │   ├── audiotools-custom-min
+│           │   │   │   │   └── audiotools-custom-min.ino
+│           │   │   │   └── audiotools-standard
+│           │   │   │       └── audiotools-standard.ino
+│           │   │   └── custom
+│           │   │       ├── custom-max
+│           │   │       │   └── custom-max.ino
+│           │   │       ├── custom-min
+│           │   │       │   └── custom-min.ino
+│           │   │       └── custom-standard
+│           │   │           └── custom-standard.ino
+│           │   ├── .git
+│           │   │   ├── branches
+│           │   │   ├── config
+│           │   │   ├── description
+│           │   │   ├── HEAD
+│           │   │   ├── hooks
+│           │   │   │   ├── applypatch-msg.sample
+│           │   │   │   ├── commit-msg.sample
+│           │   │   │   ├── fsmonitor-watchman.sample
+│           │   │   │   ├── post-update.sample
+│           │   │   │   ├── pre-applypatch.sample
+│           │   │   │   ├── pre-commit.sample
+│           │   │   │   ├── pre-merge-commit.sample
+│           │   │   │   ├── prepare-commit-msg.sample
+│           │   │   │   ├── pre-push.sample
+│           │   │   │   ├── pre-rebase.sample
+│           │   │   │   ├── pre-receive.sample
+│           │   │   │   ├── push-to-checkout.sample
+│           │   │   │   ├── sendemail-validate.sample
+│           │   │   │   └── update.sample
+│           │   │   ├── index
+│           │   │   ├── info
+│           │   │   │   └── exclude
+│           │   │   ├── logs
+│           │   │   │   ├── HEAD
+│           │   │   │   └── refs
+│           │   │   │       ├── heads
+│           │   │   │       │   └── main
+│           │   │   │       └── remotes
+│           │   │   │           └── origin
+│           │   │   │               └── HEAD
+│           │   │   ├── objects
+│           │   │   │   ├── info
+│           │   │   │   └── pack
+│           │   │   │       ├── pack-e602509d92821590d49114087180db783b2c2193.idx
+│           │   │   │       ├── pack-e602509d92821590d49114087180db783b2c2193.pack
+│           │   │   │       └── pack-e602509d92821590d49114087180db783b2c2193.rev
+│           │   │   ├── packed-refs
+│           │   │   ├── .piopm
+│           │   │   ├── refs
+│           │   │   │   ├── heads
+│           │   │   │   │   └── main
+│           │   │   │   ├── remotes
+│           │   │   │   │   └── origin
+│           │   │   │   │       └── HEAD
+│           │   │   │   └── tags
+│           │   │   └── shallow
+│           │   ├── .github
+│           │   │   ├── FUNDING.yml
+│           │   │   └── ISSUE_TEMPLATE
+│           │   │       ├── config.yml
+│           │   │       └── Issue-report.yml
+│           │   ├── .gitignore
+│           │   ├── library.properties
+│           │   ├── License.txt
+│           │   ├── .nojekyll
+│           │   ├── README.md
+│           │   └── src
+│           │       ├── AudioBoard.h
+│           │       ├── ConfigAudioDriver.h
+│           │       ├── Driver
+│           │       │   ├── ac101
+│           │       │   │   ├── ac101.c
+│           │       │   │   └── ac101.h
+│           │       │   ├── ad1938
+│           │       │   │   ├── ad1938.cpp
+│           │       │   │   └── ad1938.h
+│           │       │   ├── cs42448
+│           │       │   │   └── cs42448.h
+│           │       │   ├── cs43l22
+│           │       │   │   ├── cs43l22.c
+│           │       │   │   ├── cs43l22.h
+│           │       │   │   └── Release_Notes.html
+│           │       │   ├── DriverConstants.h
+│           │       │   ├── es7210
+│           │       │   │   ├── es7210.c
+│           │       │   │   └── es7210.h
+│           │       │   ├── es7243
+│           │       │   │   ├── es7243.c
+│           │       │   │   └── es7243.h
+│           │       │   ├── es7243e
+│           │       │   │   ├── es7243e.c
+│           │       │   │   └── es7243e.h
+│           │       │   ├── es8156
+│           │       │   │   ├── es8156.c
+│           │       │   │   └── es8156.h
+│           │       │   ├── es8311
+│           │       │   │   ├── es8311.c
+│           │       │   │   └── es8311.h
+│           │       │   ├── es8374
+│           │       │   │   ├── es8374.c
+│           │       │   │   └── es8374.h
+│           │       │   ├── es8388
+│           │       │   │   ├── es8388.c
+│           │       │   │   └── es8388.h
+│           │       │   ├── nau8325
+│           │       │   │   ├── PCBCUPID_NAU8325.cpp
+│           │       │   │   └── PCBCUPID_NAU8325.h
+│           │       │   ├── pcm3168
+│           │       │   │   └── pcm3168.h
+│           │       │   ├── tas5805m
+│           │       │   │   ├── tas5805m.c
+│           │       │   │   ├── tas5805m.h
+│           │       │   │   └── tas5805m_reg_cfg.h
+│           │       │   ├── wm8960
+│           │       │   │   ├── EULA
+│           │       │   │   ├── LICENSE
+│           │       │   │   ├── mtb_wm8960.cpp
+│           │       │   │   ├── mtb_wm8960.h
+│           │       │   │   ├── README.md
+│           │       │   │   ├── RELEASE.md
+│           │       │   │   └── version.xml
+│           │       │   ├── wm8978
+│           │       │   │   ├── LICENSE.md
+│           │       │   │   ├── WM8978.cpp
+│           │       │   │   └── WM8978.h
+│           │       │   └── wm8994
+│           │       │       ├── Release_Notes.html
+│           │       │       ├── wm8994.c
+│           │       │       └── wm8994.h
+│           │       ├── DriverCommon.h
+│           │       ├── Driver.h
+│           │       ├── DriverPins.h
+│           │       └── Platforms
+│           │           ├── API_I2C_Arduino.cpp
+│           │           ├── API_I2C_EspressifIDF.cpp
+│           │           ├── API_I2C.h
+│           │           ├── API_SPI_Arduino.cpp
+│           │           ├── API_SPI.h
+│           │           ├── API_SPI_Others.cpp
+│           │           ├── AudioDriverLogger.h
+│           │           ├── etc.h
+│           │           ├── Logger.h
+│           │           ├── LoggerIDF.h
+│           │           ├── LoggerSTD.cpp
+│           │           ├── LoggerSTD.h
+│           │           ├── Optional.h
+│           │           └── Vector.h
+│           ├── ducktape
+│           │   ├── AUTHORS.rst
+│           │   ├── duk_dist_meta.json
+│           │   ├── duktape.pc.in
+│           │   ├── library.json
+│           │   ├── LICENSE.txt
+│           │   ├── .piopm
+│           │   ├── README.rst
+│           │   └── src
+│           │       ├── duk_config.h
+│           │       ├── duk_source_meta.json
+│           │       ├── duktape.c
+│           │       └── duktape.h
+│           ├── ESP32-PSRamFS
+│           │   ├── CMakeLists.txt
+│           │   ├── component.mk
+│           │   ├── examples
+│           │   │   ├── esp-idf-psramvfs
+│           │   │   │   ├── CMakeLists.txt
+│           │   │   │   ├── .gitignore
+│           │   │   │   ├── main
+│           │   │   │   │   ├── CMakeLists.txt
+│           │   │   │   │   ├── component.mk
+│           │   │   │   │   └── psramvfs.c
+│           │   │   │   ├── Makefile
+│           │   │   │   ├── ReadMe.md
+│           │   │   │   └── sdkconfig
+│           │   │   └── PSRamFS_Test
+│           │   │       ├── PSRamFS_Test.ino
+│           │   │       └── tests
+│           │   │           └── vfs_pfs_tests.h
+│           │   ├── library.properties
+│           │   ├── LICENSE
+│           │   ├── .piopm
+│           │   ├── ReadMe.md
+│           │   └── src
+│           │       ├── pfs.c
+│           │       ├── pfs.h
+│           │       ├── PSRamFS.cpp
+│           │       └── PSRamFS.h
+│           ├── ESP32Time
+│           │   ├── ESP32Time.cpp
+│           │   ├── ESP32Time.h
+│           │   ├── examples
+│           │   │   ├── esp32_time
+│           │   │   │   └── esp32_time.ino
+│           │   │   ├── esp32_time_multiple
+│           │   │   │   └── esp32_time_multiple.ino
+│           │   │   └── esp32_time_sleep
+│           │   │       └── esp32_time_sleep.ino
+│           │   ├── .gitignore
+│           │   ├── keywords.txt
+│           │   ├── library.json
+│           │   ├── library.properties
+│           │   ├── LICENSE
+│           │   ├── .piopm
+│           │   └── README.md
+│           ├── ESP8266Audio
+│           │   ├── examples
+│           │   │   ├── MixerSample
+│           │   │   │   ├── MixerSample.ino
+│           │   │   │   └── viola.h
+│           │   │   ├── PlayAACFromPROGMEM
+│           │   │   │   ├── homer.aac
+│           │   │   │   ├── PlayAACFromPROGMEM.ino
+│           │   │   │   └── sampleaac.h
+│           │   │   ├── PlayFLACFromPROGMEMToDAC
+│           │   │   │   ├── PlayFLACFromPROGMEMToDAC.ino
+│           │   │   │   └── sample.h
+│           │   │   ├── PlayFLAC-SD-SPDIF
+│           │   │   │   └── PlayFLAC-SD-SPDIF.ino
+│           │   │   ├── PlayMIDIFromLittleFS
+│           │   │   │   ├── data
+│           │   │   │   │   ├── 1mgm.sf2
+│           │   │   │   │   └── furelise.mid
+│           │   │   │   └── PlayMIDIFromLittleFS.ino
+│           │   │   ├── PlayMIDIFromSPIFFS
+│           │   │   │   ├── data
+│           │   │   │   │   ├── 1mgm.sf2
+│           │   │   │   │   └── furelise.mid
+│           │   │   │   └── PlayMIDIFromSPIFFS.ino
+│           │   │   ├── PlayMODFromPROGMEMToDAC
+│           │   │   │   ├── enigma.h
+│           │   │   │   └── PlayMODFromPROGMEMToDAC.ino
+│           │   │   ├── PlayMODFromPROGMEMToPWM
+│           │   │   │   ├── 5steps.h
+│           │   │   │   └── PlayMODFromPROGMEMToPWM.ino
+│           │   │   ├── PlayMP3FromSPIFFS
+│           │   │   │   └── PlayMP3FromSPIFFS.ino
+│           │   │   ├── PlayMP3ToSPDIF
+│           │   │   │   └── PlayMP3ToSPDIF.ino
+│           │   │   ├── PlayOpusFromSPIFFS
+│           │   │   │   ├── data
+│           │   │   │   │   └── gs-16b-2c-44100hz.opus
+│           │   │   │   └── PlayOpusFromSPIFFS.ino
+│           │   │   ├── PlayRTTTLToI2SDAC
+│           │   │   │   └── PlayRTTTLToI2SDAC.ino
+│           │   │   ├── PlayWAVFromFunction
+│           │   │   │   └── PlayWAVFromFunction.ino
+│           │   │   ├── PlayWAVFromPROGMEM
+│           │   │   │   ├── PlayWAVFromPROGMEM.ino
+│           │   │   │   └── viola.h
+│           │   │   ├── StreamMP3FromHTTP
+│           │   │   │   └── StreamMP3FromHTTP.ino
+│           │   │   ├── StreamMP3FromHTTP_SPIRAM
+│           │   │   │   └── StreamMP3FromHTTP_SPIRAM.ino
+│           │   │   ├── StreamMP3FromHTTPToSPDIF
+│           │   │   │   └── StreamMP3FromHTTPToSPDIF.ino
+│           │   │   ├── StreamOnHost
+│           │   │   │   ├── AudioOutputLinuxDSP.h
+│           │   │   │   ├── AudioOutputNullSlow.h
+│           │   │   │   ├── onHost
+│           │   │   │   └── StreamOnHost.ino
+│           │   │   ├── TalkingClockI2S
+│           │   │   │   └── TalkingClockI2S.ino
+│           │   │   └── WebRadio
+│           │   │       ├── web.cpp
+│           │   │       ├── web.h
+│           │   │       └── WebRadio.ino
+│           │   ├── .github
+│           │   │   └── workflows
+│           │   │       └── pr-or-master-push.yml
+│           │   ├── keywords.txt
+│           │   ├── library.json
+│           │   ├── library.properties
+│           │   ├── LICENSE
+│           │   ├── .piopm
+│           │   ├── README.md
+│           │   ├── src
+│           │   │   ├── AudioFileSourceBuffer.cpp
+│           │   │   ├── AudioFileSourceBuffer.h
+│           │   │   ├── AudioFileSourceFATFS.h
+│           │   │   ├── AudioFileSourceFS.cpp
+│           │   │   ├── AudioFileSourceFS.h
+│           │   │   ├── AudioFileSourceFunction.cpp
+│           │   │   ├── AudioFileSourceFunction.h
+│           │   │   ├── AudioFileSource.h
+│           │   │   ├── AudioFileSourceHTTPStream.cpp
+│           │   │   ├── AudioFileSourceHTTPStream.h
+│           │   │   ├── AudioFileSourceICYStream.cpp
+│           │   │   ├── AudioFileSourceICYStream.h
+│           │   │   ├── AudioFileSourceID3.cpp
+│           │   │   ├── AudioFileSourceID3.h
+│           │   │   ├── AudioFileSourceLittleFS.h
+│           │   │   ├── AudioFileSourcePROGMEM.cpp
+│           │   │   ├── AudioFileSourcePROGMEM.h
+│           │   │   ├── AudioFileSourceSD.cpp
+│           │   │   ├── AudioFileSourceSD.h
+│           │   │   ├── AudioFileSourceSPIFFS.h
+│           │   │   ├── AudioFileSourceSPIRAMBuffer.cpp
+│           │   │   ├── AudioFileSourceSPIRAMBuffer.h
+│           │   │   ├── AudioFileSourceSTDIO.cpp
+│           │   │   ├── AudioFileSourceSTDIO.h
+│           │   │   ├── AudioFileStream.cpp
+│           │   │   ├── AudioFileStream.h
+│           │   │   ├── AudioGeneratorAAC.cpp
+│           │   │   ├── AudioGeneratorAAC.h
+│           │   │   ├── AudioGeneratorFLAC.cpp
+│           │   │   ├── AudioGeneratorFLAC.h
+│           │   │   ├── AudioGenerator.h
+│           │   │   ├── AudioGeneratorMIDI.cpp
+│           │   │   ├── AudioGeneratorMIDI.h
+│           │   │   ├── AudioGeneratorMOD.cpp
+│           │   │   ├── AudioGeneratorMOD.h
+│           │   │   ├── AudioGeneratorMP3a.cpp
+│           │   │   ├── AudioGeneratorMP3a.h
+│           │   │   ├── AudioGeneratorMP3.cpp
+│           │   │   ├── AudioGeneratorMP3.h
+│           │   │   ├── AudioGeneratorOpus.cpp
+│           │   │   ├── AudioGeneratorOpus.h
+│           │   │   ├── AudioGeneratorRTTTL.cpp
+│           │   │   ├── AudioGeneratorRTTTL.h
+│           │   │   ├── AudioGeneratorTalkie.cpp
+│           │   │   ├── AudioGeneratorTalkie.h
+│           │   │   ├── AudioGeneratorWAV.cpp
+│           │   │   ├── AudioGeneratorWAV.h
+│           │   │   ├── AudioLogger.cpp
+│           │   │   ├── AudioLogger.h
+│           │   │   ├── AudioOutputBuffer.cpp
+│           │   │   ├── AudioOutputBuffer.h
+│           │   │   ├── AudioOutputFilterBiquad.cpp
+│           │   │   ├── AudioOutputFilterBiquad.h
+│           │   │   ├── AudioOutputFilterDecimate.cpp
+│           │   │   ├── AudioOutputFilterDecimate.h
+│           │   │   ├── AudioOutput.h
+│           │   │   ├── AudioOutputI2S.cpp
+│           │   │   ├── AudioOutputI2S.h
+│           │   │   ├── AudioOutputI2SNoDAC.cpp
+│           │   │   ├── AudioOutputI2SNoDAC.h
+│           │   │   ├── AudioOutputMixer.cpp
+│           │   │   ├── AudioOutputMixer.h
+│           │   │   ├── AudioOutputNull.h
+│           │   │   ├── AudioOutputPWM.cpp
+│           │   │   ├── AudioOutputPWM.h
+│           │   │   ├── AudioOutputSerialWAV.cpp
+│           │   │   ├── AudioOutputSerialWAV.h
+│           │   │   ├── AudioOutputSPDIF.cpp
+│           │   │   ├── AudioOutputSPDIF.h
+│           │   │   ├── AudioOutputSPIFFSWAV.cpp
+│           │   │   ├── AudioOutputSPIFFSWAV.h
+│           │   │   ├── AudioOutputSTDIO.cpp
+│           │   │   ├── AudioOutputSTDIO.h
+│           │   │   ├── AudioOutputULP.cpp
+│           │   │   ├── AudioOutputULP.h
+│           │   │   ├── AudioStatus.h
+│           │   │   ├── driver
+│           │   │   │   ├── SinglePinI2SDriver.cpp
+│           │   │   │   └── SinglePinI2SDriver.h
+│           │   │   ├── ESP8266Audio.h
+│           │   │   ├── libflac
+│           │   │   │   ├── AUTHORS
+│           │   │   │   ├── bitmath.c
+│           │   │   │   ├── bitreader.c
+│           │   │   │   ├── config.h
+│           │   │   │   ├── COPYING.FDL
+│           │   │   │   ├── COPYING.GPL
+│           │   │   │   ├── COPYING.LGPL
+│           │   │   │   ├── COPYING.Xiph
+│           │   │   │   ├── cpu.c
+│           │   │   │   ├── crc.c
+│           │   │   │   ├── fixed.c
+│           │   │   │   ├── FLAC
+│           │   │   │   │   ├── assert.h
+│           │   │   │   │   ├── callback.h
+│           │   │   │   │   ├── export.h
+│           │   │   │   │   ├── format.h
+│           │   │   │   │   ├── metadata.h
+│           │   │   │   │   ├── ordinals.h
+│           │   │   │   │   └── stream_decoder.h
+│           │   │   │   ├── float.c
+│           │   │   │   ├── format.c
+│           │   │   │   ├── lpc.c
+│           │   │   │   ├── md5.c
+│           │   │   │   ├── memory.c
+│           │   │   │   ├── private
+│           │   │   │   │   ├── bitmath.h
+│           │   │   │   │   ├── bitreader.h
+│           │   │   │   │   ├── cpu.h
+│           │   │   │   │   ├── crc.h
+│           │   │   │   │   ├── fixed.h
+│           │   │   │   │   ├── float.h
+│           │   │   │   │   ├── format.h
+│           │   │   │   │   ├── lpc.h
+│           │   │   │   │   ├── macros.h
+│           │   │   │   │   ├── md5.h
+│           │   │   │   │   ├── memory.h
+│           │   │   │   │   ├── metadata.h
+│           │   │   │   │   └── window.h
+│           │   │   │   ├── protected
+│           │   │   │   │   ├── all.h
+│           │   │   │   │   ├── stream_decoder.h
+│           │   │   │   │   └── stream_encoder.h
+│           │   │   │   ├── README
+│           │   │   │   ├── README.ESP8266
+│           │   │   │   ├── share
+│           │   │   │   │   ├── alloc.h
+│           │   │   │   │   ├── compat.h
+│           │   │   │   │   ├── endswap.h
+│           │   │   │   │   ├── getopt.h
+│           │   │   │   │   ├── macros.h
+│           │   │   │   │   ├── private.h
+│           │   │   │   │   ├── safe_str.h
+│           │   │   │   │   └── utf8.h
+│           │   │   │   ├── stream_decoder.c
+│           │   │   │   └── window.c
+│           │   │   ├── libhelix-aac
+│           │   │   │   ├── aaccommon.h
+│           │   │   │   ├── aacdec.c
+│           │   │   │   ├── aacdec.h
+│           │   │   │   ├── aactabs.c
+│           │   │   │   ├── assembly.h
+│           │   │   │   ├── bitstream.c
+│           │   │   │   ├── bitstream.h
+│           │   │   │   ├── buffers.c
+│           │   │   │   ├── coder.h
+│           │   │   │   ├── dct4.c
+│           │   │   │   ├── decelmnt.c
+│           │   │   │   ├── dequant.c
+│           │   │   │   ├── fft.c
+│           │   │   │   ├── filefmt.c
+│           │   │   │   ├── huffman.c
+│           │   │   │   ├── hufftabs.c
+│           │   │   │   ├── imdct.c
+│           │   │   │   ├── noiseless.c
+│           │   │   │   ├── pns.c
+│           │   │   │   ├── readme.txt
+│           │   │   │   ├── sbr.c
+│           │   │   │   ├── sbrfft.c
+│           │   │   │   ├── sbrfreq.c
+│           │   │   │   ├── sbr.h
+│           │   │   │   ├── sbrhfadj.c
+│           │   │   │   ├── sbrhfgen.c
+│           │   │   │   ├── sbrhuff.c
+│           │   │   │   ├── sbrimdct.c
+│           │   │   │   ├── sbrmath.c
+│           │   │   │   ├── sbrqmf.c
+│           │   │   │   ├── sbrside.c
+│           │   │   │   ├── sbrtabs.c
+│           │   │   │   ├── statname.h
+│           │   │   │   ├── stproc.c
+│           │   │   │   ├── tns.c
+│           │   │   │   └── trigtabs.c
+│           │   │   ├── libhelix-mp3
+│           │   │   │   ├── assembly.h
+│           │   │   │   ├── bitstream.c
+│           │   │   │   ├── buffers.c
+│           │   │   │   ├── coder.h
+│           │   │   │   ├── dct32.c
+│           │   │   │   ├── dequant.c
+│           │   │   │   ├── dqchan.c
+│           │   │   │   ├── huffman.c
+│           │   │   │   ├── hufftabs.c
+│           │   │   │   ├── imdct.c
+│           │   │   │   ├── LICENSE.txt
+│           │   │   │   ├── mp3common.h
+│           │   │   │   ├── mp3dec.c
+│           │   │   │   ├── mp3dec.h
+│           │   │   │   ├── mp3tabs.c
+│           │   │   │   ├── mpadecobjfixpt.h
+│           │   │   │   ├── player.h
+│           │   │   │   ├── polyphase.c
+│           │   │   │   ├── RCSL.txt
+│           │   │   │   ├── RPSL.txt
+│           │   │   │   ├── scalfact.c
+│           │   │   │   ├── statname.h
+│           │   │   │   ├── stproc.c
+│           │   │   │   ├── subband.c
+│           │   │   │   └── trigtabs.c
+│           │   │   ├── libmad
+│           │   │   │   ├── bit.c
+│           │   │   │   ├── bit.h
+│           │   │   │   ├── CHANGES
+│           │   │   │   ├── config.h
+│           │   │   │   ├── COPYING
+│           │   │   │   ├── COPYRIGHT
+│           │   │   │   ├── CREDITS
+│           │   │   │   ├── D.dat.h
+│           │   │   │   ├── decoder.c
+│           │   │   │   ├── decoder.h
+│           │   │   │   ├── fixed.c
+│           │   │   │   ├── fixed.h
+│           │   │   │   ├── frame.c
+│           │   │   │   ├── frame.h
+│           │   │   │   ├── global.h
+│           │   │   │   ├── huffman.c
+│           │   │   │   ├── huffman.h
+│           │   │   │   ├── imdct_s.dat.h
+│           │   │   │   ├── layer3.c
+│           │   │   │   ├── layer3.h
+│           │   │   │   ├── LICENSE
+│           │   │   │   ├── mad.h
+│           │   │   │   ├── mad.h.sed
+│           │   │   │   ├── qc_table.dat.h
+│           │   │   │   ├── README
+│           │   │   │   ├── README.ESP8266
+│           │   │   │   ├── rq_table.dat.h
+│           │   │   │   ├── sf_table.dat.h
+│           │   │   │   ├── stream.c
+│           │   │   │   ├── stream.h
+│           │   │   │   ├── synth.c
+│           │   │   │   ├── synth.h
+│           │   │   │   ├── timer.c
+│           │   │   │   ├── timer.h
+│           │   │   │   ├── TODO
+│           │   │   │   ├── VERSION
+│           │   │   │   ├── version.c
+│           │   │   │   └── version.h
+│           │   │   ├── libogg
+│           │   │   │   ├── AUTHORS
+│           │   │   │   ├── bitwise.c
+│           │   │   │   ├── CHANGES
+│           │   │   │   ├── config.h
+│           │   │   │   ├── COPYING
+│           │   │   │   ├── crctable.h
+│           │   │   │   ├── framing.c
+│           │   │   │   ├── ogg
+│           │   │   │   │   ├── config_types.h
+│           │   │   │   │   ├── ogg.h
+│           │   │   │   │   └── os_types.h
+│           │   │   │   ├── ogg.pc
+│           │   │   │   ├── README.esp8266.md
+│           │   │   │   └── README.md
+│           │   │   ├── libopus
+│           │   │   │   ├── analysis.h
+│           │   │   │   ├── AUTHORS
+│           │   │   │   ├── celt
+│           │   │   │   │   ├── arch.h
+│           │   │   │   │   ├── bands.c
+│           │   │   │   │   ├── bands.h
+│           │   │   │   │   ├── celt.c
+│           │   │   │   │   ├── celt_decoder.c
+│           │   │   │   │   ├── celt_encoder.c
+│           │   │   │   │   ├── celt.h
+│           │   │   │   │   ├── celt_lpc.c
+│           │   │   │   │   ├── celt_lpc.h
+│           │   │   │   │   ├── cpu_support.h
+│           │   │   │   │   ├── cwrs.c
+│           │   │   │   │   ├── cwrs.h
+│           │   │   │   │   ├── ecintrin.h
+│           │   │   │   │   ├── entcode.c
+│           │   │   │   │   ├── entcode.h
+│           │   │   │   │   ├── entdec.c
+│           │   │   │   │   ├── entdec.h
+│           │   │   │   │   ├── entenc.c
+│           │   │   │   │   ├── entenc.h
+│           │   │   │   │   ├── fixed_debug.h
+│           │   │   │   │   ├── fixed_generic.h
+│           │   │   │   │   ├── float_cast.h
+│           │   │   │   │   ├── kiss_fft.c
+│           │   │   │   │   ├── _kiss_fft_guts.h
+│           │   │   │   │   ├── kiss_fft.h
+│           │   │   │   │   ├── laplace.c
+│           │   │   │   │   ├── laplace.h
+│           │   │   │   │   ├── mathops.c
+│           │   │   │   │   ├── mathops.h
+│           │   │   │   │   ├── mdct.c
+│           │   │   │   │   ├── mdct.h
+│           │   │   │   │   ├── mfrngcod.h
+│           │   │   │   │   ├── modes.c
+│           │   │   │   │   ├── modes.h
+│           │   │   │   │   ├── os_support.h
+│           │   │   │   │   ├── pitch.c
+│           │   │   │   │   ├── pitch.h
+│           │   │   │   │   ├── quant_bands.c
+│           │   │   │   │   ├── quant_bands.h
+│           │   │   │   │   ├── rate.c
+│           │   │   │   │   ├── rate.h
+│           │   │   │   │   ├── stack_alloc.h
+│           │   │   │   │   ├── static_modes_fixed.h
+│           │   │   │   │   ├── static_modes_float.h
+│           │   │   │   │   ├── vq.c
+│           │   │   │   │   └── vq.h
+│           │   │   │   ├── ChangeLog
+│           │   │   │   ├── config.h
+│           │   │   │   ├── COPYING
+│           │   │   │   ├── INSTALL
+│           │   │   │   ├── mapping_matrix.c
+│           │   │   │   ├── mapping_matrix.h
+│           │   │   │   ├── mlp.h
+│           │   │   │   ├── NEWS
+│           │   │   │   ├── opus.c
+│           │   │   │   ├── opus_custom.h
+│           │   │   │   ├── opus_decoder.c
+│           │   │   │   ├── opus_defines.h
+│           │   │   │   ├── opus_encoder.c
+│           │   │   │   ├── opus.h
+│           │   │   │   ├── opus_multistream.c
+│           │   │   │   ├── opus_multistream_decoder.c
+│           │   │   │   ├── opus_multistream_encoder.c
+│           │   │   │   ├── opus_multistream.h
+│           │   │   │   ├── opus.pc
+│           │   │   │   ├── opus_private.h
+│           │   │   │   ├── opus_projection_decoder.c
+│           │   │   │   ├── opus_projection_encoder.c
+│           │   │   │   ├── opus_projection.h
+│           │   │   │   ├── opus_types.h
+│           │   │   │   ├── README
+│           │   │   │   ├── repacketizer.c
+│           │   │   │   ├── silk
+│           │   │   │   │   ├── A2NLSF.c
+│           │   │   │   │   ├── ana_filt_bank_1.c
+│           │   │   │   │   ├── API.h
+│           │   │   │   │   ├── biquad_alt.c
+│           │   │   │   │   ├── bwexpander_32.c
+│           │   │   │   │   ├── bwexpander.c
+│           │   │   │   │   ├── check_control_input.c
+│           │   │   │   │   ├── CNG.c
+│           │   │   │   │   ├── code_signs.c
+│           │   │   │   │   ├── control_audio_bandwidth.c
+│           │   │   │   │   ├── control_codec.c
+│           │   │   │   │   ├── control.h
+│           │   │   │   │   ├── control_SNR.c
+│           │   │   │   │   ├── debug.c
+│           │   │   │   │   ├── debug.h
+│           │   │   │   │   ├── dec_API.c
+│           │   │   │   │   ├── decode_core.c
+│           │   │   │   │   ├── decode_frame.c
+│           │   │   │   │   ├── decode_indices.c
+│           │   │   │   │   ├── decode_parameters.c
+│           │   │   │   │   ├── decode_pitch.c
+│           │   │   │   │   ├── decode_pulses.c
+│           │   │   │   │   ├── decoder_set_fs.c
+│           │   │   │   │   ├── define.h
+│           │   │   │   │   ├── enc_API.c
+│           │   │   │   │   ├── encode_indices.c
+│           │   │   │   │   ├── encode_pulses.c
+│           │   │   │   │   ├── errors.h
+│           │   │   │   │   ├── fixed
+│           │   │   │   │   │   ├── apply_sine_window_FIX.c
+│           │   │   │   │   │   ├── apply_sine_window_FIX.lo
+│           │   │   │   │   │   ├── apply_sine_window_FIX.o
+│           │   │   │   │   │   ├── autocorr_FIX.c
+│           │   │   │   │   │   ├── autocorr_FIX.lo
+│           │   │   │   │   │   ├── autocorr_FIX.o
+│           │   │   │   │   │   ├── burg_modified_FIX.c
+│           │   │   │   │   │   ├── burg_modified_FIX.lo
+│           │   │   │   │   │   ├── burg_modified_FIX.o
+│           │   │   │   │   │   ├── corrMatrix_FIX.c
+│           │   │   │   │   │   ├── corrMatrix_FIX.lo
+│           │   │   │   │   │   ├── corrMatrix_FIX.o
+│           │   │   │   │   │   ├── encode_frame_FIX.c
+│           │   │   │   │   │   ├── encode_frame_FIX.lo
+│           │   │   │   │   │   ├── encode_frame_FIX.o
+│           │   │   │   │   │   ├── find_LPC_FIX.c
+│           │   │   │   │   │   ├── find_LPC_FIX.lo
+│           │   │   │   │   │   ├── find_LPC_FIX.o
+│           │   │   │   │   │   ├── find_LTP_FIX.c
+│           │   │   │   │   │   ├── find_LTP_FIX.lo
+│           │   │   │   │   │   ├── find_LTP_FIX.o
+│           │   │   │   │   │   ├── find_pitch_lags_FIX.c
+│           │   │   │   │   │   ├── find_pitch_lags_FIX.lo
+│           │   │   │   │   │   ├── find_pitch_lags_FIX.o
+│           │   │   │   │   │   ├── find_pred_coefs_FIX.c
+│           │   │   │   │   │   ├── find_pred_coefs_FIX.lo
+│           │   │   │   │   │   ├── find_pred_coefs_FIX.o
+│           │   │   │   │   │   ├── k2a_FIX.c
+│           │   │   │   │   │   ├── k2a_FIX.lo
+│           │   │   │   │   │   ├── k2a_FIX.o
+│           │   │   │   │   │   ├── k2a_Q16_FIX.c
+│           │   │   │   │   │   ├── k2a_Q16_FIX.lo
+│           │   │   │   │   │   ├── k2a_Q16_FIX.o
+│           │   │   │   │   │   ├── LTP_analysis_filter_FIX.c
+│           │   │   │   │   │   ├── LTP_analysis_filter_FIX.lo
+│           │   │   │   │   │   ├── LTP_analysis_filter_FIX.o
+│           │   │   │   │   │   ├── LTP_scale_ctrl_FIX.c
+│           │   │   │   │   │   ├── LTP_scale_ctrl_FIX.lo
+│           │   │   │   │   │   ├── LTP_scale_ctrl_FIX.o
+│           │   │   │   │   │   ├── main_FIX.h
+│           │   │   │   │   │   ├── noise_shape_analysis_FIX.c
+│           │   │   │   │   │   ├── noise_shape_analysis_FIX.lo
+│           │   │   │   │   │   ├── noise_shape_analysis_FIX.o
+│           │   │   │   │   │   ├── pitch_analysis_core_FIX.c
+│           │   │   │   │   │   ├── pitch_analysis_core_FIX.lo
+│           │   │   │   │   │   ├── pitch_analysis_core_FIX.o
+│           │   │   │   │   │   ├── process_gains_FIX.c
+│           │   │   │   │   │   ├── process_gains_FIX.lo
+│           │   │   │   │   │   ├── process_gains_FIX.o
+│           │   │   │   │   │   ├── regularize_correlations_FIX.c
+│           │   │   │   │   │   ├── regularize_correlations_FIX.lo
+│           │   │   │   │   │   ├── regularize_correlations_FIX.o
+│           │   │   │   │   │   ├── residual_energy16_FIX.c
+│           │   │   │   │   │   ├── residual_energy16_FIX.lo
+│           │   │   │   │   │   ├── residual_energy16_FIX.o
+│           │   │   │   │   │   ├── residual_energy_FIX.c
+│           │   │   │   │   │   ├── residual_energy_FIX.lo
+│           │   │   │   │   │   ├── residual_energy_FIX.o
+│           │   │   │   │   │   ├── schur64_FIX.c
+│           │   │   │   │   │   ├── schur64_FIX.lo
+│           │   │   │   │   │   ├── schur64_FIX.o
+│           │   │   │   │   │   ├── schur_FIX.c
+│           │   │   │   │   │   ├── schur_FIX.lo
+│           │   │   │   │   │   ├── schur_FIX.o
+│           │   │   │   │   │   ├── structs_FIX.h
+│           │   │   │   │   │   ├── vector_ops_FIX.c
+│           │   │   │   │   │   ├── vector_ops_FIX.lo
+│           │   │   │   │   │   ├── vector_ops_FIX.o
+│           │   │   │   │   │   ├── warped_autocorrelation_FIX.c
+│           │   │   │   │   │   ├── warped_autocorrelation_FIX.lo
+│           │   │   │   │   │   └── warped_autocorrelation_FIX.o
+│           │   │   │   │   ├── gain_quant.c
+│           │   │   │   │   ├── HP_variable_cutoff.c
+│           │   │   │   │   ├── init_decoder.c
+│           │   │   │   │   ├── init_encoder.c
+│           │   │   │   │   ├── Inlines.h
+│           │   │   │   │   ├── inner_prod_aligned.c
+│           │   │   │   │   ├── interpolate.c
+│           │   │   │   │   ├── lin2log.c
+│           │   │   │   │   ├── log2lin.c
+│           │   │   │   │   ├── LPC_analysis_filter.c
+│           │   │   │   │   ├── LPC_fit.c
+│           │   │   │   │   ├── LPC_inv_pred_gain.c
+│           │   │   │   │   ├── LP_variable_cutoff.c
+│           │   │   │   │   ├── MacroCount.h
+│           │   │   │   │   ├── MacroDebug.h
+│           │   │   │   │   ├── macros.h
+│           │   │   │   │   ├── main.h
+│           │   │   │   │   ├── NLSF2A.c
+│           │   │   │   │   ├── NLSF_decode.c
+│           │   │   │   │   ├── NLSF_del_dec_quant.c
+│           │   │   │   │   ├── NLSF_encode.c
+│           │   │   │   │   ├── NLSF_stabilize.c
+│           │   │   │   │   ├── NLSF_unpack.c
+│           │   │   │   │   ├── NLSF_VQ.c
+│           │   │   │   │   ├── NLSF_VQ_weights_laroia.c
+│           │   │   │   │   ├── NSQ.c
+│           │   │   │   │   ├── NSQ_del_dec.c
+│           │   │   │   │   ├── NSQ.h
+│           │   │   │   │   ├── pitch_est_defines.h
+│           │   │   │   │   ├── pitch_est_tables.c
+│           │   │   │   │   ├── PLC.c
+│           │   │   │   │   ├── PLC.h
+│           │   │   │   │   ├── process_NLSFs.c
+│           │   │   │   │   ├── quant_LTP_gains.c
+│           │   │   │   │   ├── resampler.c
+│           │   │   │   │   ├── resampler_down2_3.c
+│           │   │   │   │   ├── resampler_down2.c
+│           │   │   │   │   ├── resampler_private_AR2.c
+│           │   │   │   │   ├── resampler_private_down_FIR.c
+│           │   │   │   │   ├── resampler_private.h
+│           │   │   │   │   ├── resampler_private_IIR_FIR.c
+│           │   │   │   │   ├── resampler_private_up2_HQ.c
+│           │   │   │   │   ├── resampler_rom.c
+│           │   │   │   │   ├── resampler_rom.h
+│           │   │   │   │   ├── resampler_structs.h
+│           │   │   │   │   ├── shell_coder.c
+│           │   │   │   │   ├── sigm_Q15.c
+│           │   │   │   │   ├── SigProc_FIX.h
+│           │   │   │   │   ├── sort.c
+│           │   │   │   │   ├── stereo_decode_pred.c
+│           │   │   │   │   ├── stereo_encode_pred.c
+│           │   │   │   │   ├── stereo_find_predictor.c
+│           │   │   │   │   ├── stereo_LR_to_MS.c
+│           │   │   │   │   ├── stereo_MS_to_LR.c
+│           │   │   │   │   ├── stereo_quant_pred.c
+│           │   │   │   │   ├── structs.h
+│           │   │   │   │   ├── sum_sqr_shift.c
+│           │   │   │   │   ├── table_LSF_cos.c
+│           │   │   │   │   ├── tables_gain.c
+│           │   │   │   │   ├── tables.h
+│           │   │   │   │   ├── tables_LTP.c
+│           │   │   │   │   ├── tables_NLSF_CB_NB_MB.c
+│           │   │   │   │   ├── tables_NLSF_CB_WB.c
+│           │   │   │   │   ├── tables_other.c
+│           │   │   │   │   ├── tables_pitch_lag.c
+│           │   │   │   │   ├── tables_pulses_per_block.c
+│           │   │   │   │   ├── tuning_parameters.h
+│           │   │   │   │   ├── typedef.h
+│           │   │   │   │   ├── VAD.c
+│           │   │   │   │   └── VQ_WMat_EC.c
+│           │   │   │   └── tansig_table.h
+│           │   │   ├── libtinysoundfont
+│           │   │   │   ├── LICENSE
+│           │   │   │   ├── README.ESP8266
+│           │   │   │   ├── README.md
+│           │   │   │   └── tsf.h
+│           │   │   ├── opusfile
+│           │   │   │   ├── AUTHORS
+│           │   │   │   ├── config.h
+│           │   │   │   ├── COPYING
+│           │   │   │   ├── info.c
+│           │   │   │   ├── internal.c
+│           │   │   │   ├── internal.h
+│           │   │   │   ├── opusfile.c
+│           │   │   │   ├── opusfile.h
+│           │   │   │   ├── opusfile.pc
+│           │   │   │   ├── README.esp8266.md
+│           │   │   │   ├── README.md
+│           │   │   │   └── stream.c
+│           │   │   └── spiram-fast.h
+│           │   └── tools
+│           │       ├── makever.py
+│           │       └── README.md
+│           ├── ESP8266SAM
+│           │   ├── examples
+│           │   │   └── Speak
+│           │   │       └── Speak.ino
+│           │   ├── library.json
+│           │   ├── library.properties
+│           │   ├── .piopm
+│           │   ├── README.md
+│           │   └── src
+│           │       ├── ESP8266SAM.cpp
+│           │       ├── esp8266sam_debug.c
+│           │       ├── esp8266sam_debug.h
+│           │       ├── ESP8266SAM.h
+│           │       ├── reciter.c
+│           │       ├── reciter.h
+│           │       ├── ReciterTabs.h
+│           │       ├── render.c
+│           │       ├── render.h
+│           │       ├── RenderTabs.h
+│           │       ├── sam.c
+│           │       ├── SamData.h
+│           │       ├── sam.h
+│           │       └── SamTabs.h
+│           ├── ESPAsyncWebServer
+│           │   ├── examples
+│           │   │   ├── AsyncResponseStream
+│           │   │   │   └── AsyncResponseStream.ino
+│           │   │   ├── AsyncTunnel
+│           │   │   │   └── AsyncTunnel.ino
+│           │   │   ├── Auth
+│           │   │   │   └── Auth.ino
+│           │   │   ├── CaptivePortal
+│           │   │   │   └── CaptivePortal.ino
+│           │   │   ├── CatchAllHandler
+│           │   │   │   └── CatchAllHandler.ino
+│           │   │   ├── ChunkResponse
+│           │   │   │   └── ChunkResponse.ino
+│           │   │   ├── ChunkRetryResponse
+│           │   │   │   └── ChunkRetryResponse.ino
+│           │   │   ├── CORS
+│           │   │   │   └── CORS.ino
+│           │   │   ├── EndBegin
+│           │   │   │   └── EndBegin.ino
+│           │   │   ├── Filters
+│           │   │   │   └── Filters.ino
+│           │   │   ├── FlashResponse
+│           │   │   │   └── FlashResponse.ino
+│           │   │   ├── HeaderManipulation
+│           │   │   │   └── HeaderManipulation.ino
+│           │   │   ├── Headers
+│           │   │   │   └── Headers.ino
+│           │   │   ├── Json
+│           │   │   │   └── Json.ino
+│           │   │   ├── Logging
+│           │   │   │   └── Logging.ino
+│           │   │   ├── MessagePack
+│           │   │   │   └── MessagePack.ino
+│           │   │   ├── Middleware
+│           │   │   │   └── Middleware.ino
+│           │   │   ├── Params
+│           │   │   │   └── Params.ino
+│           │   │   ├── PartitionDownloader
+│           │   │   │   └── PartitionDownloader.ino
+│           │   │   ├── PerfTests
+│           │   │   │   └── PerfTests.ino
+│           │   │   ├── RateLimit
+│           │   │   │   └── RateLimit.ino
+│           │   │   ├── Redirect
+│           │   │   │   └── Redirect.ino
+│           │   │   ├── RequestContinuation
+│           │   │   │   └── RequestContinuation.ino
+│           │   │   ├── RequestContinuationComplete
+│           │   │   │   └── RequestContinuationComplete.ino
+│           │   │   ├── ResumableDownload
+│           │   │   │   └── ResumableDownload.ino
+│           │   │   ├── Rewrite
+│           │   │   │   └── Rewrite.ino
+│           │   │   ├── ServerSentEvents
+│           │   │   │   └── ServerSentEvents.ino
+│           │   │   ├── ServerSentEvents_PR156
+│           │   │   │   └── ServerSentEvents_PR156.ino
+│           │   │   ├── ServerState
+│           │   │   │   └── ServerState.ino
+│           │   │   ├── SkipServerMiddleware
+│           │   │   │   └── SkipServerMiddleware.ino
+│           │   │   ├── SlowChunkResponse
+│           │   │   │   └── SlowChunkResponse.ino
+│           │   │   ├── StaticFile
+│           │   │   │   └── StaticFile.ino
+│           │   │   ├── Templates
+│           │   │   │   └── Templates.ino
+│           │   │   ├── Upload
+│           │   │   │   └── Upload.ino
+│           │   │   ├── WebSocket
+│           │   │   │   └── WebSocket.ino
+│           │   │   └── WebSocketEasy
+│           │   │       └── WebSocketEasy.ino
+│           │   ├── library.json
+│           │   ├── library.properties
+│           │   ├── LICENSE
+│           │   ├── .piopm
+│           │   ├── README.md
+│           │   └── src
+│           │       ├── AsyncEventSource.cpp
+│           │       ├── AsyncEventSource.h
+│           │       ├── AsyncJson.cpp
+│           │       ├── AsyncJson.h
+│           │       ├── AsyncMessagePack.cpp
+│           │       ├── AsyncMessagePack.h
+│           │       ├── AsyncWebHeader.cpp
+│           │       ├── AsyncWebServerLogging.h
+│           │       ├── AsyncWebServerRequest.cpp
+│           │       ├── AsyncWebServerVersion.h
+│           │       ├── AsyncWebSocket.cpp
+│           │       ├── AsyncWebSocket.h
+│           │       ├── BackPort_SHA1Builder.cpp
+│           │       ├── BackPort_SHA1Builder.h
+│           │       ├── ChunkPrint.cpp
+│           │       ├── ChunkPrint.h
+│           │       ├── ESPAsyncWebServer.h
+│           │       ├── literals.h
+│           │       ├── Middleware.cpp
+│           │       ├── WebAuthentication.cpp
+│           │       ├── WebAuthentication.h
+│           │       ├── WebHandlerImpl.h
+│           │       ├── WebHandlers.cpp
+│           │       ├── WebRequest.cpp
+│           │       ├── WebResponseImpl.h
+│           │       ├── WebResponses.cpp
+│           │       └── WebServer.cpp
+│           ├── ESPping
+│           │   ├── examples
+│           │   │   └── test_ping
+│           │   │       └── test_ping.ino
+│           │   ├── .git
+│           │   │   ├── branches
+│           │   │   ├── config
+│           │   │   ├── description
+│           │   │   ├── HEAD
+│           │   │   ├── hooks
+│           │   │   │   ├── applypatch-msg.sample
+│           │   │   │   ├── commit-msg.sample
+│           │   │   │   ├── fsmonitor-watchman.sample
+│           │   │   │   ├── post-update.sample
+│           │   │   │   ├── pre-applypatch.sample
+│           │   │   │   ├── pre-commit.sample
+│           │   │   │   ├── pre-merge-commit.sample
+│           │   │   │   ├── prepare-commit-msg.sample
+│           │   │   │   ├── pre-push.sample
+│           │   │   │   ├── pre-rebase.sample
+│           │   │   │   ├── pre-receive.sample
+│           │   │   │   ├── push-to-checkout.sample
+│           │   │   │   ├── sendemail-validate.sample
+│           │   │   │   └── update.sample
+│           │   │   ├── index
+│           │   │   ├── info
+│           │   │   │   └── exclude
+│           │   │   ├── logs
+│           │   │   │   ├── HEAD
+│           │   │   │   └── refs
+│           │   │   │       ├── heads
+│           │   │   │       │   └── main
+│           │   │   │       └── remotes
+│           │   │   │           └── origin
+│           │   │   │               └── HEAD
+│           │   │   ├── objects
+│           │   │   │   ├── info
+│           │   │   │   └── pack
+│           │   │   │       ├── pack-230c74174ede46ec39ebf76e8ee4f3e4766d9d39.idx
+│           │   │   │       ├── pack-230c74174ede46ec39ebf76e8ee4f3e4766d9d39.pack
+│           │   │   │       └── pack-230c74174ede46ec39ebf76e8ee4f3e4766d9d39.rev
+│           │   │   ├── packed-refs
+│           │   │   ├── .piopm
+│           │   │   ├── refs
+│           │   │   │   ├── heads
+│           │   │   │   │   └── main
+│           │   │   │   ├── remotes
+│           │   │   │   │   └── origin
+│           │   │   │   │       └── HEAD
+│           │   │   │   └── tags
+│           │   │   └── shallow
+│           │   ├── .github
+│           │   │   └── workflows
+│           │   │       └── arduino-lint-action.yml
+│           │   ├── keywords.txt
+│           │   ├── library.properties
+│           │   ├── LICENSE
+│           │   ├── README.md
+│           │   ├── src
+│           │   │   ├── ESPping.cpp
+│           │   │   ├── ESPping.h
+│           │   │   ├── ping32.cpp
+│           │   │   └── ping32.h
+│           │   └── .vscode
+│           │       └── settings.json
+│           ├── FFT
+│           │   ├── examples
+│           │   │   └── PDM_SPM1423
+│           │   │       └── PDM_SPM1423.ino
+│           │   ├── library.json
+│           │   ├── library.properties
+│           │   ├── LICENSE
+│           │   ├── .piopm
+│           │   ├── README.md
+│           │   └── src
+│           │       ├── fft.cpp
+│           │       └── fft.h
+│           ├── integrity.dat
+│           ├── IRremoteESP8266
+│           │   ├── CPPLINT.cfg
+│           │   ├── Doxyfile
+│           │   ├── examples
+│           │   │   ├── BlynkIrRemote
+│           │   │   │   ├── BlynkIrRemote.ino
+│           │   │   │   └── platformio.ini
+│           │   │   ├── CommonAcControl
+│           │   │   │   ├── CommonAcControl.ino
+│           │   │   │   └── platformio.ini
+│           │   │   ├── ControlSamsungAC
+│           │   │   │   ├── ControlSamsungAC.ino
+│           │   │   │   └── platformio.ini
+│           │   │   ├── DumbIRRepeater
+│           │   │   │   ├── DumbIRRepeater.ino
+│           │   │   │   └── platformio.ini
+│           │   │   ├── IRGCSendDemo
+│           │   │   │   ├── IRGCSendDemo.ino
+│           │   │   │   └── platformio.ini
+│           │   │   ├── IRGCTCPServer
+│           │   │   │   ├── IRGCTCPServer.ino
+│           │   │   │   └── platformio.ini
+│           │   │   ├── IRMQTTServer
+│           │   │   │   ├── IRMQTTServer.h
+│           │   │   │   ├── IRMQTTServer.ino
+│           │   │   │   └── platformio.ini
+│           │   │   ├── IRrecvDemo
+│           │   │   │   ├── IRrecvDemo.ino
+│           │   │   │   └── platformio.ini
+│           │   │   ├── IRrecvDump
+│           │   │   │   ├── IRrecvDump.ino
+│           │   │   │   └── platformio.ini
+│           │   │   ├── IRrecvDumpV2
+│           │   │   │   ├── IRrecvDumpV2.ino
+│           │   │   │   └── platformio.ini
+│           │   │   ├── IRrecvDumpV3
+│           │   │   │   ├── BaseOTA.h
+│           │   │   │   ├── IRrecvDumpV3.ino
+│           │   │   │   └── platformio.ini
+│           │   │   ├── IRsendDemo
+│           │   │   │   ├── IRsendDemo.ino
+│           │   │   │   └── platformio.ini
+│           │   │   ├── IRsendProntoDemo
+│           │   │   │   ├── IRsendProntoDemo.ino
+│           │   │   │   └── platformio.ini
+│           │   │   ├── IRServer
+│           │   │   │   ├── IRServer.ino
+│           │   │   │   └── platformio.ini
+│           │   │   ├── JVCPanasonicSendDemo
+│           │   │   │   ├── JVCPanasonicSendDemo.ino
+│           │   │   │   └── platformio.ini
+│           │   │   ├── LGACSend
+│           │   │   │   ├── LGACSend.ino
+│           │   │   │   └── platformio.ini
+│           │   │   ├── SmartIRRepeater
+│           │   │   │   ├── platformio.ini
+│           │   │   │   └── SmartIRRepeater.ino
+│           │   │   ├── TurnOnArgoAC
+│           │   │   │   ├── platformio.ini
+│           │   │   │   └── TurnOnArgoAC.ino
+│           │   │   ├── TurnOnDaikinAC
+│           │   │   │   ├── platformio.ini
+│           │   │   │   └── TurnOnDaikinAC.ino
+│           │   │   ├── TurnOnFujitsuAC
+│           │   │   │   ├── platformio.ini
+│           │   │   │   └── TurnOnFujitsuAC.ino
+│           │   │   ├── TurnOnGreeAC
+│           │   │   │   ├── platformio.ini
+│           │   │   │   └── TurnOnGreeAC.ino
+│           │   │   ├── TurnOnKelvinatorAC
+│           │   │   │   ├── platformio.ini
+│           │   │   │   └── TurnOnKelvinatorAC.ino
+│           │   │   ├── TurnOnMitsubishiAC
+│           │   │   │   ├── platformio.ini
+│           │   │   │   └── TurnOnMitsubishiAC.ino
+│           │   │   ├── TurnOnMitsubishiHeavyAc
+│           │   │   │   ├── platformio.ini
+│           │   │   │   └── TurnOnMitsubishiHeavyAc.ino
+│           │   │   ├── TurnOnPanasonicAC
+│           │   │   │   ├── platformio.ini
+│           │   │   │   └── TurnOnPanasonicAC.ino
+│           │   │   ├── TurnOnToshibaAC
+│           │   │   │   ├── platformio.ini
+│           │   │   │   └── TurnOnToshibaAC.ino
+│           │   │   ├── TurnOnTrotecAC
+│           │   │   │   ├── platformio.ini
+│           │   │   │   └── TurnOnTrotecAC.ino
+│           │   │   └── Web-AC-control
+│           │   │       ├── data
+│           │   │       │   ├── favicon.ico
+│           │   │       │   ├── level_1_off.svg
+│           │   │       │   ├── level_1_on.svg
+│           │   │       │   ├── level_2_off.svg
+│           │   │       │   ├── level_2_on.svg
+│           │   │       │   ├── level_3_off.svg
+│           │   │       │   ├── level_3_on.svg
+│           │   │       │   ├── level_4_off.svg
+│           │   │       │   ├── level_4_on.svg
+│           │   │       │   ├── ui.html
+│           │   │       │   └── ui.js
+│           │   │       ├── platformio.ini
+│           │   │       ├── printscreen.png
+│           │   │       ├── README.md
+│           │   │       ├── Web-AC-control.h
+│           │   │       └── Web-AC-control.ino
+│           │   ├── .gitattributes
+│           │   ├── .gitignore
+│           │   ├── keywords.txt
+│           │   ├── library.json
+│           │   ├── library.properties
+│           │   ├── LICENSE.txt
+│           │   ├── .piopm
+│           │   ├── platformio.ini
+│           │   ├── pylintrc
+│           │   ├── README_de.md
+│           │   ├── README_fr.md
+│           │   ├── README.md
+│           │   ├── README_nl.md
+│           │   ├── ReleaseNotes.md
+│           │   ├── SECURITY.md
+│           │   ├── src
+│           │   │   ├── CPPLINT.cfg
+│           │   │   ├── i18n.h
+│           │   │   ├── IRac.cpp
+│           │   │   ├── IRac.h
+│           │   │   ├── ir_Airton.cpp
+│           │   │   ├── ir_Airton.h
+│           │   │   ├── ir_Airwell.cpp
+│           │   │   ├── ir_Airwell.h
+│           │   │   ├── ir_Aiwa.cpp
+│           │   │   ├── ir_Amcor.cpp
+│           │   │   ├── ir_Amcor.h
+│           │   │   ├── ir_Argo.cpp
+│           │   │   ├── ir_Argo.h
+│           │   │   ├── ir_Arris.cpp
+│           │   │   ├── ir_Bosch.cpp
+│           │   │   ├── ir_Bosch.h
+│           │   │   ├── ir_Bose.cpp
+│           │   │   ├── ir_Carrier.cpp
+│           │   │   ├── ir_Carrier.h
+│           │   │   ├── ir_ClimaButler.cpp
+│           │   │   ├── ir_Coolix.cpp
+│           │   │   ├── ir_Coolix.h
+│           │   │   ├── ir_Corona.cpp
+│           │   │   ├── ir_Corona.h
+│           │   │   ├── ir_Daikin.cpp
+│           │   │   ├── ir_Daikin.h
+│           │   │   ├── ir_Delonghi.cpp
+│           │   │   ├── ir_Delonghi.h
+│           │   │   ├── ir_Denon.cpp
+│           │   │   ├── ir_Dish.cpp
+│           │   │   ├── ir_Doshisha.cpp
+│           │   │   ├── ir_Ecoclim.cpp
+│           │   │   ├── ir_Ecoclim.h
+│           │   │   ├── ir_Electra.cpp
+│           │   │   ├── ir_Electra.h
+│           │   │   ├── ir_EliteScreens.cpp
+│           │   │   ├── ir_Epson.cpp
+│           │   │   ├── ir_Fujitsu.cpp
+│           │   │   ├── ir_Fujitsu.h
+│           │   │   ├── ir_GICable.cpp
+│           │   │   ├── ir_GlobalCache.cpp
+│           │   │   ├── ir_Goodweather.cpp
+│           │   │   ├── ir_Goodweather.h
+│           │   │   ├── ir_Gorenje.cpp
+│           │   │   ├── ir_Gree.cpp
+│           │   │   ├── ir_Gree.h
+│           │   │   ├── ir_Haier.cpp
+│           │   │   ├── ir_Haier.h
+│           │   │   ├── ir_Hitachi.cpp
+│           │   │   ├── ir_Hitachi.h
+│           │   │   ├── ir_Inax.cpp
+│           │   │   ├── ir_JVC.cpp
+│           │   │   ├── ir_Kelon.cpp
+│           │   │   ├── ir_Kelon.h
+│           │   │   ├── ir_Kelvinator.cpp
+│           │   │   ├── ir_Kelvinator.h
+│           │   │   ├── ir_Lasertag.cpp
+│           │   │   ├── ir_Lego.cpp
+│           │   │   ├── ir_LG.cpp
+│           │   │   ├── ir_LG.h
+│           │   │   ├── ir_Lutron.cpp
+│           │   │   ├── IRmacros.h
+│           │   │   ├── ir_Magiquest.cpp
+│           │   │   ├── ir_Magiquest.h
+│           │   │   ├── ir_Metz.cpp
+│           │   │   ├── ir_Midea.cpp
+│           │   │   ├── ir_Midea.h
+│           │   │   ├── ir_MilesTag2.cpp
+│           │   │   ├── ir_Mirage.cpp
+│           │   │   ├── ir_Mirage.h
+│           │   │   ├── ir_Mitsubishi.cpp
+│           │   │   ├── ir_Mitsubishi.h
+│           │   │   ├── ir_MitsubishiHeavy.cpp
+│           │   │   ├── ir_MitsubishiHeavy.h
+│           │   │   ├── ir_Multibrackets.cpp
+│           │   │   ├── ir_MWM.cpp
+│           │   │   ├── ir_NEC.cpp
+│           │   │   ├── ir_NEC.h
+│           │   │   ├── ir_Neoclima.cpp
+│           │   │   ├── ir_Neoclima.h
+│           │   │   ├── ir_Nikai.cpp
+│           │   │   ├── ir_Panasonic.cpp
+│           │   │   ├── ir_Panasonic.h
+│           │   │   ├── ir_Pioneer.cpp
+│           │   │   ├── ir_Pronto.cpp
+│           │   │   ├── ir_RC5_RC6.cpp
+│           │   │   ├── ir_RCMM.cpp
+│           │   │   ├── IRrecv.cpp
+│           │   │   ├── IRrecv.h
+│           │   │   ├── IRremoteESP8266.h
+│           │   │   ├── ir_Rhoss.cpp
+│           │   │   ├── ir_Rhoss.h
+│           │   │   ├── ir_Samsung.cpp
+│           │   │   ├── ir_Samsung.h
+│           │   │   ├── ir_Sanyo.cpp
+│           │   │   ├── ir_Sanyo.h
+│           │   │   ├── IRsend.cpp
+│           │   │   ├── IRsend.h
+│           │   │   ├── ir_Sharp.cpp
+│           │   │   ├── ir_Sharp.h
+│           │   │   ├── ir_Sherwood.cpp
+│           │   │   ├── ir_Sony.cpp
+│           │   │   ├── ir_Symphony.cpp
+│           │   │   ├── ir_Tcl.cpp
+│           │   │   ├── ir_Tcl.h
+│           │   │   ├── ir_Technibel.cpp
+│           │   │   ├── ir_Technibel.h
+│           │   │   ├── ir_Teco.cpp
+│           │   │   ├── ir_Teco.h
+│           │   │   ├── ir_Teknopoint.cpp
+│           │   │   ├── IRtext.cpp
+│           │   │   ├── IRtext.h
+│           │   │   ├── IRtimer.cpp
+│           │   │   ├── IRtimer.h
+│           │   │   ├── ir_Toshiba.cpp
+│           │   │   ├── ir_Toshiba.h
+│           │   │   ├── ir_Toto.cpp
+│           │   │   ├── ir_Transcold.cpp
+│           │   │   ├── ir_Transcold.h
+│           │   │   ├── ir_Trotec.cpp
+│           │   │   ├── ir_Trotec.h
+│           │   │   ├── ir_Truma.cpp
+│           │   │   ├── ir_Truma.h
+│           │   │   ├── IRutils.cpp
+│           │   │   ├── IRutils.h
+│           │   │   ├── ir_Vestel.cpp
+│           │   │   ├── ir_Vestel.h
+│           │   │   ├── ir_Voltas.cpp
+│           │   │   ├── ir_Voltas.h
+│           │   │   ├── ir_Whirlpool.cpp
+│           │   │   ├── ir_Whirlpool.h
+│           │   │   ├── ir_Whynter.cpp
+│           │   │   ├── ir_Wowwee.cpp
+│           │   │   ├── ir_Xmp.cpp
+│           │   │   ├── ir_York.cpp
+│           │   │   ├── ir_York.h
+│           │   │   ├── ir_Zepeal.cpp
+│           │   │   └── locale
+│           │   │       ├── de-CH.h
+│           │   │       ├── de-DE.h
+│           │   │       ├── defaults.h
+│           │   │       ├── en-AU.h
+│           │   │       ├── en-IE.h
+│           │   │       ├── en-UK.h
+│           │   │       ├── en-US.h
+│           │   │       ├── es-ES.h
+│           │   │       ├── fr-FR.h
+│           │   │       ├── it-IT.h
+│           │   │       ├── nl-NL.h
+│           │   │       ├── pt-BR.h
+│           │   │       ├── README.md
+│           │   │       ├── ru-RU.h
+│           │   │       ├── sv-SE.h
+│           │   │       └── zh-CN.h
+│           │   ├── .style.yapf
+│           │   ├── SupportedProtocols.md
+│           │   ├── test
+│           │   │   ├── IRac_test.cpp
+│           │   │   ├── ir_Airton_test.cpp
+│           │   │   ├── ir_Airwell_test.cpp
+│           │   │   ├── ir_Aiwa_test.cpp
+│           │   │   ├── ir_Amcor_test.cpp
+│           │   │   ├── ir_Argo_test.cpp
+│           │   │   ├── ir_Arris_test.cpp
+│           │   │   ├── ir_Bosch_test.cpp
+│           │   │   ├── ir_Bose_test.cpp
+│           │   │   ├── ir_Carrier_test.cpp
+│           │   │   ├── ir_ClimaButler_test.cpp
+│           │   │   ├── ir_Coolix_test.cpp
+│           │   │   ├── ir_Corona_test.cpp
+│           │   │   ├── ir_Daikin_test.cpp
+│           │   │   ├── ir_Delonghi_test.cpp
+│           │   │   ├── ir_Denon_test.cpp
+│           │   │   ├── ir_Dish_test.cpp
+│           │   │   ├── ir_Doshisha_test.cpp
+│           │   │   ├── ir_Ecoclim_test.cpp
+│           │   │   ├── ir_Electra_test.cpp
+│           │   │   ├── ir_EliteScreens_test.cpp
+│           │   │   ├── ir_Epson_test.cpp
+│           │   │   ├── ir_Fujitsu_test.cpp
+│           │   │   ├── ir_GICable_test.cpp
+│           │   │   ├── ir_GlobalCache_test.cpp
+│           │   │   ├── ir_Goodweather_test.cpp
+│           │   │   ├── ir_Gorenje_test.cpp
+│           │   │   ├── ir_Gree_test.cpp
+│           │   │   ├── ir_Haier_test.cpp
+│           │   │   ├── ir_Hitachi_test.cpp
+│           │   │   ├── ir_Inax_test.cpp
+│           │   │   ├── ir_JVC_test.cpp
+│           │   │   ├── ir_Kelon_test.cpp
+│           │   │   ├── ir_Kelvinator_test.cpp
+│           │   │   ├── ir_Lasertag_test.cpp
+│           │   │   ├── ir_Lego_test.cpp
+│           │   │   ├── ir_LG_test.cpp
+│           │   │   ├── ir_Lutron_test.cpp
+│           │   │   ├── ir_Magiquest_test.cpp
+│           │   │   ├── ir_Metz_test.cpp
+│           │   │   ├── ir_Midea_test.cpp
+│           │   │   ├── ir_Milestag2_test.cpp
+│           │   │   ├── ir_Mirage_test.cpp
+│           │   │   ├── ir_MitsubishiHeavy_test.cpp
+│           │   │   ├── ir_Mitsubishi_test.cpp
+│           │   │   ├── ir_Multibrackets_test.cpp
+│           │   │   ├── ir_MWM_test.cpp
+│           │   │   ├── ir_NEC_test.cpp
+│           │   │   ├── ir_Neoclima_test.cpp
+│           │   │   ├── ir_Nikai_test.cpp
+│           │   │   ├── ir_Panasonic_test.cpp
+│           │   │   ├── ir_Pioneer_test.cpp
+│           │   │   ├── ir_Pronto_test.cpp
+│           │   │   ├── ir_RC5_RC6_test.cpp
+│           │   │   ├── ir_RCMM_test.cpp
+│           │   │   ├── IRrecv_test.cpp
+│           │   │   ├── IRrecv_test.h
+│           │   │   ├── ir_Rhoss_test.cpp
+│           │   │   ├── ir_Samsung_test.cpp
+│           │   │   ├── ir_Sanyo_test.cpp
+│           │   │   ├── IRsend_test.cpp
+│           │   │   ├── IRsend_test.h
+│           │   │   ├── ir_Sharp_test.cpp
+│           │   │   ├── ir_Sherwood_test.cpp
+│           │   │   ├── ir_Sony_test.cpp
+│           │   │   ├── ir_Symphony_test.cpp
+│           │   │   ├── ir_Tcl_test.cpp
+│           │   │   ├── ir_Technibel_test.cpp
+│           │   │   ├── ir_Teco_test.cpp
+│           │   │   ├── ir_Teknopoint_test.cpp
+│           │   │   ├── ir_Toshiba_test.cpp
+│           │   │   ├── ir_Toto_test.cpp
+│           │   │   ├── ir_Transcold_test.cpp
+│           │   │   ├── ir_Trotec_test.cpp
+│           │   │   ├── ir_Truma_test.cpp
+│           │   │   ├── IRutils_test.cpp
+│           │   │   ├── ir_Vestel_test.cpp
+│           │   │   ├── ir_Voltas_test.cpp
+│           │   │   ├── ir_Whirlpool_test.cpp
+│           │   │   ├── ir_Whynter_test.cpp
+│           │   │   ├── ir_Wowwee_test.cpp
+│           │   │   ├── ir_Xmp_test.cpp
+│           │   │   ├── ir_York_test.cpp
+│           │   │   ├── ir_Zepeal_test.cpp
+│           │   │   ├── Makefile
+│           │   │   └── ut_utils.h
+│           │   └── tools
+│           │       ├── auto_analyse_raw_data.py
+│           │       ├── auto_analyse_raw_data_test.py
+│           │       ├── code_to_raw.cpp
+│           │       ├── code_to_raw_test.sh
+│           │       ├── extract_lib_version.sh
+│           │       ├── gc_decode.cpp
+│           │       ├── generate_irtext_h.sh
+│           │       ├── Makefile
+│           │       ├── mkkeywords
+│           │       ├── mode2_decode.cpp
+│           │       ├── RawToGlobalCache.sh
+│           │       ├── raw_to_pronto_code.py
+│           │       ├── raw_to_pronto_code_test.py
+│           │       └── scrape_supported_devices.py
+│           ├── JPEGDecoder
+│           │   ├── examples
+│           │   │   ├── Adafruit_GFX
+│           │   │   │   ├── Huzzah_Jpeg
+│           │   │   │   │   ├── Huzzah_Jpeg.ino
+│           │   │   │   │   ├── JPEG_functions.ino
+│           │   │   │   │   └── SPIFFS_functions.ino
+│           │   │   │   └── NodeMCU_Jpeg
+│           │   │   │       ├── JPEG_functions.ino
+│           │   │   │       ├── NodeMCU_Jpeg.ino
+│           │   │   │       └── SPIFFS_functions.ino
+│           │   │   ├── Arduino TFT
+│           │   │   │   └── TFT_Jpeg
+│           │   │   │       └── TFT_Jpeg.ino
+│           │   │   ├── ILI9341_due
+│           │   │   │   └── Due_SD_Jpeg
+│           │   │   │       ├── Due_SD_Jpeg.ino
+│           │   │   │       └── JPEG_functions.ino
+│           │   │   ├── MCUFRIEND_kbv
+│           │   │   │   └── jpeg_kbv
+│           │   │   │       ├── jpeg1.h
+│           │   │   │       ├── JPEG_Functions.ino
+│           │   │   │       └── jpeg_kbv.ino
+│           │   │   ├── Other libraries
+│           │   │   │   ├── Mega and Due
+│           │   │   │   │   ├── TFT_flash_jpg
+│           │   │   │   │   │   ├── jpeg1.h
+│           │   │   │   │   │   ├── jpeg2.h
+│           │   │   │   │   │   ├── jpeg3.h
+│           │   │   │   │   │   ├── jpeg4.h
+│           │   │   │   │   │   └── TFT_flash_jpg.ino
+│           │   │   │   │   └── TFT_SDcard_jpg
+│           │   │   │   │       └── TFT_SDcard_jpg.ino
+│           │   │   │   ├── NodeMCU_Jpeg_ESP
+│           │   │   │   │   ├── JPEG_functions.ino
+│           │   │   │   │   ├── NodeMCU_Jpeg_ESP.ino
+│           │   │   │   │   └── SPIFFS_functions.ino
+│           │   │   │   └── SPIFFS_Jpeg
+│           │   │   │       ├── JPEG_functions.ino
+│           │   │   │       ├── SPIFFS_functions.ino
+│           │   │   │       └── SPIFFS_Jpeg.ino
+│           │   │   └── UTFT
+│           │   │       ├── UTFT_Flash_Jpeg
+│           │   │       │   ├── jpeg1.h
+│           │   │       │   └── UTFT_Flash_Jpeg.ino
+│           │   │       └── UTFT_SD_Jpeg
+│           │   │           ├── Jpeg_utilities.ino
+│           │   │           └── UTFT_SD_Jpeg.ino
+│           │   ├── keywords.txt
+│           │   ├── library.properties
+│           │   ├── license.txt
+│           │   ├── .piopm
+│           │   ├── README.md
+│           │   └── src
+│           │       ├── JPEGDecoder.cpp
+│           │       ├── JPEGDecoder.h
+│           │       ├── picojpeg.c
+│           │       ├── picojpeg.h
+│           │       └── User_Config.h
+│           ├── LibSSH-ESP32
+│           │   ├── BSD
+│           │   ├── CMakeLists.txt
+│           │   ├── COPYING
+│           │   ├── examples
+│           │   │   ├── exec
+│           │   │   │   ├── examples_common.h
+│           │   │   │   └── exec.ino
+│           │   │   ├── FirmwareOTAClientSCP
+│           │   │   │   ├── examples_common.h
+│           │   │   │   └── FirmwareOTAClientSCP.ino
+│           │   │   ├── keygen2
+│           │   │   │   ├── argp-ba.c
+│           │   │   │   ├── argp.c
+│           │   │   │   ├── argp-eexst.c
+│           │   │   │   ├── argp-fmtstream.c
+│           │   │   │   ├── argp-fmtstream-esp32-port.c
+│           │   │   │   ├── argp-fmtstream.h
+│           │   │   │   ├── argp.h
+│           │   │   │   ├── argp-help.c
+│           │   │   │   ├── argp-namefrob.h
+│           │   │   │   ├── argp-parse.c
+│           │   │   │   ├── argp-pv.c
+│           │   │   │   ├── argp-pvh.c
+│           │   │   │   ├── argp-xinl.c
+│           │   │   │   └── keygen2.ino
+│           │   │   ├── libssh_scp
+│           │   │   │   ├── examples_common.h
+│           │   │   │   └── libssh_scp.ino
+│           │   │   └── samplesshd-kbdint
+│           │   │       ├── argp-ba.c
+│           │   │       ├── argp.c
+│           │   │       ├── argp-eexst.c
+│           │   │       ├── argp-fmtstream.c
+│           │   │       ├── argp-fmtstream-esp32-port.c
+│           │   │       ├── argp-fmtstream.h
+│           │   │       ├── argp.h
+│           │   │       ├── argp-help.c
+│           │   │       ├── argp-namefrob.h
+│           │   │       ├── argp-parse.c
+│           │   │       ├── argp-pv.c
+│           │   │       ├── argp-pvh.c
+│           │   │       ├── argp-xinl.c
+│           │   │       └── samplesshd-kbdint.ino
+│           │   ├── keywords.txt
+│           │   ├── library.properties
+│           │   ├── .piopm
+│           │   ├── README.md
+│           │   └── src
+│           │       ├── agent.c
+│           │       ├── auth.c
+│           │       ├── base64.c
+│           │       ├── bignum.c
+│           │       ├── bind.c
+│           │       ├── bind_config.c
+│           │       ├── buffer.c
+│           │       ├── callbacks.c
+│           │       ├── channels.c
+│           │       ├── client.c
+│           │       ├── config.c
+│           │       ├── config_parser.c
+│           │       ├── connect.c
+│           │       ├── crypto_common.c
+│           │       ├── curve25519.c
+│           │       ├── dh.c
+│           │       ├── dh-gex.c
+│           │       ├── dh_key.c
+│           │       ├── ecdh.c
+│           │       ├── ecdh_mbedcrypto.c
+│           │       ├── error.c
+│           │       ├── external
+│           │       │   ├── bcrypt_pbkdf.c
+│           │       │   ├── blowfish.c
+│           │       │   ├── curve25519_ref.c
+│           │       │   ├── ed25519.c
+│           │       │   ├── fe25519.c
+│           │       │   ├── ge25519_base.data
+│           │       │   ├── ge25519.c
+│           │       │   └── sc25519.c
+│           │       ├── getpass.c
+│           │       ├── getrandom_mbedcrypto.c
+│           │       ├── gzip.c
+│           │       ├── init.c
+│           │       ├── kdf.c
+│           │       ├── kex.c
+│           │       ├── knownhosts.c
+│           │       ├── libmbedcrypto.c
+│           │       ├── libssh
+│           │       │   ├── agent.h
+│           │       │   ├── auth.h
+│           │       │   ├── bignum.h
+│           │       │   ├── bind.h
+│           │       │   ├── blf.h
+│           │       │   ├── buffer.h
+│           │       │   ├── bytearray.h
+│           │       │   ├── callbacks.h
+│           │       │   ├── chacha20-poly1305-common.h
+│           │       │   ├── channels.h
+│           │       │   ├── config_parser.h
+│           │       │   ├── crypto.h
+│           │       │   ├── curve25519.h
+│           │       │   ├── dh-gex.h
+│           │       │   ├── dh.h
+│           │       │   ├── ecdh.h
+│           │       │   ├── ed25519.h
+│           │       │   ├── fe25519.h
+│           │       │   ├── ge25519.h
+│           │       │   ├── gssapi.h
+│           │       │   ├── kex.h
+│           │       │   ├── keys.h
+│           │       │   ├── knownhosts.h
+│           │       │   ├── legacy.h
+│           │       │   ├── libcrypto.h
+│           │       │   ├── libgcrypt.h
+│           │       │   ├── libmbedcrypto.h
+│           │       │   ├── libssh_esp32_bind_config.h
+│           │       │   ├── libssh_esp32_config.h
+│           │       │   ├── libssh.h
+│           │       │   ├── libssh_version.h
+│           │       │   ├── messages.h
+│           │       │   ├── misc.h
+│           │       │   ├── options.h
+│           │       │   ├── packet.h
+│           │       │   ├── pcap.h
+│           │       │   ├── pki.h
+│           │       │   ├── pki_priv.h
+│           │       │   ├── poll.h
+│           │       │   ├── poly1305.h
+│           │       │   ├── priv.h
+│           │       │   ├── sc25519.h
+│           │       │   ├── scp.h
+│           │       │   ├── server.h
+│           │       │   ├── session.h
+│           │       │   ├── socket.h
+│           │       │   ├── ssh2.h
+│           │       │   ├── string.h
+│           │       │   ├── threads.h
+│           │       │   ├── token.h
+│           │       │   └── wrapper.h
+│           │       ├── libssh_esp32_compat.c
+│           │       ├── libssh_esp32_compat.h
+│           │       ├── libssh_esp32_config.h
+│           │       ├── libssh_esp32.cpp
+│           │       ├── libssh_esp32.h
+│           │       ├── libssh_esp32_info.h
+│           │       ├── log.c
+│           │       ├── match.c
+│           │       ├── mbedcrypto-compat.h
+│           │       ├── mbedcrypto_missing.c
+│           │       ├── md_mbedcrypto.c
+│           │       ├── messages.c
+│           │       ├── misc.c
+│           │       ├── options.c
+│           │       ├── packet.c
+│           │       ├── packet_cb.c
+│           │       ├── packet_crypt.c
+│           │       ├── pki.c
+│           │       ├── pki_container_openssh.c
+│           │       ├── pki_ed25519.c
+│           │       ├── pki_ed25519_common.c
+│           │       ├── pki_mbedcrypto.c
+│           │       ├── poll.c
+│           │       ├── scp.c
+│           │       ├── server.c
+│           │       ├── session.c
+│           │       ├── socket.c
+│           │       ├── string.c
+│           │       ├── threads
+│           │       │   ├── mbedtls.c
+│           │       │   └── noop.c
+│           │       ├── threads.c
+│           │       ├── token.c
+│           │       ├── ttyopts.c
+│           │       └── wrapper.c
+│           ├── NimBLE-Arduino
+│           │   ├── CHANGELOG.md
+│           │   ├── examples
+│           │   │   ├── BLE_Beacon_Scanner
+│           │   │   │   ├── BLE_Beacon_Scanner.ino
+│           │   │   │   └── BLE_Beacon_Scanner.md
+│           │   │   ├── BLE_EddystoneTLM_Beacon
+│           │   │   │   ├── BLE_EddystoneTLM_Beacon.ino
+│           │   │   │   └── BLE_EddystoneTLM_Beacon.md
+│           │   │   ├── BLE_EddystoneURL_Beacon
+│           │   │   │   ├── BLE_EddystoneURL_Beacon.ino
+│           │   │   │   └── BLE_EddystoneURL_Beacon.md
+│           │   │   ├── Bluetooth_5
+│           │   │   │   ├── NimBLE_extended_client
+│           │   │   │   │   └── NimBLE_extended_client.ino
+│           │   │   │   ├── NimBLE_extended_server
+│           │   │   │   │   └── NimBLE_extended_server.ino
+│           │   │   │   └── NimBLE_multi_advertiser
+│           │   │   │       └── NimBLE_multi_advertiser.ino
+│           │   │   ├── NimBLE_Client
+│           │   │   │   └── NimBLE_Client.ino
+│           │   │   ├── NimBLE_Scan_Continuous
+│           │   │   │   └── NimBLE_Scan_Continuous.ino
+│           │   │   ├── NimBLE_Scan_Whitelist
+│           │   │   │   └── NimBLE_Scan_whitelist.ino
+│           │   │   ├── NimBLE_Secure_Client
+│           │   │   │   └── NimBLE_Secure_Client.ino
+│           │   │   ├── NimBLE_Secure_Server
+│           │   │   │   └── NimBLE_Secure_Server.ino
+│           │   │   ├── NimBLE_Server
+│           │   │   │   └── NimBLE_Server.ino
+│           │   │   ├── NimBLE_Server_Whitelist
+│           │   │   │   └── NimBLE_Server_Whitelist.ino
+│           │   │   ├── NimBLE_Service_Data_Advertiser
+│           │   │   │   └── NimBLE_Service_Data_Advertiser.ino
+│           │   │   └── Refactored_original_examples
+│           │   │       ├── BLE_client
+│           │   │       │   └── BLE_client.ino
+│           │   │       ├── BLE_iBeacon
+│           │   │       │   └── BLE_iBeacon.ino
+│           │   │       ├── BLE_notify
+│           │   │       │   └── BLE_notify.ino
+│           │   │       ├── BLE_scan
+│           │   │       │   └── BLE_scan.ino
+│           │   │       ├── BLE_server
+│           │   │       │   └── BLE_server.ino
+│           │   │       ├── BLE_server_multiconnect
+│           │   │       │   └── BLE_server_multiconnect.ino
+│           │   │       ├── BLE_uart
+│           │   │       │   └── BLE_uart.ino
+│           │   │       └── BLE_write
+│           │   │           └── BLE_write.ino
+│           │   ├── .github
+│           │   │   └── workflows
+│           │   │       ├── build.yml
+│           │   │       └── release.yml
+│           │   ├── .gitignore
+│           │   ├── library.properties
+│           │   ├── LICENSE
+│           │   ├── .piopm
+│           │   ├── README.md
+│           │   └── src
+│           │       ├── HIDKeyboardTypes.h
+│           │       ├── HIDTypes.h
+│           │       ├── nimble
+│           │       │   ├── CODING_STANDARDS.md
+│           │       │   ├── console
+│           │       │   │   └── console.h
+│           │       │   ├── esp_port
+│           │       │   │   ├── esp-hci
+│           │       │   │   │   ├── include
+│           │       │   │   │   │   ├── esp_compiler.h
+│           │       │   │   │   │   └── esp_nimble_hci.h
+│           │       │   │   │   └── src
+│           │       │   │   │       └── esp_nimble_hci.c
+│           │       │   │   └── port
+│           │       │   │       ├── include
+│           │       │   │       │   ├── esp_nimble_cfg.h
+│           │       │   │       │   └── esp_nimble_mem.h
+│           │       │   │       └── src
+│           │       │   │           └── esp_nimble_mem.c
+│           │       │   ├── ext
+│           │       │   │   └── tinycrypt
+│           │       │   │       ├── AUTHORS
+│           │       │   │       ├── documentation
+│           │       │   │       │   └── tinycrypt.rst
+│           │       │   │       ├── include
+│           │       │   │       │   └── tinycrypt
+│           │       │   │       │       ├── aes.h
+│           │       │   │       │       ├── cbc_mode.h
+│           │       │   │       │       ├── ccm_mode.h
+│           │       │   │       │       ├── cmac_mode.h
+│           │       │   │       │       ├── constants.h
+│           │       │   │       │       ├── ctr_mode.h
+│           │       │   │       │       ├── ctr_prng.h
+│           │       │   │       │       ├── ecc_dh.h
+│           │       │   │       │       ├── ecc_dsa.h
+│           │       │   │       │       ├── ecc.h
+│           │       │   │       │       ├── ecc_platform_specific.h
+│           │       │   │       │       ├── hmac.h
+│           │       │   │       │       ├── hmac_prng.h
+│           │       │   │       │       ├── sha256.h
+│           │       │   │       │       └── utils.h
+│           │       │   │       ├── LICENSE
+│           │       │   │       ├── README
+│           │       │   │       ├── src
+│           │       │   │       │   ├── aes_decrypt.c
+│           │       │   │       │   ├── aes_encrypt.c
+│           │       │   │       │   ├── cbc_mode.c
+│           │       │   │       │   ├── ccm_mode.c
+│           │       │   │       │   ├── cmac_mode.c
+│           │       │   │       │   ├── ctr_mode.c
+│           │       │   │       │   ├── ctr_prng.c
+│           │       │   │       │   ├── ecc.c
+│           │       │   │       │   ├── ecc_dh.c
+│           │       │   │       │   ├── ecc_dsa.c
+│           │       │   │       │   ├── ecc_platform_specific.c
+│           │       │   │       │   ├── hmac.c
+│           │       │   │       │   ├── hmac_prng.c
+│           │       │   │       │   ├── sha256.c
+│           │       │   │       │   └── utils.c
+│           │       │   │       └── VERSION
+│           │       │   ├── LICENSE
+│           │       │   ├── nimble
+│           │       │   │   ├── controller
+│           │       │   │   │   ├── include
+│           │       │   │   │   │   └── controller
+│           │       │   │   │   │       ├── ble_hw.h
+│           │       │   │   │   │       ├── ble_ll_adv.h
+│           │       │   │   │   │       ├── ble_ll_conn.h
+│           │       │   │   │   │       ├── ble_ll_ctrl.h
+│           │       │   │   │   │       ├── ble_ll.h
+│           │       │   │   │   │       ├── ble_ll_hci.h
+│           │       │   │   │   │       ├── ble_ll_iso.h
+│           │       │   │   │   │       ├── ble_ll_resolv.h
+│           │       │   │   │   │       ├── ble_ll_rfmgmt.h
+│           │       │   │   │   │       ├── ble_ll_scan.h
+│           │       │   │   │   │       ├── ble_ll_sched.h
+│           │       │   │   │   │       ├── ble_ll_sync.h
+│           │       │   │   │   │       ├── ble_ll_test.h
+│           │       │   │   │   │       ├── ble_ll_trace.h
+│           │       │   │   │   │       ├── ble_ll_utils.h
+│           │       │   │   │   │       ├── ble_ll_whitelist.h
+│           │       │   │   │   │       ├── ble_phy.h
+│           │       │   │   │   │       └── ble_phy_trace.h
+│           │       │   │   │   └── src
+│           │       │   │   │       ├── ble_ll_adv.c
+│           │       │   │   │       ├── ble_ll.c
+│           │       │   │   │       ├── ble_ll_conn.c
+│           │       │   │   │       ├── ble_ll_conn_hci.c
+│           │       │   │   │       ├── ble_ll_conn_priv.h
+│           │       │   │   │       ├── ble_ll_ctrl.c
+│           │       │   │   │       ├── ble_ll_dtm.c
+│           │       │   │   │       ├── ble_ll_dtm_priv.h
+│           │       │   │   │       ├── ble_ll_hci.c
+│           │       │   │   │       ├── ble_ll_hci_ev.c
+│           │       │   │   │       ├── ble_ll_iso.c
+│           │       │   │   │       ├── ble_ll_priv.h
+│           │       │   │   │       ├── ble_ll_rand.c
+│           │       │   │   │       ├── ble_ll_resolv.c
+│           │       │   │   │       ├── ble_ll_rfmgmt.c
+│           │       │   │   │       ├── ble_ll_scan.c
+│           │       │   │   │       ├── ble_ll_sched.c
+│           │       │   │   │       ├── ble_ll_supp_cmd.c
+│           │       │   │   │       ├── ble_ll_sync.c
+│           │       │   │   │       ├── ble_ll_trace.c
+│           │       │   │   │       ├── ble_ll_utils.c
+│           │       │   │   │       └── ble_ll_whitelist.c
+│           │       │   │   ├── drivers
+│           │       │   │   │   ├── nrf51
+│           │       │   │   │   │   ├── include
+│           │       │   │   │   │   │   └── ble
+│           │       │   │   │   │   │       └── xcvr.h
+│           │       │   │   │   │   └── src
+│           │       │   │   │   │       ├── ble_hw.c
+│           │       │   │   │   │       └── ble_phy.c
+│           │       │   │   │   └── nrf52
+│           │       │   │   │       ├── include
+│           │       │   │   │       │   └── ble
+│           │       │   │   │       │       └── xcvr.h
+│           │       │   │   │       └── src
+│           │       │   │   │           ├── ble_hw.c
+│           │       │   │   │           ├── ble_phy.c
+│           │       │   │   │           └── ble_phy_trace.c
+│           │       │   │   ├── host
+│           │       │   │   │   ├── include
+│           │       │   │   │   │   └── host
+│           │       │   │   │   │       ├── ble_att.h
+│           │       │   │   │   │       ├── ble_eddystone.h
+│           │       │   │   │   │       ├── ble_gap.h
+│           │       │   │   │   │       ├── ble_gatt.h
+│           │       │   │   │   │       ├── ble_hs_adv.h
+│           │       │   │   │   │       ├── ble_hs.h
+│           │       │   │   │   │       ├── ble_hs_hci.h
+│           │       │   │   │   │       ├── ble_hs_id.h
+│           │       │   │   │   │       ├── ble_hs_log.h
+│           │       │   │   │   │       ├── ble_hs_mbuf.h
+│           │       │   │   │   │       ├── ble_hs_pvcy.h
+│           │       │   │   │   │       ├── ble_hs_stop.h
+│           │       │   │   │   │       ├── ble_ibeacon.h
+│           │       │   │   │   │       ├── ble_l2cap.h
+│           │       │   │   │   │       ├── ble_monitor.h
+│           │       │   │   │   │       ├── ble_sm.h
+│           │       │   │   │   │       ├── ble_store.h
+│           │       │   │   │   │       └── ble_uuid.h
+│           │       │   │   │   ├── mesh
+│           │       │   │   │   │   ├── include
+│           │       │   │   │   │   │   └── mesh
+│           │       │   │   │   │   │       ├── access.h
+│           │       │   │   │   │   │       ├── atomic.h
+│           │       │   │   │   │   │       ├── cdb.h
+│           │       │   │   │   │   │       ├── cfg_cli.h
+│           │       │   │   │   │   │       ├── cfg.h
+│           │       │   │   │   │   │       ├── cfg_srv.h
+│           │       │   │   │   │   │       ├── glue.h
+│           │       │   │   │   │   │       ├── health_cli.h
+│           │       │   │   │   │   │       ├── health_srv.h
+│           │       │   │   │   │   │       ├── heartbeat.h
+│           │       │   │   │   │   │       ├── main.h
+│           │       │   │   │   │   │       ├── mesh.h
+│           │       │   │   │   │   │       ├── model_cli.h
+│           │       │   │   │   │   │       ├── model_srv.h
+│           │       │   │   │   │   │       ├── porting.h
+│           │       │   │   │   │   │       ├── proxy.h
+│           │       │   │   │   │   │       ├── slist.h
+│           │       │   │   │   │   │       └── testing.h
+│           │       │   │   │   │   └── src
+│           │       │   │   │   │       ├── access.c
+│           │       │   │   │   │       ├── access.h
+│           │       │   │   │   │       ├── adv.c
+│           │       │   │   │   │       ├── adv.h
+│           │       │   │   │   │       ├── aes-ccm.c
+│           │       │   │   │   │       ├── app_keys.c
+│           │       │   │   │   │       ├── app_keys.h
+│           │       │   │   │   │       ├── atomic.h
+│           │       │   │   │   │       ├── beacon.c
+│           │       │   │   │   │       ├── beacon.h
+│           │       │   │   │   │       ├── cdb.c
+│           │       │   │   │   │       ├── cfg.c
+│           │       │   │   │   │       ├── cfg_cli.c
+│           │       │   │   │   │       ├── cfg.h
+│           │       │   │   │   │       ├── cfg_srv.c
+│           │       │   │   │   │       ├── crypto.c
+│           │       │   │   │   │       ├── crypto.h
+│           │       │   │   │   │       ├── foundation.h
+│           │       │   │   │   │       ├── friend.c
+│           │       │   │   │   │       ├── friend.h
+│           │       │   │   │   │       ├── glue.c
+│           │       │   │   │   │       ├── health_cli.c
+│           │       │   │   │   │       ├── health_srv.c
+│           │       │   │   │   │       ├── heartbeat.c
+│           │       │   │   │   │       ├── heartbeat.h
+│           │       │   │   │   │       ├── light_model.c
+│           │       │   │   │   │       ├── light_model.h
+│           │       │   │   │   │       ├── lpn.c
+│           │       │   │   │   │       ├── lpn.h
+│           │       │   │   │   │       ├── mesh.c
+│           │       │   │   │   │       ├── mesh_priv.h
+│           │       │   │   │   │       ├── model_cli.c
+│           │       │   │   │   │       ├── model_srv.c
+│           │       │   │   │   │       ├── net.c
+│           │       │   │   │   │       ├── net.h
+│           │       │   │   │   │       ├── nodes.c
+│           │       │   │   │   │       ├── nodes.h
+│           │       │   │   │   │       ├── pb_adv.c
+│           │       │   │   │   │       ├── pb_gatt.c
+│           │       │   │   │   │       ├── prov_bearer.h
+│           │       │   │   │   │       ├── prov.c
+│           │       │   │   │   │       ├── prov_device.c
+│           │       │   │   │   │       ├── prov.h
+│           │       │   │   │   │       ├── provisioner.c
+│           │       │   │   │   │       ├── provisioner.h
+│           │       │   │   │   │       ├── proxy.c
+│           │       │   │   │   │       ├── proxy.h
+│           │       │   │   │   │       ├── rpl.c
+│           │       │   │   │   │       ├── rpl.h
+│           │       │   │   │   │       ├── settings.c
+│           │       │   │   │   │       ├── settings.h
+│           │       │   │   │   │       ├── shell.c
+│           │       │   │   │   │       ├── shell.h
+│           │       │   │   │   │       ├── subnet.c
+│           │       │   │   │   │       ├── subnet.h
+│           │       │   │   │   │       ├── transport.c
+│           │       │   │   │   │       └── transport.h
+│           │       │   │   │   ├── services
+│           │       │   │   │   │   ├── ans
+│           │       │   │   │   │   │   ├── include
+│           │       │   │   │   │   │   │   └── services
+│           │       │   │   │   │   │   │       └── ans
+│           │       │   │   │   │   │   │           └── ble_svc_ans.h
+│           │       │   │   │   │   │   └── src
+│           │       │   │   │   │   │       └── ble_svc_ans.c
+│           │       │   │   │   │   ├── bas
+│           │       │   │   │   │   │   ├── include
+│           │       │   │   │   │   │   │   └── services
+│           │       │   │   │   │   │   │       └── bas
+│           │       │   │   │   │   │   │           └── ble_svc_bas.h
+│           │       │   │   │   │   │   └── src
+│           │       │   │   │   │   │       └── ble_svc_bas.c
+│           │       │   │   │   │   ├── dis
+│           │       │   │   │   │   │   ├── include
+│           │       │   │   │   │   │   │   └── services
+│           │       │   │   │   │   │   │       └── dis
+│           │       │   │   │   │   │   │           └── ble_svc_dis.h
+│           │       │   │   │   │   │   └── src
+│           │       │   │   │   │   │       └── ble_svc_dis.c
+│           │       │   │   │   │   ├── gap
+│           │       │   │   │   │   │   ├── include
+│           │       │   │   │   │   │   │   └── services
+│           │       │   │   │   │   │   │       └── gap
+│           │       │   │   │   │   │   │           └── ble_svc_gap.h
+│           │       │   │   │   │   │   └── src
+│           │       │   │   │   │   │       └── ble_svc_gap.c
+│           │       │   │   │   │   ├── gatt
+│           │       │   │   │   │   │   ├── include
+│           │       │   │   │   │   │   │   └── services
+│           │       │   │   │   │   │   │       └── gatt
+│           │       │   │   │   │   │   │           └── ble_svc_gatt.h
+│           │       │   │   │   │   │   └── src
+│           │       │   │   │   │   │       └── ble_svc_gatt.c
+│           │       │   │   │   │   ├── ias
+│           │       │   │   │   │   │   ├── include
+│           │       │   │   │   │   │   │   └── services
+│           │       │   │   │   │   │   │       └── ias
+│           │       │   │   │   │   │   │           └── ble_svc_ias.h
+│           │       │   │   │   │   │   └── src
+│           │       │   │   │   │   │       └── ble_svc_ias.c
+│           │       │   │   │   │   ├── ipss
+│           │       │   │   │   │   │   ├── include
+│           │       │   │   │   │   │   │   └── services
+│           │       │   │   │   │   │   │       └── ipss
+│           │       │   │   │   │   │   │           └── ble_svc_ipss.h
+│           │       │   │   │   │   │   └── src
+│           │       │   │   │   │   │       └── ble_svc_ipss.c
+│           │       │   │   │   │   └── lls
+│           │       │   │   │   │       ├── include
+│           │       │   │   │   │       │   └── services
+│           │       │   │   │   │       │       └── lls
+│           │       │   │   │   │       │           └── ble_svc_lls.h
+│           │       │   │   │   │       └── src
+│           │       │   │   │   │           └── ble_svc_lls.c
+│           │       │   │   │   ├── src
+│           │       │   │   │   │   ├── ble_att.c
+│           │       │   │   │   │   ├── ble_att_clt.c
+│           │       │   │   │   │   ├── ble_att_cmd.c
+│           │       │   │   │   │   ├── ble_att_cmd_priv.h
+│           │       │   │   │   │   ├── ble_att_priv.h
+│           │       │   │   │   │   ├── ble_att_svr.c
+│           │       │   │   │   │   ├── ble_eddystone.c
+│           │       │   │   │   │   ├── ble_gap.c
+│           │       │   │   │   │   ├── ble_gap_priv.h
+│           │       │   │   │   │   ├── ble_gattc.c
+│           │       │   │   │   │   ├── ble_gatt_priv.h
+│           │       │   │   │   │   ├── ble_gatts.c
+│           │       │   │   │   │   ├── ble_gatts_lcl.c
+│           │       │   │   │   │   ├── ble_hs_adv.c
+│           │       │   │   │   │   ├── ble_hs_adv_priv.h
+│           │       │   │   │   │   ├── ble_hs_atomic.c
+│           │       │   │   │   │   ├── ble_hs_atomic_priv.h
+│           │       │   │   │   │   ├── ble_hs.c
+│           │       │   │   │   │   ├── ble_hs_cfg.c
+│           │       │   │   │   │   ├── ble_hs_conn.c
+│           │       │   │   │   │   ├── ble_hs_conn_priv.h
+│           │       │   │   │   │   ├── ble_hs_flow.c
+│           │       │   │   │   │   ├── ble_hs_flow_priv.h
+│           │       │   │   │   │   ├── ble_hs_hci.c
+│           │       │   │   │   │   ├── ble_hs_hci_cmd.c
+│           │       │   │   │   │   ├── ble_hs_hci_evt.c
+│           │       │   │   │   │   ├── ble_hs_hci_priv.h
+│           │       │   │   │   │   ├── ble_hs_hci_util.c
+│           │       │   │   │   │   ├── ble_hs_id.c
+│           │       │   │   │   │   ├── ble_hs_id_priv.h
+│           │       │   │   │   │   ├── ble_hs_log.c
+│           │       │   │   │   │   ├── ble_hs_mbuf.c
+│           │       │   │   │   │   ├── ble_hs_mbuf_priv.h
+│           │       │   │   │   │   ├── ble_hs_misc.c
+│           │       │   │   │   │   ├── ble_hs_mqueue.c
+│           │       │   │   │   │   ├── ble_hs_periodic_sync.c
+│           │       │   │   │   │   ├── ble_hs_periodic_sync_priv.h
+│           │       │   │   │   │   ├── ble_hs_priv.h
+│           │       │   │   │   │   ├── ble_hs_pvcy.c
+│           │       │   │   │   │   ├── ble_hs_pvcy_priv.h
+│           │       │   │   │   │   ├── ble_hs_resolv.c
+│           │       │   │   │   │   ├── ble_hs_resolv_priv.h
+│           │       │   │   │   │   ├── ble_hs_shutdown.c
+│           │       │   │   │   │   ├── ble_hs_startup.c
+│           │       │   │   │   │   ├── ble_hs_startup_priv.h
+│           │       │   │   │   │   ├── ble_hs_stop.c
+│           │       │   │   │   │   ├── ble_ibeacon.c
+│           │       │   │   │   │   ├── ble_l2cap.c
+│           │       │   │   │   │   ├── ble_l2cap_coc.c
+│           │       │   │   │   │   ├── ble_l2cap_coc_priv.h
+│           │       │   │   │   │   ├── ble_l2cap_priv.h
+│           │       │   │   │   │   ├── ble_l2cap_sig.c
+│           │       │   │   │   │   ├── ble_l2cap_sig_cmd.c
+│           │       │   │   │   │   ├── ble_l2cap_sig_priv.h
+│           │       │   │   │   │   ├── ble_monitor.c
+│           │       │   │   │   │   ├── ble_monitor_priv.h
+│           │       │   │   │   │   ├── ble_sm_alg.c
+│           │       │   │   │   │   ├── ble_sm.c
+│           │       │   │   │   │   ├── ble_sm_cmd.c
+│           │       │   │   │   │   ├── ble_sm_lgcy.c
+│           │       │   │   │   │   ├── ble_sm_priv.h
+│           │       │   │   │   │   ├── ble_sm_sc.c
+│           │       │   │   │   │   ├── ble_store.c
+│           │       │   │   │   │   ├── ble_store_util.c
+│           │       │   │   │   │   ├── ble_uuid.c
+│           │       │   │   │   │   └── ble_uuid_priv.h
+│           │       │   │   │   ├── store
+│           │       │   │   │   │   └── config
+│           │       │   │   │   │       ├── include
+│           │       │   │   │   │       │   └── store
+│           │       │   │   │   │       │       └── config
+│           │       │   │   │   │       │           └── ble_store_config.h
+│           │       │   │   │   │       └── src
+│           │       │   │   │   │           ├── ble_store_config.c
+│           │       │   │   │   │           ├── ble_store_config_conf.c
+│           │       │   │   │   │           ├── ble_store_config_priv.h
+│           │       │   │   │   │           └── ble_store_nvs.c
+│           │       │   │   │   └── util
+│           │       │   │   │       ├── include
+│           │       │   │   │       │   └── host
+│           │       │   │   │       │       └── util
+│           │       │   │   │       │           └── util.h
+│           │       │   │   │       └── src
+│           │       │   │   │           └── addr.c
+│           │       │   │   ├── include
+│           │       │   │   │   └── nimble
+│           │       │   │   │       ├── ble.h
+│           │       │   │   │       ├── ble_hci_trans.h
+│           │       │   │   │       ├── hci_common.h
+│           │       │   │   │       ├── nimble_npl.h
+│           │       │   │   │       ├── nimble_opt_auto.h
+│           │       │   │   │       └── nimble_opt.h
+│           │       │   │   └── transport
+│           │       │   │       └── ram
+│           │       │   │           ├── include
+│           │       │   │           │   └── transport
+│           │       │   │           │       └── ram
+│           │       │   │           │           └── ble_hci_ram.h
+│           │       │   │           └── src
+│           │       │   │               └── ble_hci_ram.c
+│           │       │   ├── NOTICE
+│           │       │   ├── porting
+│           │       │   │   ├── nimble
+│           │       │   │   │   ├── include
+│           │       │   │   │   │   ├── hal
+│           │       │   │   │   │   │   └── hal_timer.h
+│           │       │   │   │   │   ├── log
+│           │       │   │   │   │   │   └── log.h
+│           │       │   │   │   │   ├── logcfg
+│           │       │   │   │   │   │   └── logcfg.h
+│           │       │   │   │   │   ├── log_common
+│           │       │   │   │   │   │   ├── ignore.h
+│           │       │   │   │   │   │   └── log_common.h
+│           │       │   │   │   │   ├── mem
+│           │       │   │   │   │   │   └── mem.h
+│           │       │   │   │   │   ├── modlog
+│           │       │   │   │   │   │   └── modlog.h
+│           │       │   │   │   │   ├── nimble
+│           │       │   │   │   │   │   └── nimble_port.h
+│           │       │   │   │   │   ├── os
+│           │       │   │   │   │   │   ├── endian.h
+│           │       │   │   │   │   │   ├── os_cputime.h
+│           │       │   │   │   │   │   ├── os_error.h
+│           │       │   │   │   │   │   ├── os.h
+│           │       │   │   │   │   │   ├── os_mbuf.h
+│           │       │   │   │   │   │   ├── os_mempool.h
+│           │       │   │   │   │   │   ├── os_trace_api.h
+│           │       │   │   │   │   │   ├── queue.h
+│           │       │   │   │   │   │   └── util.h
+│           │       │   │   │   │   ├── stats
+│           │       │   │   │   │   │   └── stats.h
+│           │       │   │   │   │   ├── syscfg
+│           │       │   │   │   │   │   └── syscfg.h
+│           │       │   │   │   │   ├── sysflash
+│           │       │   │   │   │   │   └── sysflash.h
+│           │       │   │   │   │   └── sysinit
+│           │       │   │   │   │       └── sysinit.h
+│           │       │   │   │   └── src
+│           │       │   │   │       ├── endian.c
+│           │       │   │   │       ├── hal_timer.c
+│           │       │   │   │       ├── hal_uart.c
+│           │       │   │   │       ├── mem.c
+│           │       │   │   │       ├── nimble_port.c
+│           │       │   │   │       ├── os_cputime.c
+│           │       │   │   │       ├── os_cputime_pwr2.c
+│           │       │   │   │       ├── os_mbuf.c
+│           │       │   │   │       ├── os_mempool.c
+│           │       │   │   │       └── os_msys_init.c
+│           │       │   │   └── npl
+│           │       │   │       └── freertos
+│           │       │   │           ├── include
+│           │       │   │           │   └── nimble
+│           │       │   │           │       ├── nimble_npl_os.h
+│           │       │   │           │       ├── nimble_port_freertos.h
+│           │       │   │           │       └── npl_freertos.h
+│           │       │   │           └── src
+│           │       │   │               ├── nimble_port_freertos.c
+│           │       │   │               └── npl_os_freertos.c
+│           │       │   ├── README.md
+│           │       │   └── RELEASE_NOTES.md
+│           │       ├── NimBLE2904.cpp
+│           │       ├── NimBLE2904.h
+│           │       ├── NimBLEAddress.cpp
+│           │       ├── NimBLEAddress.h
+│           │       ├── NimBLEAdvertisedDevice.cpp
+│           │       ├── NimBLEAdvertisedDevice.h
+│           │       ├── NimBLEAdvertising.cpp
+│           │       ├── NimBLEAdvertising.h
+│           │       ├── NimBLEAttValue.h
+│           │       ├── NimBLEBeacon.cpp
+│           │       ├── NimBLEBeacon.h
+│           │       ├── NimBLECharacteristic.cpp
+│           │       ├── NimBLECharacteristic.h
+│           │       ├── NimBLEClient.cpp
+│           │       ├── NimBLEClient.h
+│           │       ├── NimBLEConnInfo.h
+│           │       ├── NimBLEDescriptor.cpp
+│           │       ├── NimBLEDescriptor.h
+│           │       ├── NimBLEDevice.cpp
+│           │       ├── NimBLEDevice.h
+│           │       ├── NimBLEEddystoneTLM.cpp
+│           │       ├── NimBLEEddystoneTLM.h
+│           │       ├── NimBLEEddystoneURL.cpp
+│           │       ├── NimBLEEddystoneURL.h
+│           │       ├── NimBLEExtAdvertising.cpp
+│           │       ├── NimBLEExtAdvertising.h
+│           │       ├── NimBLEHIDDevice.cpp
+│           │       ├── NimBLEHIDDevice.h
+│           │       ├── NimBLELog.h
+│           │       ├── NimBLERemoteCharacteristic.cpp
+│           │       ├── NimBLERemoteCharacteristic.h
+│           │       ├── NimBLERemoteDescriptor.cpp
+│           │       ├── NimBLERemoteDescriptor.h
+│           │       ├── NimBLERemoteService.cpp
+│           │       ├── NimBLERemoteService.h
+│           │       ├── NimBLEScan.cpp
+│           │       ├── NimBLEScan.h
+│           │       ├── NimBLESecurity.cpp
+│           │       ├── NimBLESecurity.h
+│           │       ├── NimBLEServer.cpp
+│           │       ├── NimBLEServer.h
+│           │       ├── NimBLEService.cpp
+│           │       ├── NimBLEService.h
+│           │       ├── NimBLEUtils.cpp
+│           │       ├── NimBLEUtils.h
+│           │       ├── NimBLEUUID.cpp
+│           │       ├── NimBLEUUID.h
+│           │       ├── nimconfig.h
+│           │       └── nimconfig_rename.h
+│           ├── NTPClient
+│           │   ├── CHANGELOG
+│           │   ├── .codespellrc
+│           │   ├── examples
+│           │   │   ├── Advanced
+│           │   │   │   └── Advanced.ino
+│           │   │   ├── Basic
+│           │   │   │   └── Basic.ino
+│           │   │   └── IsTimeSet
+│           │   │       └── IsTimeSet.ino
+│           │   ├── .github
+│           │   │   ├── dependabot.yml
+│           │   │   └── workflows
+│           │   │       ├── check-arduino.yml
+│           │   │       ├── compile-examples.yml
+│           │   │       ├── report-size-deltas.yml
+│           │   │       ├── spell-check.yml
+│           │   │       └── sync-labels.yml
+│           │   ├── keywords.txt
+│           │   ├── library.properties
+│           │   ├── NTPClient.cpp
+│           │   ├── NTPClient.h
+│           │   ├── .piopm
+│           │   └── README.md
+│           ├── OneWire
+│           │   ├── examples
+│           │   │   ├── DS18x20_Temperature
+│           │   │   │   └── DS18x20_Temperature.ino
+│           │   │   ├── DS2408_Switch
+│           │   │   │   └── DS2408_Switch.ino
+│           │   │   └── DS250x_PROM
+│           │   │       └── DS250x_PROM.ino
+│           │   ├── keywords.txt
+│           │   ├── library.json
+│           │   ├── library.properties
+│           │   ├── OneWire.cpp
+│           │   ├── OneWire.h
+│           │   ├── .piopm
+│           │   └── util
+│           │       ├── OneWire_direct_gpio.h
+│           │       └── OneWire_direct_regtype.h
+│           ├── PCA9554
+│           │   ├── library.json
+│           │   ├── LICENSE.txt
+│           │   ├── .piopm
+│           │   ├── README.md
+│           │   └── src
+│           │       ├── PCA9554.cpp
+│           │       ├── PCA9554_defs.h
+│           │       └── PCA9554.h
+│           ├── PNGdec
+│           │   ├── examples
+│           │   │   ├── 1bpp_transparent_oled
+│           │   │   │   ├── 1bpp_transparent_oled.ino
+│           │   │   │   └── octocat_1bpp.h
+│           │   │   ├── dma_perf_boost
+│           │   │   │   └── dma_perf_boost.ino
+│           │   │   ├── png_benchmark
+│           │   │   │   ├── octocat_32bpp.h
+│           │   │   │   ├── octocat_4bpp.h
+│           │   │   │   ├── octocat_8bpp.h
+│           │   │   │   └── png_benchmark.ino
+│           │   │   ├── png_comparison
+│           │   │   │   ├── arduino_screen.h
+│           │   │   │   ├── lodepng.cpp
+│           │   │   │   ├── lodepng.h
+│           │   │   │   ├── octocat_32bpp.h
+│           │   │   │   ├── octocat_4bpp.h
+│           │   │   │   ├── octocat_optimized.h
+│           │   │   │   ├── png_comparison.ino
+│           │   │   │   ├── snoopy_128x128_4b.h
+│           │   │   │   ├── snoopy_128x128.h
+│           │   │   │   ├── stackoverflow.h
+│           │   │   │   ├── zebra.h
+│           │   │   │   ├── zoidberg_320x240_24b.h
+│           │   │   │   └── zoidberg_320x240_4b.h
+│           │   │   ├── pngdisplay_demo
+│           │   │   │   ├── octocat_small.h
+│           │   │   │   └── pngdisplay_demo.ino
+│           │   │   ├── png_transparency
+│           │   │   │   ├── octocat_4bpp.h
+│           │   │   │   └── png_transparency.ino
+│           │   │   └── sdcard_slideshow
+│           │   │       └── sdcard_slideshow.ino
+│           │   ├── .github
+│           │   │   └── ISSUE_TEMPLATE
+│           │   │       └── bug_report.md
+│           │   ├── library.properties
+│           │   ├── LICENSE
+│           │   ├── linux
+│           │   │   ├── main.cpp
+│           │   │   └── Makefile
+│           │   ├── MacOS
+│           │   │   └── PNG_Test
+│           │   │       ├── PNG_Test
+│           │   │       │   ├── .gitignore
+│           │   │       │   ├── main.cpp
+│           │   │       │   └── Makefile
+│           │   │       └── PNG_Test.xcodeproj
+│           │   │           ├── project.pbxproj
+│           │   │           ├── project.xcworkspace
+│           │   │           │   ├── contents.xcworkspacedata
+│           │   │           │   └── xcuserdata
+│           │   │           │       └── laurencebank.xcuserdatad
+│           │   │           │           └── UserInterfaceState.xcuserstate
+│           │   │           └── xcuserdata
+│           │   │               └── laurencebank.xcuserdatad
+│           │   │                   └── xcschemes
+│           │   │                       └── xcschememanagement.plist
+│           │   ├── .piopm
+│           │   ├── README.md
+│           │   ├── src
+│           │   │   ├── adler32.c
+│           │   │   ├── crc32.c
+│           │   │   ├── crc32.h
+│           │   │   ├── infback.c
+│           │   │   ├── inffast.c
+│           │   │   ├── inffast.h
+│           │   │   ├── inffixed.h
+│           │   │   ├── inflate.c
+│           │   │   ├── inflate.h
+│           │   │   ├── inftrees.c
+│           │   │   ├── inftrees.h
+│           │   │   ├── PNGdec.cpp
+│           │   │   ├── PNGdec.h
+│           │   │   ├── PNGDisplay.h
+│           │   │   ├── PNGDisplay.inl
+│           │   │   ├── png.inl
+│           │   │   ├── s3_simd_rgb565.S
+│           │   │   ├── zconf.h
+│           │   │   ├── zlib.h
+│           │   │   ├── zutil.c
+│           │   │   └── zutil.h
+│           │   └── test_images
+│           │       ├── bugpng.h
+│           │       ├── octocat_8bpp.h
+│           │       └── octocat.h
+│           ├── SimpleCLI
+│           │   ├── examples
+│           │   │   ├── BoundlessCommand
+│           │   │   │   └── BoundlessCommand.ino
+│           │   │   ├── ESP8266WebCLI
+│           │   │   │   └── ESP8266WebCLI.ino
+│           │   │   ├── HelpCommand
+│           │   │   │   └── HelpCommand.ino
+│           │   │   ├── Ping
+│           │   │   │   └── Ping.ino
+│           │   │   ├── PingWithArguments
+│           │   │   │   └── PingWithArguments.ino
+│           │   │   ├── PingWithCallbacks
+│           │   │   │   └── PingWithCallbacks.ino
+│           │   │   ├── PingWithTemplates
+│           │   │   │   └── PingWithTemplates.ino
+│           │   │   ├── SingleArgumentCommand
+│           │   │   │   └── SingleArgumentCommand.ino
+│           │   │   └── VideoExample
+│           │   │       └── VideoExample.ino
+│           │   ├── .github
+│           │   │   ├── FUNDING.yml
+│           │   │   ├── stale.yml
+│           │   │   └── workflows
+│           │   │       └── version.yml
+│           │   ├── .gitignore
+│           │   ├── keywords.txt
+│           │   ├── library.json
+│           │   ├── library.properties
+│           │   ├── LICENSE
+│           │   ├── .piopm
+│           │   ├── README.md
+│           │   └── src
+│           │       ├── Argument.cpp
+│           │       ├── Argument.h
+│           │       ├── c
+│           │       │   ├── arg.c
+│           │       │   ├── arg.h
+│           │       │   ├── arg_types.h
+│           │       │   ├── cmd.c
+│           │       │   ├── cmd_error.c
+│           │       │   ├── cmd_error.h
+│           │       │   ├── cmd_error_types.h
+│           │       │   ├── cmd.h
+│           │       │   ├── cmd_types.h
+│           │       │   ├── comparator.c
+│           │       │   ├── comparator.h
+│           │       │   ├── parser.c
+│           │       │   ├── parser.h
+│           │       │   └── parser_types.h
+│           │       ├── Command.cpp
+│           │       ├── CommandError.cpp
+│           │       ├── CommandError.h
+│           │       ├── Command.h
+│           │       ├── SimpleCLI.cpp
+│           │       ├── SimpleCLI.h
+│           │       └── StringCLI.h
+│           ├── Time
+│           │   ├── DateStrings.cpp
+│           │   ├── examples
+│           │   │   ├── Processing
+│           │   │   │   └── SyncArduinoClock
+│           │   │   │       ├── readme.txt
+│           │   │   │       └── SyncArduinoClock.pde
+│           │   │   ├── TimeArduinoDue
+│           │   │   │   └── TimeArduinoDue.ino
+│           │   │   ├── TimeGPS
+│           │   │   │   └── TimeGPS.ino
+│           │   │   ├── TimeNTP
+│           │   │   │   └── TimeNTP.ino
+│           │   │   ├── TimeNTP_ENC28J60
+│           │   │   │   └── TimeNTP_ENC28J60.ino
+│           │   │   ├── TimeNTP_ESP8266WiFi
+│           │   │   │   └── TimeNTP_ESP8266WiFi.ino
+│           │   │   ├── TimeRTC
+│           │   │   │   └── TimeRTC.ino
+│           │   │   ├── TimeRTCLog
+│           │   │   │   └── TimeRTCLog.ino
+│           │   │   ├── TimeRTCSet
+│           │   │   │   └── TimeRTCSet.ino
+│           │   │   ├── TimeSerial
+│           │   │   │   └── TimeSerial.ino
+│           │   │   ├── TimeSerialDateStrings
+│           │   │   │   └── TimeSerialDateStrings.ino
+│           │   │   └── TimeTeensy3
+│           │   │       └── TimeTeensy3.ino
+│           │   ├── keywords.txt
+│           │   ├── library.json
+│           │   ├── library.properties
+│           │   ├── .piopm
+│           │   ├── Readme.md
+│           │   ├── Time.cpp
+│           │   └── TimeLib.h
+│           ├── Timezone
+│           │   ├── CONTRIBUTING.md
+│           │   ├── examples
+│           │   │   ├── Change_TZ_1
+│           │   │   │   └── Change_TZ_1.ino
+│           │   │   ├── Change_TZ_2
+│           │   │   │   └── Change_TZ_2.ino
+│           │   │   ├── Clock
+│           │   │   │   └── Clock.ino
+│           │   │   ├── HardwareRTC
+│           │   │   │   └── HardwareRTC.ino
+│           │   │   ├── tzTest
+│           │   │   │   └── tzTest.ino
+│           │   │   ├── WorldClock
+│           │   │   │   └── WorldClock.ino
+│           │   │   └── WriteRules
+│           │   │       └── WriteRules.ino
+│           │   ├── keywords.txt
+│           │   ├── library.properties
+│           │   ├── LICENSE.md
+│           │   ├── .piopm
+│           │   ├── README.md
+│           │   └── src
+│           │       ├── Timezone.cpp
+│           │       └── Timezone.h
+│           ├── TinyGPSPlus
+│           │   ├── examples
+│           │   │   ├── BasicExample
+│           │   │   │   └── BasicExample.ino
+│           │   │   ├── DeviceExample
+│           │   │   │   └── DeviceExample.ino
+│           │   │   ├── FullExample
+│           │   │   │   └── FullExample.ino
+│           │   │   ├── KitchenSink
+│           │   │   │   └── KitchenSink.ino
+│           │   │   ├── SatElevTracker
+│           │   │   │   ├── sample_satellite_elevation_log.txt
+│           │   │   │   └── SatElevTracker.ino
+│           │   │   ├── SatelliteTracker
+│           │   │   │   └── SatelliteTracker.ino
+│           │   │   └── UsingCustomFields
+│           │   │       └── UsingCustomFields.ino
+│           │   ├── .gitignore
+│           │   ├── keywords.txt
+│           │   ├── library.json
+│           │   ├── library.properties
+│           │   ├── .piopm
+│           │   ├── README.md
+│           │   └── src
+│           │       ├── TinyGPS++.cpp
+│           │       ├── TinyGPS++.h
+│           │       └── TinyGPSPlus.h
+│           └── WireGuard-ESP32
+│               ├── examples
+│               │   ├── disconnect
+│               │   │   └── disconnect.ino
+│               │   ├── uptime_post
+│               │   │   └── uptime_post.ino
+│               │   └── uptime_udp
+│               │       └── uptime_udp.ino
+│               ├── .gitignore
+│               ├── library.properties
+│               ├── LICENSE
+│               ├── .piopm
+│               ├── README.md
+│               └── src
+│                   ├── crypto
+│                   │   └── refc
+│                   │       ├── blake2s.c
+│                   │       ├── blake2s.h
+│                   │       ├── chacha20.c
+│                   │       ├── chacha20.h
+│                   │       ├── chacha20poly1305.c
+│                   │       ├── chacha20poly1305.h
+│                   │       ├── poly1305-donna-32.h
+│                   │       ├── poly1305-donna.c
+│                   │       ├── poly1305-donna.h
+│                   │       ├── x25519.c
+│                   │       ├── x25519.h
+│                   │       └── x25519-license.txt
+│                   ├── crypto.c
+│                   ├── crypto.h
+│                   ├── wireguard.c
+│                   ├── WireGuard.cpp
+│                   ├── WireGuard-ESP32.h
+│                   ├── wireguard.h
+│                   ├── wireguardif.c
+│                   ├── wireguardif.h
+│                   ├── wireguard-platform.c
+│                   └── wireguard-platform.h
+├── platformio.ini
+├── pre_build_current_year.py
+├── README.md
+├── sd_files
+│   ├── BadUSB and BlueDucky
+│   │   ├── Bruce_t_Best.txt
+│   │   ├── Ducky-br.html
+│   │   └── Ducky-en.html
+│   ├── infrared
+│   │   ├── ACs
+│   │   │   ├── Black_and_Decker
+│   │   │   │   └── Portable.ir
+│   │   │   ├── Carrier
+│   │   │   │   └── Carrier_orlen_ac.ir
+│   │   │   ├── Electrolux
+│   │   │   │   └── Electrol_ESV09CRO_B2I.ir
+│   │   │   ├── Lennox
+│   │   │   │   └── Lennox_AC.ir
+│   │   │   ├── LG
+│   │   │   │   ├── LG_AC_2.ir
+│   │   │   │   ├── LG_AC.ir
+│   │   │   │   ├── LG_COV30332906_AC.ir
+│   │   │   │   ├── LG_LP1015WNR_AC.ir
+│   │   │   │   ├── LG_LP1417GSR_AC.ir
+│   │   │   │   ├── LG_LP1419IVSM.ir
+│   │   │   │   ├── LG_R12AWN-NB11.ir
+│   │   │   │   └── LG_SX122CL.ir
+│   │   │   ├── Midea
+│   │   │   │   ├── Midea_AC_MAW05R1WBL.ir
+│   │   │   │   ├── Midea_MP12SVKBA3RCM.ir
+│   │   │   │   ├── Midea_silent_cool_26_pro.ir
+│   │   │   │   └── Midea_WWK08CR81N.ir
+│   │   │   ├── Panasonic
+│   │   │   │   ├── Panasonic_A75C4187.ir
+│   │   │   │   ├── Panasonic_Climate_A75C2600.ir
+│   │   │   │   └── Panasonic_CWA75C4179.ir
+│   │   │   ├── Rinnai
+│   │   │   │   └── Rinnai_AC.ir
+│   │   │   ├── Samsung
+│   │   │   │   ├── Samsung_AC_AR12K.ir
+│   │   │   │   ├── Samsung_AR13TYHZCWKN.ir
+│   │   │   │   └── Samsung_Wind-Free.ir
+│   │   │   ├── Sharp
+│   │   │   │   ├── Sharp AH-A9UCD.ir
+│   │   │   │   ├── Sharp_AH_X9VEW_AC.ir
+│   │   │   │   └── Sharp_CVP10MX.ir
+│   │   │   ├── TCL
+│   │   │   │   └── Tcl.ir
+│   │   │   ├── Toshiba
+│   │   │   │   ├── Toshiba_AC.ir
+│   │   │   │   ├── Toshiba_RAS13SKV2E.ir
+│   │   │   │   └── Toshiba_RG57H4.ir
+│   │   │   └── Xiaomi
+│   │   │       └── Xiaomi_AC.ir
+│   │   ├── Consoles
+│   │   │   ├── Microsoft
+│   │   │   │   ├── Xb1_8BitDo_Media_remote_short.ir
+│   │   │   │   ├── XBOX360_Media.ir
+│   │   │   │   ├── XBox_DVD_Media_Playback_Kit.ir
+│   │   │   │   ├── Xbox.ir
+│   │   │   │   └── Xbox_One_Media_Remote.ir
+│   │   │   ├── Nintendo
+│   │   │   │   └── Gameboy
+│   │   │   │       └── Pokemon_Silver_Mystery_Gift.ir
+│   │   │   ├── Philips
+│   │   │   │   └── CDi_Commander.ir
+│   │   │   └── PlayStation
+│   │   │       └── PlayStation_2.ir
+│   │   ├── TVs
+│   │   │   ├── Android
+│   │   │   │   └── Android_TV_MXQ.ir
+│   │   │   ├── CCE
+│   │   │   │   └── CCE_RC512_Remote.ir
+│   │   │   ├── Dynex
+│   │   │   │   ├── Dynex_DX-RC01A-12.ir
+│   │   │   │   └── Dynex_EN21669D.ir
+│   │   │   ├── LG
+│   │   │   │   ├── LG_24LJ4840.ir
+│   │   │   │   ├── LG_27GR95QE_TV.ir
+│   │   │   │   ├── LG_32LF650V.ir
+│   │   │   │   ├── LG_32LN5406.ir
+│   │   │   │   ├── LG_43NANO779PA.ir
+│   │   │   │   ├── LG_48LV340H.ir
+│   │   │   │   ├── LG_4K_TV.ir
+│   │   │   │   ├── LG_55LB870V_ZA.ir
+│   │   │   │   ├── LG_55UN7300AUD.ir
+│   │   │   │   ├── LG_75UJ6470.ir
+│   │   │   │   ├── LG_AKB69680401.ir
+│   │   │   │   ├── LG_AKB72913118.ir
+│   │   │   │   ├── LG_AKB72914048.ir
+│   │   │   │   ├── LG_AKB72915206.ir
+│   │   │   │   ├── LG_AKB73275675.ir
+│   │   │   │   ├── LG_AKB75095307.ir
+│   │   │   │   ├── LG_AKB75675311.ir
+│   │   │   │   ├── LG_AKB75855501.ir
+│   │   │   │   ├── LG_C1.ir
+│   │   │   │   ├── LG_C9_magic_remote.ir
+│   │   │   │   ├── LG_Factory_Service.ir
+│   │   │   │   ├── LG_Hotel_TV_Home2.ir
+│   │   │   │   ├── LG_Hotel_tv.ir
+│   │   │   │   ├── LG.ir
+│   │   │   │   ├── LG_MKJ39170828_Service.ir
+│   │   │   │   ├── LG_MR21GC_Magic_Remote.ir
+│   │   │   │   ├── LG_OLED65C8PUA.ir
+│   │   │   │   ├── LG_TV_42LF5800.ir
+│   │   │   │   └── LG_TV_AKB75375604.ir
+│   │   │   ├── Panasonic
+│   │   │   │   ├── Panasonic_58JX800_Series.ir
+│   │   │   │   ├── Panasonic_N2QAYA_152.ir
+│   │   │   │   ├── Panasonic_N2QAYB000705.ir
+│   │   │   │   ├── Panasonic_N2QAYB000715.ir
+│   │   │   │   ├── Panasonic_N2QAYB000752_Full.ir
+│   │   │   │   ├── Panasonic_N2QAYB000752.ir
+│   │   │   │   ├── Panasonic_N2QAYB000926.ir
+│   │   │   │   ├── Panasonic_TC-P50S2.ir
+│   │   │   │   ├── Panasonic_TC-P50U1.ir
+│   │   │   │   ├── Panasonic_TH-43HS550K.ir
+│   │   │   │   ├── Panasonic_TX-40HX800B.ir
+│   │   │   │   ├── Panasonic_TX_42AS650E.ir
+│   │   │   │   ├── Panasonic_TX_43GXW584.ir
+│   │   │   │   ├── Panasonic_TX_L42E5E.ir
+│   │   │   │   ├── Panasonic_TX-P50C10E.ir
+│   │   │   │   └── Panasonic_Unknown_Full.ir
+│   │   │   ├── Philips
+│   │   │   │   ├── Philips_14PT136B00.ir
+│   │   │   │   ├── Philips_22IT_TV_Monitor.ir
+│   │   │   │   ├── Philips_32PFL4208T.ir
+│   │   │   │   ├── Philips_32PFL7403S.ir
+│   │   │   │   ├── Philips_32PFL7962D12.ir
+│   │   │   │   ├── Philips_40HFL3010T12.ir
+│   │   │   │   ├── Philips_436M6VBPAB.ir
+│   │   │   │   ├── Philips_5766_Series.ir
+│   │   │   │   ├── Philips_generic.ir
+│   │   │   │   ├── Philips_sf256.ir
+│   │   │   │   ├── Philips_TV_14PV172_08.ir
+│   │   │   │   ├── Philips_TV_48OLED806.ir
+│   │   │   │   ├── Philips_TV_7000LED_42PFL7695H.ir
+│   │   │   │   ├── Philips_TV_7956_Series.ir
+│   │   │   │   ├── PhilipsTV.ir
+│   │   │   │   ├── Philips_TV_Universal.ir
+│   │   │   │   └── Philips_XXPFL9955H.ir
+│   │   │   ├── RCA
+│   │   │   │   ├── RCA_24_Roku.ir
+│   │   │   │   ├── RCA_CRK50A.ir
+│   │   │   │   ├── RCA_P46731AT_TV.ir
+│   │   │   │   ├── RCA_RCR314WR_ RCA313BR.ir
+│   │   │   │   ├── RCA_RLDED3258A-B.ir
+│   │   │   │   ├── RCA_RokuTV_RTR4061-B-CA.ir
+│   │   │   │   ├── RCA_RT2471_AC.ir
+│   │   │   │   └── RCA_TV_2.ir
+│   │   │   ├── Roku
+│   │   │   │   └── Roku_Standalone.ir
+│   │   │   ├── Samsung
+│   │   │   │   ├── Samsung_AA-00721A
+│   │   │   │   ├── Samsung_AA59-00443A.ir
+│   │   │   │   ├── Samsung_AA59-00580A.ir
+│   │   │   │   ├── Samsung_AA59-00741A.ir
+│   │   │   │   ├── Samsung_AA59-00786A.ir
+│   │   │   │   ├── Samsung_AA59.ir
+│   │   │   │   ├── Samsung_AA81-00243A.ir
+│   │   │   │   ├── Samsung_BN59-01081A.ir
+│   │   │   │   ├── Samsung_BN59-01175N.ir
+│   │   │   │   ├── Samsung_BN59-01178W.ir
+│   │   │   │   ├── Samsung_BN59-01180A.ir
+│   │   │   │   ├── Samsung_BN59-01198_R.ir
+│   │   │   │   ├── Samsung_BN59-01247A.ir
+│   │   │   │   ├── Samsung_BN59-01301A.ir
+│   │   │   │   ├── Samsung_BN59-01303A.ir
+│   │   │   │   ├── Samsung_BN59-01315B.ir
+│   │   │   │   ├── Samsung_BN59-01315J.ir
+│   │   │   │   ├── Samsung_BN59-01358C.ir
+│   │   │   │   ├── Samsung_BN59-01385C.ir
+│   │   │   │   ├── Samsung_BN59-01391A.ir
+│   │   │   │   ├── Samsung_BN59.ir
+│   │   │   │   ├── Samsung_Broadband_Hospitality.ir
+│   │   │   │   ├── Samsung_E6.ir
+│   │   │   │   ├── Samsung_H6300_TV.ir
+│   │   │   │   ├── Samsung_HQ24ED470AK.ir
+│   │   │   │   ├── Samsung.ir
+│   │   │   │   ├── Samsung_LE37S71B.ir
+│   │   │   │   ├── Samsung_LE40R87BD.ir
+│   │   │   │   ├── Samsung_LN46C650L1F.ir
+│   │   │   │   ├── Samsung_LW17E34C.ir
+│   │   │   │   ├── Samsung_P2770HD.ir
+│   │   │   │   ├── Samsung_QM55RA.ir
+│   │   │   │   ├── Samsung_Royal_Caribbean.ir
+│   │   │   │   ├── Samsung_Service_Menu.ir
+│   │   │   │   ├── Samsung_Smart_Remote.ir
+│   │   │   │   ├── Samsung_TV_1.ir
+│   │   │   │   ├── Samsung_TV_2.ir
+│   │   │   │   ├── Samsung_TV_Full.ir
+│   │   │   │   ├── Samsung_UE26C4000PW.ir
+│   │   │   │   ├── Samsung_UE32F4000AW.ir
+│   │   │   │   ├── Samsung_UE32F4000.ir
+│   │   │   │   ├── Samsung_UE48JU6490U.ir
+│   │   │   │   ├── Samsung_UE75TU7125K.ir
+│   │   │   │   ├── Samsung_UN32EH5000F.ir
+│   │   │   │   ├── Samsung_UN40C5000QFXZA.ir
+│   │   │   │   ├── Samsung_UN60JU6500_Discrete.ir
+│   │   │   │   ├── Samsung_UN60JU6500.ir
+│   │   │   │   └── Samsung_Unknown_Model.ir
+│   │   │   ├── Sharp
+│   │   │   │   ├── Sharp_13VT-L100.ir
+│   │   │   │   ├── Sharp_Aquos_32BG3E.ir
+│   │   │   │   ├── Sharp_Aquos_JP.ir
+│   │   │   │   ├── Sharp_g0684cesa_NES_TV.ir
+│   │   │   │   ├── Sharp_LC-42LB261U.ir
+│   │   │   │   ├── Sharp_LC-RC1-16.ir
+│   │   │   │   ├── Sharp_Roku_TV.ir
+│   │   │   │   ├── Sharp_TV2.ir
+│   │   │   │   └── Sharp_tv.ir
+│   │   │   ├── Sony
+│   │   │   │   ├── Sony_Bravia.ir
+│   │   │   │   ├── Sony_Bravia_KD-55XF80xx-49XF80xx-43XF80xx.ir
+│   │   │   │   ├── Sony_Bravia_KDL-46W905A.ir
+│   │   │   │   ├── Sony_FW_75BZ40H.ir
+│   │   │   │   ├── Sony_KD-55X80CK.ir
+│   │   │   │   ├── Sony_KD.ir
+│   │   │   │   ├── Sony_KDL-55HX850.ir
+│   │   │   │   ├── Sony_RMEA002.ir
+│   │   │   │   ├── Sony_RM_ED016.ir
+│   │   │   │   ├── Sony_RM_ED045.ir
+│   │   │   │   ├── Sony_RM-GD014.ir
+│   │   │   │   ├── Sony_RMT_TB400U.ir
+│   │   │   │   ├── Sony_RMT_TX100D.ir
+│   │   │   │   ├── Sony_RMT_TX200U.ir
+│   │   │   │   ├── Sony_RM-V310.ir
+│   │   │   │   ├── Sony_RM-YD017.ir
+│   │   │   │   ├── Sony_RM-YD018.ir
+│   │   │   │   ├── Sony_RM-YD092.ir
+│   │   │   │   ├── Sony_SFRTV5.ir
+│   │   │   │   ├── SonyTV.ir
+│   │   │   │   ├── Sony_X2182U.ir
+│   │   │   │   ├── Sony_XBR.ir
+│   │   │   │   ├── Sony_XBR_RM-TD017.ir
+│   │   │   │   └── Sony_XBR_RMT-TX200U.ir
+│   │   │   ├── TCL
+│   │   │   │   ├── TCL_32S327.ir
+│   │   │   │   ├── TCL_43S446.ir
+│   │   │   │   ├── TCL_LED49D2930.ir
+│   │   │   │   ├── TCL_Roku_TV.ir
+│   │   │   │   ├── TCL_ROKU_US.ir
+│   │   │   │   ├── TCL_UnknownModel1.ir
+│   │   │   │   ├── TCL_UnknownModel2.ir
+│   │   │   │   └── TCL_UnknownModel3.ir
+│   │   │   ├── Toshiba
+│   │   │   │   ├── Toshiba_32AV502U.ir
+│   │   │   │   ├── Toshiba_43LF421U21.ir
+│   │   │   │   ├── Toshiba_50C350LC.ir
+│   │   │   │   ├── Toshiba_CT-32F2.ir
+│   │   │   │   ├── Toshiba_Ct-8563.ir
+│   │   │   │   ├── Toshiba_CT-90325.ir
+│   │   │   │   ├── Toshiba_CT-9922.ir
+│   │   │   │   ├── Toshiba_FireTV.ir
+│   │   │   │   └── Toshiba_SE_R0305_32CV100U.ir
+│   │   │   └── Xiaomi
+│   │   │       └── Xiaomi_TV.ir
+│   │   └── Universal_TV_Remotes
+│   │       ├── EHP
+│   │       │   └── EHP_Waagen_Universal_Remote.ir
+│   │       ├── One_For_All
+│   │       │   └── OFA_8_Universal_Remote.ir
+│   │       ├── RemotesReplaced
+│   │       │   └── RemotesReplaced_RRS41.ir
+│   │       ├── Sanyo
+│   │       │   └── Sanyo_universal.ir
+│   │       ├── UNIVERSAL_POWER_OFF_DEVICES.ir
+│   │       └── User_Created
+│   │           └── UniversalSamsungFF.ir
+│   ├── interpreter
+│   │   ├── browser_bruce.js
+│   │   ├── calculator_t-embed.js
+│   │   ├── crypto-prices.js
+│   │   ├── dino_game.js
+│   │   ├── dtmf.js
+│   │   ├── Example1.js
+│   │   ├── gifs
+│   │   │   ├── half_patrick.gif
+│   │   │   ├── half_rainbow.gif
+│   │   │   ├── half_rick.gif
+│   │   │   └── half_spongebob.gif
+│   │   ├── gifs.js
+│   │   ├── highway_racer.js
+│   │   ├── ir2keys.js
+│   │   ├── ir_brute.js
+│   │   ├── M5stickcplus2_arcade-games.js
+│   │   ├── M5stickcplus2_calculator.js
+│   │   ├── pingpong.js
+│   │   ├── rf_brute.js
+│   │   ├── Snake_Cardputer.js
+│   │   ├── Snake_Stick_CoreS3.js
+│   │   ├── space_shooter.js
+│   │   ├── tamagochi.js
+│   │   └── wifi_brute.js
+│   ├── nfc
+│   │   ├── bruce_repo.rfid
+│   │   └── rickroll.rfid
+│   ├── portals
+│   │   ├── en
+│   │   │   ├── facebook.html
+│   │   │   ├── google.html
+│   │   │   ├── instagram.html
+│   │   │   ├── microsoft.html
+│   │   │   └── router_update.html
+│   │   └── pt-br
+│   │       ├── facebook.html
+│   │       ├── google.html
+│   │       ├── instagram.html
+│   │       ├── microsoft.html
+│   │       └── router_update.html
+│   ├── pwnagotchi
+│   │   └── pwngridspam.txt
+│   ├── README.md
+│   ├── reverseshell
+│   │   └── README.md
+│   ├── themes
+│   │   ├── example
+│   │   │   ├── Pirata_BW_jpg.zip
+│   │   │   ├── Pirata_png.zip
+│   │   │   ├── README.md
+│   │   │   └── Sharky.zip
+│   │   ├── README.md
+│   │   └── Theme_Builder.html
+│   └── wifi
+│       └── evil portal
+│           └── readme.md
+├── src
+│   ├── core
+│   │   ├── config.cpp
+│   │   ├── config.h
+│   │   ├── configPins.cpp
+│   │   ├── configPins.h
+│   │   ├── connect
+│   │   │   ├── esp_connection.cpp
+│   │   │   ├── esp_connection.h
+│   │   │   ├── file_sharing.cpp
+│   │   │   ├── file_sharing.h
+│   │   │   ├── serial_commands.cpp
+│   │   │   └── serial_commands.h
+│   │   ├── display.cpp
+│   │   ├── display.h
+│   │   ├── i2c_finder.cpp
+│   │   ├── i2c_finder.h
+│   │   ├── led_control.cpp
+│   │   ├── led_control.h
+│   │   ├── main_menu.cpp
+│   │   ├── main_menu.h
+│   │   ├── massStorage.cpp
+│   │   ├── massStorage.h
+│   │   ├── menu_items
+│   │   │   ├── BleMenu.cpp
+│   │   │   ├── BleMenu.h
+│   │   │   ├── ClockMenu.cpp
+│   │   │   ├── ClockMenu.h
+│   │   │   ├── ConfigMenu.cpp
+│   │   │   ├── ConfigMenu.h
+│   │   │   ├── ConnectMenu.cpp
+│   │   │   ├── ConnectMenu.h
+│   │   │   ├── EthernetMenu.cpp
+│   │   │   ├── EthernetMenu.h
+│   │   │   ├── FileMenu.cpp
+│   │   │   ├── FileMenu.h
+│   │   │   ├── FMMenu.cpp
+│   │   │   ├── FMMenu.h
+│   │   │   ├── GpsMenu.cpp
+│   │   │   ├── GpsMenu.h
+│   │   │   ├── IRMenu.cpp
+│   │   │   ├── IRMenu.h
+│   │   │   ├── NRF24.cpp
+│   │   │   ├── NRF24.h
+│   │   │   ├── OthersMenu.cpp
+│   │   │   ├── OthersMenu.h
+│   │   │   ├── RFIDMenu.cpp
+│   │   │   ├── RFIDMenu.h
+│   │   │   ├── RFMenu.cpp
+│   │   │   ├── RFMenu.h
+│   │   │   ├── ScriptsMenu.cpp
+│   │   │   ├── ScriptsMenu.h
+│   │   │   ├── WifiMenu.cpp
+│   │   │   └── WifiMenu.h
+│   │   ├── mykeyboard.cpp
+│   │   ├── mykeyboard.h
+│   │   ├── net_utils.cpp
+│   │   ├── net_utils.h
+│   │   ├── passwords.cpp
+│   │   ├── passwords.h
+│   │   ├── powerSave.cpp
+│   │   ├── powerSave.h
+│   │   ├── scrollableTextArea.cpp
+│   │   ├── scrollableTextArea.h
+│   │   ├── sd_functions.cpp
+│   │   ├── sd_functions.h
+│   │   ├── serialcmds.cpp
+│   │   ├── serialcmds.h
+│   │   ├── serial_commands
+│   │   │   ├── badusb_commands.cpp
+│   │   │   ├── badusb_commands.h
+│   │   │   ├── cli.cpp
+│   │   │   ├── cli.h
+│   │   │   ├── crypto_commands.cpp
+│   │   │   ├── crypto_commands.h
+│   │   │   ├── gpio_commands.cpp
+│   │   │   ├── gpio_commands.h
+│   │   │   ├── helpers.cpp
+│   │   │   ├── helpers.h
+│   │   │   ├── interpreter_commands.cpp
+│   │   │   ├── interpreter_commands.h
+│   │   │   ├── ir_commands.cpp
+│   │   │   ├── ir_commands.h
+│   │   │   ├── power_commands.cpp
+│   │   │   ├── power_commands.h
+│   │   │   ├── rf_commands.cpp
+│   │   │   ├── rf_commands.h
+│   │   │   ├── screen_commands.cpp
+│   │   │   ├── screen_commands.h
+│   │   │   ├── settings_commands.cpp
+│   │   │   ├── settings_commands.h
+│   │   │   ├── sound_commands.cpp
+│   │   │   ├── sound_commands.h
+│   │   │   ├── storage_commands.cpp
+│   │   │   ├── storage_commands.h
+│   │   │   ├── util_commands.cpp
+│   │   │   ├── util_commands.h
+│   │   │   ├── wifi_commands.cpp
+│   │   │   └── wifi_commands.h
+│   │   ├── settingsColor.h
+│   │   ├── settings.cpp
+│   │   ├── settings.h
+│   │   ├── startup_app.cpp
+│   │   ├── startup_app.h
+│   │   ├── tftLogger
+│   │   │   └── tftLogger.cpp
+│   │   ├── theme.cpp
+│   │   ├── theme.h
+│   │   ├── type_convertion.cpp
+│   │   ├── type_convertion.h
+│   │   ├── utils.cpp
+│   │   ├── utils.h
+│   │   └── wifi
+│   │       ├── webInterface.cpp
+│   │       ├── webInterface.h
+│   │       ├── wg.cpp
+│   │       ├── wg.h
+│   │       ├── wifi_common.cpp
+│   │       ├── wifi_common.h
+│   │       ├── wifi_mac.cpp
+│   │       └── wifi_mac.h
+│   ├── main.cpp
+│   └── modules
+│       ├── badusb_ble
+│       │   ├── ducky_typer.cpp
+│       │   └── ducky_typer.h
+│       ├── bjs_interpreter
+│       │   ├── display_js.cpp
+│       │   ├── display_js.h
+│       │   ├── gui_js.cpp
+│       │   ├── gui_js.h
+│       │   ├── helpers_js.cpp
+│       │   ├── helpers_js.h
+│       │   ├── interpreter.cpp
+│       │   ├── interpreter.h
+│       │   ├── wifi_js.cpp
+│       │   └── wifi_js.h
+│       ├── ble
+│       │   ├── ble_common.cpp
+│       │   ├── ble_common.h
+│       │   ├── ble_ninebot.cpp
+│       │   ├── ble_ninebot.h
+│       │   ├── ble_spam.cpp
+│       │   └── ble_spam.h
+│       ├── ethernet
+│       │   ├── ARPoisoner.cpp
+│       │   ├── ARPoisoner.h
+│       │   ├── ARPScanner.cpp
+│       │   ├── ARPScanner.h
+│       │   ├── ARPSpoofer.cpp
+│       │   ├── ARPSpoofer.h
+│       │   ├── DHCPStarvation.cpp
+│       │   ├── DHCPStarvation.h
+│       │   ├── ESPNetifEthernetClient.cpp
+│       │   ├── ESPNetifEthernetClient.h
+│       │   ├── EthernetHelper.cpp
+│       │   ├── EthernetHelper.h
+│       │   ├── HostInfo.cpp
+│       │   ├── HostInfo.h
+│       │   ├── MACFlooding.cpp
+│       │   └── MACFlooding.h
+│       ├── ir
+│       │   ├── custom_ir.cpp
+│       │   ├── custom_ir.h
+│       │   ├── ir_jammer.cpp
+│       │   ├── ir_jammer.h
+│       │   ├── ir_read.cpp
+│       │   ├── ir_read.h
+│       │   ├── TV-B-Gone.cpp
+│       │   ├── TV-B-Gone.h
+│       │   └── WORLD_IR_CODES.h
+│       ├── others
+│       │   ├── audio.cpp
+│       │   ├── audio.h
+│       │   ├── clicker.cpp
+│       │   ├── clicker.h
+│       │   ├── ibutton.cpp
+│       │   ├── ibutton.h
+│       │   ├── mic.cpp
+│       │   ├── mic.h
+│       │   ├── openhaystack.cpp
+│       │   ├── openhaystack.h
+│       │   ├── qrcode_menu.cpp
+│       │   ├── qrcode_menu.h
+│       │   ├── timer.cpp
+│       │   ├── timer.h
+│       │   ├── tururururu.cpp
+│       │   └── tururururu.h
+│       ├── pwnagotchi
+│       │   ├── mood.cpp
+│       │   ├── mood.h
+│       │   ├── pwnagotchi.cpp
+│       │   ├── pwnagotchi.h
+│       │   ├── pwngrid.cpp
+│       │   ├── pwngrid.h
+│       │   ├── spam.cpp
+│       │   ├── spam.h
+│       │   ├── ui.cpp
+│       │   └── ui.h
+│       ├── reverseShell
+│       │   ├── reverseShell.cpp
+│       │   └── reverseShell.h
+│       └── wifi
+│           ├── ap_info.cpp
+│           ├── ap_info.h
+│           ├── clients.cpp
+│           ├── clients.h
+│           ├── deauther.cpp
+│           ├── deauther.h
+│           ├── evil_portal.cpp
+│           ├── evil_portal.h
+│           ├── karma_attack.cpp
+│           ├── karma_attack.h
+│           ├── scan_hosts.h
+│           ├── sniffer.cpp
+│           ├── sniffer.h
+│           ├── tcp_utils.cpp
+│           ├── tcp_utils.h
+│           ├── wifi_atks.cpp
+│           └── wifi_atks.h
+└── .vscode
+    ├── c_cpp_properties.json
+    ├── extensions.json
+    ├── launch.json
+    └── settings.json
+
+777 directories, 3886 files

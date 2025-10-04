@@ -10,6 +10,7 @@ public:
     void setup(void);
 
     SimpleCLI getCli() { return _cli; };
+
     bool parse(const String &input) { return _cli.parse(input); }
 
 private:
