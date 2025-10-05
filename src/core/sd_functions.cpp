@@ -7,7 +7,6 @@
 #include "modules/ir/custom_ir.h"
 #include "modules/others/audio.h"
 #include "modules/others/qrcode_menu.h"
-#include "modules/rf/rf_send.h"
 #include "mykeyboard.h" // using keyboard when calling rename
 #include "passwords.h"
 #include "scrollableTextArea.h"
@@ -728,11 +727,7 @@ String loopSD(FS &fs, bool filePicker, String allowed_ext, String rootPath) {
                                                              delay(200);
                                                              txIrFile(&fs, filepath);
                                                          }});
-                    if (filepath.endsWith(".sub"))
-                        options.insert(options.begin(), {"Subghz Tx", [&]() {
-                                                             delay(200);
-                                                             txSubFile(&fs, filepath);
-                                                         }});
+
                     if (filepath.endsWith(".csv")) {
                         options.insert(options.begin(), {"Wigle Upload", [&]() {
                                                              delay(200);
@@ -769,36 +764,33 @@ String loopSD(FS &fs, bool filePicker, String allowed_ext, String rootPath) {
                     }
                     if (filepath.endsWith(".enc")) { // encrypted files
                         options.insert(
-                            options.begin(),
-                            {"Decrypt+Type",
-                             [&]() {
-                                 String plaintext = readDecryptedFile(fs, filepath);
-                                 if (plaintext.length() == 0)
-                                     return displayError(
-                                         "Decryption failed", true
-                                     ); // file is too big or cannot read, or cancelled
-                                 // else
-                                 plaintext.trim(); // remove newlines
-                                 key_input_from_string(plaintext);
-                             }}
+                            options.begin(), {"Decrypt+Type", [&]() {
+                                                  String plaintext = readDecryptedFile(fs, filepath);
+                                                  if (plaintext.length() == 0)
+                                                      return displayError(
+                                                          "Decryption failed", true
+                                                      ); // file is too big or cannot read, or cancelled
+                                                  // else
+                                                  plaintext.trim(); // remove newlines
+                                                  key_input_from_string(plaintext);
+                                              }}
                         );
                     }
 #endif
                     if (filepath.endsWith(".enc")) { // encrypted files
-                        options.insert(options.begin(), {"Decrypt+Show", [&]() {
-                                                             String plaintext =
-                                                                 readDecryptedFile(fs, filepath);
-                                                             delay(200);
-                                                             if (plaintext.length() == 0)
-                                                                 return displayError(
-                                                                     "Decryption failed", true
-                                                                 );
-                                                             plaintext.trim(); // remove newlines
-                                                                               // if(plaintext.length()<..)
-                                                             displaySuccess(plaintext, true);
-                                                             // else
-                                                             // TODO: show in the text viewer
-                                                         }});
+                        options.insert(
+                            options.begin(), {"Decrypt+Show", [&]() {
+                                                  String plaintext = readDecryptedFile(fs, filepath);
+                                                  delay(200);
+                                                  if (plaintext.length() == 0)
+                                                      return displayError("Decryption failed", true);
+                                                  plaintext.trim(); // remove newlines
+                                                                    // if(plaintext.length()<..)
+                                                  displaySuccess(plaintext, true);
+                                                  // else
+                                                  // TODO: show in the text viewer
+                                              }}
+                        );
                     }
 #if defined(HAS_NS4168_SPKR)
                     if (isAudioFile(filepath))
